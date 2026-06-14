@@ -136,6 +136,10 @@ enum MatchEventType: String, Codable, Hashable {
     case yellow
     /// Tarjeta roja directa.
     case red
+    /// Entrada al campo (suplente que entra al partido).
+    case subIn = "sub_in"
+    /// Salida del campo (jugador sustituido).
+    case subOut = "sub_out"
 }
 
 // MARK: - MatchEvent
@@ -143,32 +147,96 @@ enum MatchEventType: String, Codable, Hashable {
 /// Evento puntual durante un partido (gol o tarjeta) con su minuto.
 ///
 /// Los eventos se asocian a `LineupPlayer` para poder pintarlos junto al jugador
-/// en la alineación.
+/// en la alineación. Admiten *tiempo añadido* para representar fielmente goles
+/// en prolongación de los 45' o 90' (p. ej. "45+5'" se modela como
+/// `minute: 45, extraTime: 5`).
 struct MatchEvent: Codable, Hashable {
+
     /// Tipo de evento (gol, tarjeta, etc.).
     let type: MatchEventType
-    /// Minuto del partido en el que ocurrió (1–120).
+
+    /// Minuto regular del partido (1–120).
     let minute: Int
 
+    /// Minutos adicionales sobre el tiempo regular. `nil` cuando el evento
+    /// ocurre dentro del minuto reglamentario.
+    let extraTime: Int?
+
+    /// Inicializador completo.
+    /// - Parameters:
+    ///   - type: Tipo de evento.
+    ///   - minute: Minuto regular.
+    ///   - extraTime: Tiempo añadido opcional.
+    init(type: MatchEventType, minute: Int, extraTime: Int? = nil) {
+        self.type = type
+        self.minute = minute
+        self.extraTime = extraTime
+    }
+
+    enum CodingKeys: String, CodingKey {
+        case type, minute, extraTime
+    }
+
+    /// Decodificación tolerante: `extraTime` se trata como opcional para
+    /// preservar compatibilidad con cachés/JSON antiguos sin el campo.
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        self.type = try c.decode(MatchEventType.self, forKey: .type)
+        self.minute = try c.decode(Int.self, forKey: .minute)
+        self.extraTime = try c.decodeIfPresent(Int.self, forKey: .extraTime)
+    }
+
     /// Crea un evento de gol.
-    /// - Parameter minute: Minuto del gol.
-    static func goal(_ minute: Int) -> MatchEvent { .init(type: .goal, minute: minute) }
+    /// - Parameters:
+    ///   - minute: Minuto regular.
+    ///   - extra: Tiempo añadido opcional.
+    static func goal(_ minute: Int, extra: Int? = nil) -> MatchEvent {
+        .init(type: .goal, minute: minute, extraTime: extra)
+    }
 
     /// Crea un evento de gol de penalti.
-    /// - Parameter minute: Minuto del lanzamiento convertido.
-    static func penalty(_ minute: Int) -> MatchEvent { .init(type: .penalty, minute: minute) }
+    static func penalty(_ minute: Int, extra: Int? = nil) -> MatchEvent {
+        .init(type: .penalty, minute: minute, extraTime: extra)
+    }
 
     /// Crea un evento de gol en propia puerta.
-    /// - Parameter minute: Minuto del autogol.
-    static func ownGoal(_ minute: Int) -> MatchEvent { .init(type: .ownGoal, minute: minute) }
+    static func ownGoal(_ minute: Int, extra: Int? = nil) -> MatchEvent {
+        .init(type: .ownGoal, minute: minute, extraTime: extra)
+    }
 
     /// Crea un evento de tarjeta amarilla.
-    /// - Parameter minute: Minuto de la amonestación.
-    static func yellow(_ minute: Int) -> MatchEvent { .init(type: .yellow, minute: minute) }
+    static func yellow(_ minute: Int, extra: Int? = nil) -> MatchEvent {
+        .init(type: .yellow, minute: minute, extraTime: extra)
+    }
 
     /// Crea un evento de tarjeta roja directa.
-    /// - Parameter minute: Minuto de la expulsión.
-    static func red(_ minute: Int) -> MatchEvent { .init(type: .red, minute: minute) }
+    static func red(_ minute: Int, extra: Int? = nil) -> MatchEvent {
+        .init(type: .red, minute: minute, extraTime: extra)
+    }
+
+    /// Crea un evento de entrada al campo.
+    /// - Parameters:
+    ///   - minute: Minuto en el que el jugador entró desde el banquillo.
+    ///   - extra: Tiempo añadido opcional.
+    static func subIn(_ minute: Int, extra: Int? = nil) -> MatchEvent {
+        .init(type: .subIn, minute: minute, extraTime: extra)
+    }
+
+    /// Crea un evento de salida del campo (sustitución del jugador).
+    /// - Parameters:
+    ///   - minute: Minuto en el que el jugador fue sustituido.
+    ///   - extra: Tiempo añadido opcional.
+    static func subOut(_ minute: Int, extra: Int? = nil) -> MatchEvent {
+        .init(type: .subOut, minute: minute, extraTime: extra)
+    }
+
+    /// Texto del minuto formateado para la UI (p. ej. "31'", "45+5'").
+    var displayMinute: String {
+        if let extraTime {
+            return "\(minute)+\(extraTime)'"
+        }
+        return "\(minute)'"
+    }
 }
 
 // MARK: - LineupPlayer
@@ -290,6 +358,10 @@ struct Match: Identifiable, Codable {
     let esp: Bool
     /// Alineaciones y eventos del partido, presentes sólo cuando se ha jugado.
     let details: MatchDetails?
+    /// Nombre del estadio donde se disputa el partido (p. ej. "Estadio Azteca").
+    let stadium: String?
+    /// Ciudad de la sede, opcionalmente con país ("Inglewood, EE.UU.").
+    let venueCity: String?
 
     // MARK: Inicializador
 
@@ -301,7 +373,9 @@ struct Match: Identifiable, Codable {
          done: Bool,
          result: String? = nil,
          esp: Bool = false,
-         details: MatchDetails? = nil) {
+         details: MatchDetails? = nil,
+         stadium: String? = nil,
+         venueCity: String? = nil) {
         self.id = UUID()
         self.time = time
         self.home = home
@@ -312,12 +386,14 @@ struct Match: Identifiable, Codable {
         self.result = result
         self.esp = esp
         self.details = details
+        self.stadium = stadium
+        self.venueCity = venueCity
     }
 
     // MARK: Codable
 
     enum CodingKeys: String, CodingKey {
-        case time, home, away, group, tv, done, result, esp, details
+        case time, home, away, group, tv, done, result, esp, details, stadium, venueCity
     }
 
     init(from decoder: Decoder) throws {
@@ -334,6 +410,8 @@ struct Match: Identifiable, Codable {
         self.result = try c.decodeIfPresent(String.self, forKey: .result)
         self.esp = try c.decodeIfPresent(Bool.self, forKey: .esp) ?? false
         self.details = try c.decodeIfPresent(MatchDetails.self, forKey: .details)
+        self.stadium = try c.decodeIfPresent(String.self, forKey: .stadium)
+        self.venueCity = try c.decodeIfPresent(String.self, forKey: .venueCity)
     }
 
     func encode(to encoder: Encoder) throws {
@@ -347,6 +425,8 @@ struct Match: Identifiable, Codable {
         try c.encodeIfPresent(result, forKey: .result)
         try c.encode(esp, forKey: .esp)
         try c.encodeIfPresent(details, forKey: .details)
+        try c.encodeIfPresent(stadium, forKey: .stadium)
+        try c.encodeIfPresent(venueCity, forKey: .venueCity)
     }
 
     // MARK: Helpers de presentación

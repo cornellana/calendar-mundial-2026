@@ -2,9 +2,20 @@
 //  MatchDetailSheet.swift
 //  CalendarMundial
 //
+//  Hoja modal con el detalle de un partido: equipos, resultado, info y
+//  alineaciones con eventos por jugador (goles y tarjetas con minuto).
+//
 
 import SwiftUI
 
+// MARK: - MatchDetailSheet
+
+/// Vista presentada en `.sheet` que detalla un partido seleccionado.
+///
+/// Adapta su contenido:
+/// - Para partidos jugados muestra resultado en grande y alineaciones con eventos.
+/// - Para próximos partidos confirmados muestra hora y equipos.
+/// - Para placeholders del bracket avisa de que los equipos están por definir.
 struct MatchDetailSheet: View {
     let match: Match
     let dateString: String
@@ -165,6 +176,12 @@ struct MatchDetailSheet: View {
             if !match.group.isEmpty {
                 InfoRow(label: groupLabel, value: match.group)
             }
+            if let stadium = match.stadium, !stadium.isEmpty {
+                InfoRow(label: "Estadio", value: stadium)
+            }
+            if let city = match.venueCity, !city.isEmpty {
+                InfoRow(label: "Ciudad", value: city)
+            }
             InfoRow(label: "Televisión",
                     value: match.tv.label,
                     valueColor: match.tv.dotColor)
@@ -282,6 +299,9 @@ struct MatchDetailSheet: View {
     }
 }
 
+// MARK: - InfoRow
+
+/// Fila clave/valor para el bloque informativo del partido.
 private struct InfoRow: View {
     let label: String
     let value: String
@@ -303,6 +323,10 @@ private struct InfoRow: View {
     }
 }
 
+// MARK: - PlayerRow
+
+/// Fila de un jugador en la alineación: dorsal, nombre, posición y los
+/// eventos del partido (goles y tarjetas con minuto).
 private struct PlayerRow: View {
     let player: LineupPlayer
 
@@ -348,13 +372,16 @@ private struct PlayerRow: View {
     }
 }
 
+// MARK: - EventBadge
+
+/// Icono + minuto que representa un evento concreto de un jugador.
 private struct EventBadge: View {
     let event: MatchEvent
 
     var body: some View {
         HStack(spacing: 3) {
             icon
-            Text("\(event.minute)'")
+            Text(event.displayMinute)
                 .font(.system(size: 10, weight: .semibold).monospacedDigit())
                 .foregroundColor(Color(hex: 0xE0EAFF))
         }
@@ -387,6 +414,14 @@ private struct EventBadge: View {
             RoundedRectangle(cornerRadius: 2)
                 .fill(Color(red: 0.86, green: 0.16, blue: 0.16))
                 .frame(width: 9, height: 13)
+        case .subIn:
+            Image(systemName: "arrow.up.circle.fill")
+                .font(.system(size: 13))
+                .foregroundColor(Color(red: 0.30, green: 0.78, blue: 0.40))
+        case .subOut:
+            Image(systemName: "arrow.down.circle.fill")
+                .font(.system(size: 13))
+                .foregroundColor(Color(red: 0.90, green: 0.40, blue: 0.40))
         }
     }
 }

@@ -40,10 +40,14 @@ final class MatchStore {
 
     /// URL del JSON remoto con la estructura de `MatchSnapshot`.
     ///
-    /// Cambia esto por la URL de tu propio archivo (un Gist, un endpoint, etc.)
-    /// para que la app actualice resultados y rellene los placeholders del bracket.
-    /// Si es `nil`, la app sólo usa los datos locales y el caché.
-    static let remoteURL: URL? = nil
+    /// Apunta al repositorio público `calendar-mundial-2026`. El workflow
+    /// `.github/workflows/update-mundial.yml` regenera `data/mundial2026.json`
+    /// cada 30 minutos consultando la API pública de ESPN y haciendo commit
+    /// automático. La app sólo necesita descargar este JSON — cero
+    /// intervención manual de aquí en adelante.
+    static let remoteURL: URL? = URL(
+        string: "https://raw.githubusercontent.com/cornellana/calendar-mundial-2026/refs/heads/main/data/mundial2026.json"
+    )
 
     /// Clave bajo la que se persiste el snapshot en `UserDefaults`.
     private static let cacheKey = "mundial2026_cache_v1"

@@ -2,36 +2,66 @@
 //  MatchesData.swift
 //  CalendarMundial
 //
+//  Datos integrados del Mundial 2026. Sirven de semilla cuando no hay caché
+//  ni JSON remoto disponible. El `MatchStore` sustituye estos datos por la
+//  versión remota en cuanto se publica una nueva.
+//
 
 import Foundation
 
+// MARK: - MundialData
+
+/// Fuente de datos estática con el calendario completo del Mundial 2026.
 enum MundialData {
+
+    /// Fecha de inicio del torneo (jornada inaugural).
     static let startDate = "2026-06-11"
+
+    /// Fecha de la gran final.
     static let endDate = "2026-07-19"
 
+    /// Letras de los 12 grupos del torneo, en orden alfabético.
+    static let groupLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
+
+    /// Fecha actual en zona horaria Europe/Madrid (formato ISO `yyyy-MM-dd`).
+    ///
+    /// Se usa para detectar la jornada del día actual en el listado. Se
+    /// calcula sobre el huso de Madrid porque la app está pensada para
+    /// usuarios en España y los horarios son europeos.
     static var todayString: String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
-        formatter.timeZone = TimeZone(identifier: "Europe/Madrid")
-        return formatter.string(from: Date())
+        let madridZone = TimeZone(identifier: "Europe/Madrid") ?? .gmt
+        return Date().formatted(
+            Date.ISO8601FormatStyle(timeZone: madridZone)
+                .year()
+                .month()
+                .day()
+        )
     }
 
     static let matchDays: [MatchDay] = [
         MatchDay(date: "2026-06-11", phase: .grupos, games: [
-            Match(time: "21:00", home: "México", away: "Sudáfrica", group: "A", tv: .both, done: true, result: "2-0")
+            Match(time: "21:00", home: "México", away: "Sudáfrica", group: "A", tv: .both, done: true, result: "2-0",
+                  details: MatchDetailsData.mexicoVsSouthAfrica)
         ]),
         MatchDay(date: "2026-06-12", phase: .grupos, games: [
-            Match(time: "04:00", home: "Corea del Sur", away: "Rep. Checa", group: "A", tv: .dazn, done: true, result: "2-1"),
-            Match(time: "21:00", home: "Canadá", away: "Bosnia Herz.", group: "B", tv: .both, done: true, result: "1-0")
+            Match(time: "04:00", home: "Corea del Sur", away: "Rep. Checa", group: "A", tv: .dazn, done: true, result: "2-1",
+                  details: MatchDetailsData.koreaVsCzechia),
+            Match(time: "21:00", home: "Canadá", away: "Bosnia Herz.", group: "B", tv: .both, done: true, result: "1-1",
+                  details: MatchDetailsData.canadaVsBosnia)
         ]),
         MatchDay(date: "2026-06-13", phase: .grupos, games: [
-            Match(time: "03:00", home: "EE.UU.", away: "Paraguay", group: "D", tv: .dazn, done: true, result: "1-0"),
-            Match(time: "21:00", home: "Qatar", away: "Suiza", group: "B", tv: .dazn, done: true, result: "0-3")
+            Match(time: "03:00", home: "EE.UU.", away: "Paraguay", group: "D", tv: .dazn, done: true, result: "4-1",
+                  details: MatchDetailsData.usaVsParaguay),
+            Match(time: "21:00", home: "Qatar", away: "Suiza", group: "B", tv: .dazn, done: true, result: "1-1",
+                  details: MatchDetailsData.qatarVsSwitzerland)
         ]),
         MatchDay(date: "2026-06-14", phase: .grupos, games: [
-            Match(time: "00:00", home: "Brasil", away: "Marruecos", group: "C", tv: .both, done: false),
-            Match(time: "03:00", home: "Haití", away: "Escocia", group: "C", tv: .dazn, done: false),
-            Match(time: "06:00", home: "Australia", away: "Turquía", group: "D", tv: .dazn, done: false),
+            Match(time: "00:00", home: "Brasil", away: "Marruecos", group: "C", tv: .both, done: true, result: "1-1",
+                  details: MatchDetailsData.brazilVsMorocco),
+            Match(time: "03:00", home: "Haití", away: "Escocia", group: "C", tv: .dazn, done: true, result: "0-1",
+                  details: MatchDetailsData.scotlandVsHaiti),
+            Match(time: "06:00", home: "Australia", away: "Turquía", group: "D", tv: .dazn, done: true, result: "2-0",
+                  details: MatchDetailsData.australiaVsTurkey),
             Match(time: "19:00", home: "Alemania", away: "Curaçao", group: "E", tv: .both, done: false),
             Match(time: "22:00", home: "Países Bajos", away: "Japón", group: "F", tv: .dazn, done: false)
         ]),
@@ -194,28 +224,37 @@ enum MundialData {
     ]
 }
 
-enum DateFormat {
-    private static let daysES = ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"]
-    private static let monthsES = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
+// MARK: - DateFormat
 
+/// Utilidades para formatear las fechas ISO de las jornadas a una representación
+/// abreviada y *localizada*.
+///
+/// Usa `Date.FormatStyle` (no `DateFormatter` manual) para respetar el locale
+/// activo del sistema: en español muestra "sáb 14 jun", en inglés "Sat, Jun 14".
+enum DateFormat {
+
+    /// Convierte una cadena ISO `yyyy-MM-dd` en una representación legible y
+    /// localizada con día de la semana abreviado, día y mes.
+    /// - Parameter dateStr: Fecha en formato `yyyy-MM-dd`.
+    /// - Returns: Texto localizado o la propia cadena si el parseo falla.
     static func displayDate(from dateStr: String) -> String {
         let parts = dateStr.split(separator: "-").compactMap { Int($0) }
         guard parts.count == 3 else { return dateStr }
-        let year = parts[0]
-        let month = parts[1]
-        let day = parts[2]
 
         var components = DateComponents()
-        components.year = year
-        components.month = month
-        components.day = day
+        components.year = parts[0]
+        components.month = parts[1]
+        components.day = parts[2]
 
         let calendar = Calendar(identifier: .gregorian)
         guard let date = calendar.date(from: components) else { return dateStr }
 
-        let weekdayIndex = calendar.component(.weekday, from: date) - 1
-        let dayName = daysES[weekdayIndex]
-        let monthName = monthsES[month - 1]
-        return "\(dayName) \(day) \(monthName)"
+        // FormatStyle respeta el locale del usuario sin tablas hardcodeadas.
+        return date.formatted(
+            .dateTime
+                .weekday(.abbreviated)
+                .day()
+                .month(.abbreviated)
+        )
     }
 }

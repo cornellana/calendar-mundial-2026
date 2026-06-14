@@ -2,31 +2,45 @@
 //  ContentView.swift
 //  CalendarMundial
 //
+//  Pantalla principal: cabecera con filtros, leyenda y listado de jornadas.
+//  Toda la composición es SwiftUI sin Combine; el estado dinámico vive en
+//  `MatchStore` (Observation framework).
+//
 
 import SwiftUI
 
+// MARK: - ContentView
+
+/// Vista raíz que muestra el calendario completo del Mundial 2026 con
+/// filtros por fase y por grupo, búsqueda por equipo y detalle por partido.
 struct ContentView: View {
     @State private var store = MatchStore()
     @State private var search: String = ""
     @State private var activePhase: PhaseFilter = .all
     @State private var selectedMatch: SelectedMatch?
+    @State private var sheetDetent: PresentationDetent = .medium
 
     private let today = MundialData.todayString
 
     private var filteredDays: [MatchDay] {
-        store.matchDays.filter { day in
-            let phaseOk: Bool
+        store.matchDays.compactMap { day in
+            let phaseFiltered: [Match]
             switch activePhase {
             case .all:
-                phaseOk = true
+                phaseFiltered = day.games
             case .phase(let p):
-                phaseOk = day.phase == p || day.games.contains { $0.group == p.rawValue }
+                phaseFiltered = day.games.filter { $0.phase == p }
+            case .group(let letter):
+                phaseFiltered = day.games.filter { $0.group == letter }
             }
-            let searchOk = search.isEmpty || day.games.contains { game in
+
+            let finalGames = search.isEmpty ? phaseFiltered : phaseFiltered.filter { game in
                 game.home.localizedCaseInsensitiveContains(search) ||
                 game.away.localizedCaseInsensitiveContains(search)
             }
-            return phaseOk && searchOk
+
+            guard !finalGames.isEmpty else { return nil }
+            return MatchDay(date: day.date, phase: day.phase, games: finalGames)
         }
     }
 
@@ -49,14 +63,35 @@ struct ContentView: View {
                             .padding(.top, 12)
 
                         if filteredDays.isEmpty {
-                            Text("No se encontraron partidos")
-                                .font(.system(size: 14))
-                                .foregroundColor(Color(hex: 0x4A6A8A))
-                                .padding(.vertical, 60)
+                            VStack(spacing: 14) {
+                                Image(systemName: "magnifyingglass")
+                                    .font(.system(size: 28))
+                                    .foregroundColor(Color(hex: 0x4A6A8A))
+                                Text("No se encontraron partidos")
+                                    .font(.system(size: 14, weight: .semibold))
+                                    .foregroundColor(Color(hex: 0x8CA8CC))
+                                if activePhase != .all || !search.isEmpty {
+                                    Button {
+                                        activePhase = .all
+                                        search = ""
+                                    } label: {
+                                        Text("Limpiar filtros")
+                                            .font(.system(size: 13, weight: .bold))
+                                            .foregroundColor(Color(hex: 0x0A0F1E))
+                                            .padding(.horizontal, 18)
+                                            .padding(.vertical, 9)
+                                            .background(Color(hex: 0xC8A84B))
+                                            .clipShape(Capsule())
+                                    }
+                                    .buttonStyle(.plain)
+                                }
+                            }
+                            .padding(.vertical, 60)
                         } else {
                             VStack(spacing: 10) {
                                 ForEach(filteredDays) { day in
                                     DaySectionView(day: day, today: today) { match in
+                                        sheetDetent = match.details != nil ? .large : .medium
                                         selectedMatch = SelectedMatch(
                                             match: match,
                                             date: day.date,
@@ -82,12 +117,15 @@ struct ContentView: View {
         }
         .sheet(item: $selectedMatch) { item in
             MatchDetailSheet(match: item.match, dateString: item.date, phase: item.phase)
-                .presentationDetents([.medium, .large])
+                .presentationDetents([.medium, .large], selection: $sheetDetent)
                 .presentationDragIndicator(.visible)
         }
     }
 }
 
+// MARK: - HeaderView
+
+/// Cabecera fija con título, buscador, chips de filtro y barra de filtro activo.
 private struct HeaderView: View {
     @Binding var search: String
     @Binding var activePhase: PhaseFilter
@@ -142,17 +180,38 @@ private struct HeaderView: View {
 
             SearchField(text: $search)
 
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 6) {
-                    PhaseChip(label: "Todos", active: activePhase == .all) {
-                        activePhase = .all
-                    }
-                    ForEach(Phase.allCases) { phase in
-                        PhaseChip(label: phase.rawValue, active: activePhase == .phase(phase)) {
-                            activePhase = .phase(phase)
+            VStack(alignment: .leading, spacing: 8) {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 6) {
+                        PhaseChip(label: "Todos", active: activePhase == .all) {
+                            activePhase = .all
+                        }
+                        ForEach(Phase.allCases) { phase in
+                            PhaseChip(label: phaseChipLabel(phase), active: activePhase == .phase(phase)) {
+                                activePhase = .phase(phase)
+                            }
                         }
                     }
+                    .padding(.vertical, 2)
                 }
+
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 6) {
+                        ForEach(MundialData.groupLetters, id: \.self) { letter in
+                            PhaseChip(label: "Grupo \(letter)", active: activePhase == .group(letter)) {
+                                if search.trimmingCharacters(in: .whitespaces).uppercased() == letter {
+                                    search = ""
+                                }
+                                activePhase = .group(letter)
+                            }
+                        }
+                    }
+                    .padding(.vertical, 2)
+                }
+            }
+
+            if activePhase != .all || !search.isEmpty {
+                activeFilterBanner
             }
         }
         .padding(.horizontal, 20)
@@ -173,6 +232,13 @@ private struct HeaderView: View {
         )
     }
 
+    private func phaseChipLabel(_ phase: Phase) -> String {
+        switch phase {
+        case .grupos: return "Fase Grupos"
+        default: return phase.rawValue
+        }
+    }
+
     private var rightSubtitle: String {
         if let lastUpdated {
             let formatter = DateFormatter()
@@ -182,8 +248,79 @@ private struct HeaderView: View {
         }
         return "11 Jun – 19 Jul 2026"
     }
+
+    private var phaseFilterCapsule: some View {
+        Group {
+            if activePhase != .all {
+                HStack(spacing: 4) {
+                    Image(systemName: "line.3.horizontal.decrease.circle.fill")
+                        .font(.system(size: 11))
+                    Text(activePhase.label)
+                        .font(.system(size: 12, weight: .bold))
+                }
+                .foregroundColor(Color(hex: 0x0A0F1E))
+                .padding(.horizontal, 10)
+                .padding(.vertical, 5)
+                .background(Color(hex: 0xC8A84B))
+                .clipShape(Capsule())
+            }
+        }
+    }
+
+    private var searchCapsule: some View {
+        Group {
+            if !search.isEmpty {
+                HStack(spacing: 4) {
+                    Image(systemName: "magnifyingglass")
+                        .font(.system(size: 11))
+                    Text("\u{201C}\(search)\u{201D}")
+                        .font(.system(size: 12, weight: .bold))
+                        .lineLimit(1)
+                }
+                .foregroundColor(Color(hex: 0xE0EAFF))
+                .padding(.horizontal, 10)
+                .padding(.vertical, 5)
+                .background(Color(hex: 0x1E3A5F))
+                .clipShape(Capsule())
+            }
+        }
+    }
+
+    private var activeFilterBanner: some View {
+        HStack(spacing: 6) {
+            phaseFilterCapsule
+            searchCapsule
+            Spacer(minLength: 4)
+            Button {
+                activePhase = .all
+                search = ""
+            } label: {
+                HStack(spacing: 4) {
+                    Image(systemName: "xmark.circle.fill")
+                        .font(.system(size: 12, weight: .bold))
+                    Text("Limpiar")
+                        .font(.system(size: 12, weight: .bold))
+                }
+                .foregroundColor(Color(hex: 0xE0EAFF))
+                .padding(.horizontal, 8)
+                .padding(.vertical, 4)
+            }
+            .buttonStyle(.plain)
+        }
+        .padding(.horizontal, 10)
+        .padding(.vertical, 6)
+        .background(Color(hex: 0x0D1F3C))
+        .overlay(
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(Color(hex: 0x1E3A5F), lineWidth: 1)
+        )
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+    }
 }
 
+// MARK: - SearchField
+
+/// Campo de texto estilizado para buscar equipos por nombre.
 private struct SearchField: View {
     @Binding var text: String
 
@@ -212,6 +349,12 @@ private struct SearchField: View {
     }
 }
 
+// MARK: - PhaseChip
+
+/// Chip pill para filtros de fase y grupo.
+///
+/// El `minWidth`/`minHeight` y el `contentShape` garantizan un *tap target*
+/// cómodo (≥ 44×36) aun cuando la etiqueta sea una sola letra.
 private struct PhaseChip: View {
     let label: String
     let active: Bool
@@ -220,21 +363,26 @@ private struct PhaseChip: View {
     var body: some View {
         Button(action: action) {
             Text(label)
-                .font(.system(size: 12, weight: active ? .bold : .regular))
-                .foregroundColor(active ? Color(hex: 0x0A0F1E) : Color(hex: 0x8CA8CC))
-                .padding(.horizontal, 13)
-                .padding(.vertical, 5)
+                .font(.system(size: 13, weight: active ? .bold : .semibold))
+                .foregroundColor(active ? Color(hex: 0x0A0F1E) : Color(hex: 0xE0EAFF))
+                .padding(.horizontal, 14)
+                .padding(.vertical, 9)
+                .frame(minWidth: 44, minHeight: 36)
                 .background(active ? Color(hex: 0xC8A84B) : Color(hex: 0x0D1F3C))
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
                         .stroke(active ? Color.clear : Color(hex: 0x1E3A5F), lineWidth: 1)
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 20))
+                .contentShape(RoundedRectangle(cornerRadius: 20))
         }
         .buttonStyle(.plain)
     }
 }
 
+// MARK: - LegendView
+
+/// Leyenda con la convención de colores de los canales y el partido de España.
 private struct LegendView: View {
     var body: some View {
         HStack(spacing: 16) {
@@ -260,6 +408,10 @@ private struct LegendView: View {
     }
 }
 
+// MARK: - DaySectionView
+
+/// Bloque de un día con su cabecera (fecha y badge de fase) y las filas de
+/// partidos correspondientes.
 private struct DaySectionView: View {
     let day: MatchDay
     let today: String
@@ -315,6 +467,10 @@ private struct DaySectionView: View {
     }
 }
 
+// MARK: - MatchRow
+
+/// Fila individual de un partido en el listado, con hora, equipos, badge de
+/// canal y chevron para indicar que es navegable a la hoja de detalle.
 private struct MatchRow: View {
     let match: Match
     let isToday: Bool

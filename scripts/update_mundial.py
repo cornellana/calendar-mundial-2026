@@ -102,6 +102,42 @@ TEAM_NAME_MAP: dict[str, str] = {
 }
 
 
+# -- Mapeo de país (ESPN inglés → español) -------------------------------
+
+COUNTRY_NAME_MAP: dict[str, str] = {
+    "United States": "EE.UU.",
+    "United States of America": "EE.UU.",
+    "USA": "EE.UU.",
+    "US": "EE.UU.",
+    "Mexico": "México",
+    "MEX": "México",
+    "Canada": "Canadá",
+    "CAN": "Canadá",
+}
+
+
+def format_venue_city(venue: dict | None) -> str | None:
+    """Formato "Ciudad, País" en español a partir del bloque venue de ESPN."""
+    if not venue:
+        return None
+    address = venue.get("address") or {}
+    city = (address.get("city") or "").strip()
+    country = (address.get("country") or "").strip()
+    country_es = COUNTRY_NAME_MAP.get(country, country)
+    if city and country_es and country_es.lower() not in city.lower():
+        return f"{city}, {country_es}"
+    return city or None
+
+
+def extract_venue(summary: dict) -> tuple[str | None, str | None]:
+    """Devuelve (estadio, ciudad) extraídos del gameInfo del summary de ESPN."""
+    info = summary.get("gameInfo") or {}
+    venue = info.get("venue") or {}
+    stadium = (venue.get("fullName") or venue.get("name") or "").strip() or None
+    city = format_venue_city(venue)
+    return stadium, city
+
+
 # -- Mapeo de posiciones ESPN → 3 letras de la app ------------------------
 
 POSITION_MAP: dict[str, str] = {
@@ -384,9 +420,12 @@ def main() -> int:
                 continue
 
             result = f"{home_score}-{away_score}"
+            # Refetch si falta cualquiera de: result correcto, details o venue.
             already = (game.get("done")
                        and game.get("result") == result
-                       and game.get("details"))
+                       and game.get("details")
+                       and game.get("stadium")
+                       and game.get("venueCity"))
             if already:
                 continue
 
@@ -398,13 +437,19 @@ def main() -> int:
                 continue
 
             details = build_details(summary)
+            stadium, city = extract_venue(summary)
 
             game["done"] = True
             game["result"] = result
             if details:
                 game["details"] = details
+            if stadium:
+                game["stadium"] = stadium
+            if city:
+                game["venueCity"] = city
             updated += 1
-            print(f"  ✅ {madrid_date}  {home_team} {result} {away_team}")
+            print(f"  ✅ {madrid_date}  {home_team} {result} {away_team}  "
+                  f"({stadium or '?'} – {city or '?'})")
 
     if updated == 0:
         print("Sin cambios. No se reescribe el JSON.")

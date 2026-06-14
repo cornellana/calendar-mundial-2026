@@ -221,21 +221,21 @@ enum MatchDetailsData {
             .starter(16, "Alex Freeman", "DEF"),
             .starter(13, "Tim Ream", "DEF"),
             .starter(3, "Chris Richards", "DEF"),
-            .starter(2, "Sergiño Dest", "MED", [.subOut(72)]),
+            .starter(2, "Sergiño Dest", "MED", [.subOut(71)]),
             .starter(4, "Tyler Adams", "MED"),
-            .starter(17, "Malik Tillman", "MED", [.subOut(82)]),
+            .starter(17, "Malik Tillman", "MED", [.subOut(81)]),
             .starter(5, "Antonee Robinson", "MED"),
             .starter(8, "Weston McKennie", "MED", [.yellow(42)]),
-            .starter(10, "Christian Pulisic", "DEL", [.subOut(46)]),
-            .starter(20, "Folarin Balogun", "DEL", [.goal(31), .goal(45, extra: 5), .subOut(72)]),
-            .sub(14, "Sebastian Berhalter", "MED", [.subIn(46)]),
-            .sub(21, "Tim Weah", "DEL", [.subIn(72)]),
-            .sub(9, "Ricardo Pepi", "DEL", [.subIn(72)]),
-            .sub(7, "Gio Reyna", "DEL", [.subIn(82), .goal(90, extra: 8)]),
+            .starter(10, "Christian Pulisic", "DEL", [.subOut(45)]),
+            .starter(20, "Folarin Balogun", "DEL", [.goal(31), .goal(45, extra: 5), .subOut(71)]),
+            .sub(14, "Sebastian Berhalter", "MED", [.subIn(45)]),
+            .sub(21, "Tim Weah", "DEL", [.subIn(71)]),
+            .sub(9, "Ricardo Pepi", "DEL", [.subIn(71)]),
+            .sub(7, "Gio Reyna", "DEL", [.subIn(81), .goal(90, extra: 8)]),
             .sub(1, "Matt Turner", "POR"),
             .sub(25, "Chris Brady", "POR"),
             .sub(6, "Auston Trusty", "DEF"),
-            .sub(11, "Brenden Aaronson", "MED"),
+            .sub(11, "Brenden Aaronson", "DEL"),
             .sub(12, "Miles Robinson", "DEF"),
             .sub(15, "Cristian Roldan", "MED"),
             .sub(18, "Max Arfsten", "DEF"),
@@ -246,27 +246,215 @@ enum MatchDetailsData {
         ]),
         awayLineup: TeamLineup(formation: "4-3-3", players: [
             .starter(12, "Orlando Gill", "POR"),
-            .starter(4, "Juan Cáceres", "DEF", [.subOut(79)]),
+            .starter(4, "Juan Cáceres", "DEF", [.subOut(78)]),
             .starter(15, "Gustavo Gómez", "DEF"),
             .starter(3, "Omar Alderete", "DEF"),
             .starter(6, "Junior Alonso", "DEF"),
-            .starter(8, "Diego Gómez", "MED", [.subOut(80)]),
+            .starter(8, "Diego Gómez", "MED", [.subOut(78)]),
             .starter(14, "Andrés Cubas", "MED"),
-            .starter(16, "Damián Bobadilla", "MED", [.ownGoal(7), .subOut(46)]),
-            .starter(10, "Miguel Almirón", "MED", [.subOut(79)]),
-            .starter(9, "Antonio Sanabria", "DEL", [.subOut(62)]),
+            .starter(16, "Damián Bobadilla", "MED", [.ownGoal(7), .subOut(45)]),
+            .starter(10, "Miguel Almirón", "MED", [.subOut(78)]),
+            .starter(9, "Antonio Sanabria", "DEL", [.subOut(61)]),
             .starter(19, "Julio Enciso", "DEL"),
-            .sub(18, "Maurício", "DEL", [.subIn(46), .goal(73)]),
-            .sub(11, "Alex Arce", "DEL", [.subIn(62), .yellow(75)]),
-            .sub(22, "Gustavo Velázquez", "DEF", [.subIn(79)]),
-            .sub(7, "Ramón Sosa", "DEL", [.subIn(79)]),
-            .sub(17, "Alejandro Romero", "MED", [.subIn(80)]),
+            .sub(18, "Maurício", "DEL", [.subIn(45), .goal(73)]),
+            .sub(11, "Alex Arce", "DEL", [.subIn(61), .yellow(75)]),
+            .sub(22, "Gustavo Velázquez", "DEF", [.subIn(78)]),
+            .sub(7, "Ramón Sosa", "DEL", [.subIn(78)]),
+            .sub(17, "Alejandro Romero", "MED", [.subIn(78)]),
             .sub(1, "Gabriel Fernández", "POR"),
             .sub(23, "Anthony Silva", "POR"),
             .sub(5, "Fabián Balbuena", "DEF"),
             .sub(13, "Juan Canale", "DEF"),
             .sub(20, "Braian Ojeda", "MED"),
             .sub(21, "Gerardo Ávalos", "DEL")
+        ])
+    )
+
+    // MARK: Brasil 1-1 Marruecos (14/06/2026, MetLife Stadium, Nueva Jersey)
+    //
+    // Selectores:  Dorival Jr. (BRA),  Regragui (MAR).
+    // Goles:  Saibari 21' (MAR, asist. B. Díaz),  Vinicius Jr. 72' aprox. (BRA).
+    // Cambios BRA descanso:  Fabinho por Casemiro,  Danilo por R. Ibañez.
+    // Ausencias BRA:  Militão (muslo), Rodrygo (rodilla), Estevão (isquios).
+    static let brazilVsMorocco = MatchDetails(
+        homeLineup: TeamLineup(formation: "4-3-3", players: [
+            .starter(1, "Alisson", "POR"),
+            .starter(13, "Roger Ibañez", "DEF", [.subOut(46)]),
+            .starter(4, "Marquinhos", "DEF"),
+            .starter(15, "Gabriel Magalhães", "DEF"),
+            .starter(6, "Douglas Santos", "DEF"),
+            .starter(5, "Casemiro", "MED", [.subOut(46)]),
+            .starter(8, "Bruno Guimarães", "MED"),
+            .starter(10, "Lucas Paquetá", "MED"),
+            .starter(7, "Vinicius Júnior", "DEL", [.goal(72)]),
+            .starter(11, "Raphinha", "DEL"),
+            .starter(9, "Igor Thiago", "DEL"),
+            .sub(17, "Fabinho", "MED", [.subIn(46)]),
+            .sub(2, "Danilo", "DEF", [.subIn(46)]),
+            .sub(18, "Neymar", "DEL"),
+            .sub(16, "Léo Pereira", "DEF"),
+            .sub(23, "Ederson", "POR"),
+            .sub(12, "Bento", "POR"),
+            .sub(14, "Endrick", "DEL"),
+            .sub(19, "Andreas Pereira", "MED"),
+            .sub(20, "João Gomes", "MED"),
+            .sub(21, "Vítor Roque", "DEL"),
+            .sub(22, "Yan Couto", "DEF"),
+            .sub(24, "Wendell", "DEF"),
+            .sub(25, "Léo Ortiz", "DEF"),
+            .sub(26, "Savinho", "DEL")
+        ]),
+        awayLineup: TeamLineup(formation: "4-3-3", players: [
+            .starter(1, "Yassine Bono", "POR"),
+            .starter(2, "Achraf Hakimi", "DEF"),
+            .starter(6, "Romain Saïss", "DEF"),
+            .starter(5, "Nayef Aguerd", "DEF"),
+            .starter(3, "Noussair Mazraoui", "DEF"),
+            .starter(4, "Sofyan Amrabat", "MED"),
+            .starter(8, "Azzedine Ounahi", "MED"),
+            .starter(21, "Brahim Díaz", "MED"),
+            .starter(11, "Ismael Saibari", "MED", [.goal(21)]),
+            .starter(19, "Youssef En-Nesyri", "DEL"),
+            .starter(7, "Hakim Ziyech", "DEL"),
+            .sub(9, "Ayoub El Kaabi", "DEL"),
+            .sub(10, "Bilal El Khannouss", "MED"),
+            .sub(12, "Munir El Kajoui", "POR"),
+            .sub(13, "Eliesse Ben Seghir", "DEL"),
+            .sub(14, "Amine Adli", "DEL"),
+            .sub(15, "Adam Masina", "DEF"),
+            .sub(16, "Achraf Dari", "DEF"),
+            .sub(17, "Hamza Igamane", "DEL"),
+            .sub(18, "Bilal Nadir", "MED"),
+            .sub(20, "Achraf El Bouchiouy", "MED"),
+            .sub(22, "Mehdi Benatia", "DEF"),
+            .sub(23, "Ahmed Reda Tagnaouti", "POR")
+        ])
+    )
+
+    // MARK: Escocia 1-0 Haití (14/06/2026, Gillette Stadium, Boston)
+    //
+    // Selectores:  Steve Clarke (SCO),  Sébastien Migné (HAI).
+    // Goles:  McGinn 28' (SCO, desvío tras parada de Placide a Che Adams).
+    // Cambios SCO:  Hickey 46' (suplente entra).
+    // Cambios HAI:  Providence 61' (por Deedson).
+    // Notas:  Primer triunfo de Escocia en un Mundial desde 1990.
+    //         McTominay golpeó el palo antes del gol.
+    static let scotlandVsHaiti = MatchDetails(
+        homeLineup: TeamLineup(formation: "4-2-3-1", players: [
+            .starter(1, "Angus Gunn", "POR"),
+            .starter(2, "Aaron Hickey", "DEF"),
+            .starter(5, "Grant Hanley", "DEF"),
+            .starter(4, "Jack Hendry", "DEF"),
+            .starter(3, "Andrew Robertson", "DEF"),
+            .starter(6, "Billy Gilmour", "MED"),
+            .starter(8, "Callum McGregor", "MED"),
+            .starter(17, "John McGinn", "MED", [.goal(28)]),
+            .starter(11, "Scott McTominay", "MED"),
+            .starter(7, "Ben Doak", "DEL"),
+            .starter(9, "Che Adams", "DEL"),
+            .sub(14, "Ryan Christie", "MED"),
+            .sub(10, "Tommy Conway", "DEL"),
+            .sub(15, "Lewis Ferguson", "MED"),
+            .sub(16, "Lewis Morgan", "DEL"),
+            .sub(18, "George Hirst", "DEL"),
+            .sub(19, "James Forrest", "DEL"),
+            .sub(20, "Ryan Gauld", "MED"),
+            .sub(12, "Cieran Slicker", "POR"),
+            .sub(13, "Robby McCrorie", "POR"),
+            .sub(21, "Anthony Ralston", "DEF"),
+            .sub(22, "Max Johnston", "DEF"),
+            .sub(23, "Scott McKenna", "DEF"),
+            .sub(24, "Kieran Tierney", "DEF"),
+            .sub(25, "Liam Cooper", "DEF"),
+            .sub(26, "Ross McCrorie", "MED")
+        ]),
+        awayLineup: TeamLineup(formation: "4-4-2", players: [
+            .starter(1, "Johny Placide", "POR"),
+            .starter(2, "Ricardo Adé", "DEF"),
+            .starter(4, "Thomas Delcroix", "DEF"),
+            .starter(3, "Garven Metusala", "DEF"),
+            .starter(5, "Carlens Arcus", "DEF"),
+            .starter(8, "Jean Bellegarde", "MED"),
+            .starter(7, "Danley Jean Jacques", "MED"),
+            .starter(10, "Deedson Louicius", "MED", [.subOut(61)]),
+            .starter(11, "Frantzdy Pierrot", "DEL"),
+            .starter(9, "Jean-Eudes Aholou", "MED"),
+            .starter(20, "Jean-Ricner Bellegarde", "DEL"),
+            .sub(17, "Donovan Providence", "MED", [.subIn(61)]),
+            .sub(13, "Alexandre Pierre", "MED"),
+            .sub(15, "Markhus Lacroix", "DEF"),
+            .sub(16, "Jean-Kevin Duverne", "DEF"),
+            .sub(18, "Wilguens Paugain", "MED"),
+            .sub(19, "Carl Sainte", "DEL"),
+            .sub(21, "Dominique Simon", "DEL"),
+            .sub(22, "Woodensky Pierre", "DEL"),
+            .sub(23, "Derrick Etienne", "DEL"),
+            .sub(14, "Duckens Nazon", "DEL"),
+            .sub(25, "Lenny Joseph", "DEL"),
+            .sub(26, "Yassin Fortune", "DEL"),
+            .sub(12, "Josue Duverger", "POR"),
+            .sub(24, "Keeto Thermoncy", "POR")
+        ])
+    )
+
+    // MARK: Australia 2-0 Turquía (14/06/2026, BC Place, Vancouver)
+    //
+    // Selectores:  Popovic (AUS 5-4-1),  Vincenzo Montella (TUR).
+    // Goles:  Irankunda 27' (AUS),  Metcalfe 70' aprox. (AUS).
+    // Cambios AUS:  Behich por Bos,  Irvine por Okon-Engstler 84'.
+    // Cambios TUR:  K. Yıldız 46' (por B. Yılmaz),  D. Gül 85' (por Aktürkoğlu).
+    static let australiaVsTurkey = MatchDetails(
+        homeLineup: TeamLineup(formation: "5-4-1", players: [
+            .starter(1, "Joe Gauci", "POR"),
+            .starter(15, "Jason Geria", "DEF"),
+            .starter(5, "Harry Souttar", "DEF"),
+            .starter(6, "Cameron Burgess", "DEF"),
+            .starter(4, "Alessandro Circati", "DEF"),
+            .starter(3, "Jordan Bos", "DEF", [.subOut(75)]),
+            .starter(7, "Nestory Irankunda", "MED", [.goal(27)]),
+            .starter(8, "Aiden O'Neill", "MED"),
+            .starter(10, "Connor Metcalfe", "MED", [.goal(70)]),
+            .starter(11, "Jacob Italiano", "MED"),
+            .starter(9, "Paul Okon-Engstler", "DEL", [.subOut(84)]),
+            .sub(2, "Aziz Behich", "DEF", [.subIn(75)]),
+            .sub(14, "Jackson Irvine", "MED", [.subIn(84)]),
+            .sub(13, "Nishan Velupillay", "DEL"),
+            .sub(16, "Riley McGree", "MED"),
+            .sub(17, "Hayden Matthews", "DEF"),
+            .sub(18, "Mohamed Toure", "DEL"),
+            .sub(19, "Adam Taggart", "DEL"),
+            .sub(20, "Lewis Miller", "DEF"),
+            .sub(21, "Anthony Caceres", "MED"),
+            .sub(22, "Daniel Arzani", "DEL"),
+            .sub(23, "Patrick Yazbek", "MED"),
+            .sub(12, "Maty Ryan", "POR"),
+            .sub(24, "Steven Hall", "POR")
+        ]),
+        awayLineup: TeamLineup(formation: "4-2-3-1", players: [
+            .starter(1, "Uğurcan Çakır", "POR"),
+            .starter(2, "Zeki Çelik", "DEF"),
+            .starter(4, "Abdülkerim Bardakçı", "DEF"),
+            .starter(5, "Merih Demiral", "DEF"),
+            .starter(3, "Ferdi Kadıoğlu", "DEF"),
+            .starter(6, "İsmail Yüksek", "MED"),
+            .starter(8, "Orkun Kökçü", "MED"),
+            .starter(10, "Hakan Çalhanoğlu", "MED"),
+            .starter(11, "Arda Güler", "MED"),
+            .starter(7, "Kerem Aktürkoğlu", "DEL", [.subOut(85)]),
+            .starter(9, "Burak Yılmaz", "DEL", [.subOut(46)]),
+            .sub(20, "Kenan Yıldız", "DEL", [.subIn(46)]),
+            .sub(21, "Doğukan Gül", "MED", [.subIn(85)]),
+            .sub(13, "Hakan Kadıoğlu", "DEF"),
+            .sub(14, "Salih Özcan", "MED"),
+            .sub(15, "Çağlar Söyüncü", "DEF"),
+            .sub(16, "Yusuf Yazıcı", "MED"),
+            .sub(17, "Cenk Tosun", "DEL"),
+            .sub(18, "Halil Dervişoğlu", "DEL"),
+            .sub(19, "Eren Elmalı", "DEF"),
+            .sub(22, "Çağlar Şahan", "MED"),
+            .sub(23, "Berke Özer", "POR"),
+            .sub(24, "Erkin Aydın", "DEL"),
+            .sub(25, "Mert Günok", "POR")
         ])
     )
 
