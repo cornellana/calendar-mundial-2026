@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-14T21:06:38Z",
+  "lastUpdated": "2026-06-14T23:17:10Z",
   "matchDays": [
     {
       "date": "2026-06-11",
@@ -4491,12 +4491,508 @@
         },
         {
           "away": "Japón",
-          "done": false,
+          "details": {
+            "awayLineup": {
+              "formation": "3-4-2-1",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Zion Suzuki",
+                  "number": 1,
+                  "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Shogo Taniguchi",
+                  "number": 3,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Hiroki Ito",
+                  "number": 21,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 75,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Tsuyoshi Watanabe",
+                  "number": 16,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Daichi Kamada",
+                  "number": 15,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Kaishu Sano",
+                  "number": 24,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 57,
+                      "type": "goal"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Keito Nakamura",
+                  "number": 13,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 75,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Ritsu Doan",
+                  "number": 10,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 84,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Ayase Ueda",
+                  "number": 18,
+                  "position": "DEL"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 66,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Daizen Maeda",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 75,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Takefusa Kubo",
+                  "number": 8,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 66,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Junya Ito",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 75,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Koki Ogawa",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Yuto Nagatomo",
+                  "number": 5,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 84,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Kento Shiogai",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Keisuke Goto",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Yuito Suzuki",
+                  "number": 17,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Ayumu Seko",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Tomoki Hayakawa",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Shuto Machino",
+                  "number": 6,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Kou Itakura",
+                  "number": 4,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Junnosuke Suzuki",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Keisuke Osako",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Ao Tanaka",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 75,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Yukinari Sugawara",
+                  "number": 2,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 75,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Takehiro Tomiyasu",
+                  "number": 22,
+                  "position": "?"
+                }
+              ]
+            },
+            "homeLineup": {
+              "formation": "4-3-3",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Bart Verbruggen",
+                  "number": 1,
+                  "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Virgil van Dijk",
+                  "number": 4,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Jan Paul van Hecke",
+                  "number": 6,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Micky van de Ven",
+                  "number": 15,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Denzel Dumfries",
+                  "number": 22,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Frenkie de Jong",
+                  "number": 21,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 70,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Tijjani Reijnders",
+                  "number": 14,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 81,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Ryan Gravenberch",
+                  "number": 8,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 70,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Donyell Malen",
+                  "number": 18,
+                  "position": "DEL"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 85,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Cody Gakpo",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "yellow"
+                    },
+                    {
+                      "minute": 64,
+                      "type": "goal"
+                    },
+                    {
+                      "minute": 70,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Crysencio Summerville",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mats Wieffer",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Lutsharel Geertruida",
+                  "number": 2,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Justin Kluivert",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 70,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Teun Koopmeiners",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Guus Til",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Robin Roefs",
+                  "number": 13,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 70,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Quinten Timber",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 81,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Nathan Aké",
+                  "number": 5,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Wout Weghorst",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mark Flekken",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 70,
+                      "type": "sub_in"
+                    },
+                    {
+                      "minute": 83,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Memphis Depay",
+                  "number": 10,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Noa Lang",
+                  "number": 17,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Marten de Roon",
+                  "number": 3,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Jorrel Hato",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 85,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Brian Brobbey",
+                  "number": 19,
+                  "position": "?"
+                }
+              ]
+            }
+          },
+          "done": true,
           "esp": false,
           "group": "F",
           "home": "Países Bajos",
+          "result": "2-2",
+          "stadium": "AT&T Stadium",
           "time": "22:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "venueCity": "Arlington, Texas, EE.UU."
         }
       ],
       "phase": "Grupos"
