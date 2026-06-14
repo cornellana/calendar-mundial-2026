@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-14T20:22:29Z",
+  "lastUpdated": "2026-06-14T21:06:38Z",
   "matchDays": [
     {
       "date": "2026-06-11",
@@ -20,21 +20,38 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Aubrey Modiba",
-                  "number": 4,
+                  "name": "Ime Okon",
+                  "number": 21,
                   "position": "DEF"
                 },
                 {
                   "events": [],
                   "isStarter": true,
                   "name": "Mbekezeli Mbokazi",
-                  "number": 5,
+                  "number": 14,
                   "position": "DEF"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 74,
+                      "type": "yellow"
+                    }
+                  ],
                   "isStarter": true,
                   "name": "Nkosinathi Sibisi",
+                  "number": 19,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 77,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Aubrey Modiba",
                   "number": 6,
                   "position": "DEF"
                 },
@@ -42,88 +59,68 @@
                   "events": [],
                   "isStarter": true,
                   "name": "Khuliso Mudau",
-                  "number": 19,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Ime Okon",
-                  "number": 3,
+                  "number": 20,
                   "position": "DEF"
                 },
                 {
                   "events": [
                     {
-                      "minute": 16,
-                      "type": "yellow"
-                    }
-                  ],
-                  "isStarter": true,
-                  "name": "Teboho Mokoena",
-                  "number": 8,
-                  "position": "MED"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 50,
+                      "minute": 49,
                       "type": "red"
                     }
                   ],
                   "isStarter": true,
                   "name": "Sphephelo Sithole",
-                  "number": 14,
+                  "number": 13,
                   "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Jayden Adams",
-                  "number": 15,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Lyle Foster",
-                  "number": 10,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Iqraam Rayners",
-                  "number": 9,
-                  "position": "DEL"
                 },
                 {
                   "events": [
                     {
-                      "minute": 70,
-                      "type": "sub_in"
-                    },
-                    {
-                      "minute": 84,
-                      "type": "red"
+                      "minute": 61,
+                      "type": "sub_out"
                     }
                   ],
-                  "isStarter": false,
-                  "name": "Themba Zwane",
-                  "number": 11,
+                  "isStarter": true,
+                  "name": "Jayden Adams",
+                  "number": 23,
                   "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 17,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Teboho Mokoena",
+                  "number": 4,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 56,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Lyle Foster",
+                  "number": 9,
+                  "position": "?"
                 },
                 {
                   "events": [
                     {
                       "minute": 76,
-                      "type": "sub_in"
+                      "type": "sub_out"
                     }
                   ],
-                  "isStarter": false,
-                  "name": "Evidence Makgopa",
-                  "number": 13,
-                  "position": "DEL"
+                  "isStarter": true,
+                  "name": "Iqraam Rayners",
+                  "number": 15,
+                  "position": "?"
                 },
                 {
                   "events": [
@@ -134,76 +131,130 @@
                   ],
                   "isStarter": false,
                   "name": "Oswin Appollis",
-                  "number": 18,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Percy Tau",
                   "number": 7,
-                  "position": "DEL"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Mihlali Mayambela",
-                  "number": 2,
-                  "position": "DEL"
+                  "name": "Sipho Chaine",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_in"
+                    },
+                    {
+                      "minute": 84,
+                      "type": "red"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Themba Zwane",
+                  "number": 11,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Bongokuhle Hlongwane",
-                  "number": 21,
-                  "position": "DEL"
+                  "name": "Kamogelo Sebelebele",
+                  "number": 25,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Bafana Mbatha",
-                  "number": 22,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Patrick Maswanganyi",
-                  "number": 24,
-                  "position": "MED"
+                  "name": "Khulumani Ndamane",
+                  "number": 3,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Thabang Matuludi",
-                  "number": 20,
-                  "position": "DEF"
+                  "number": 2,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Innocent Maela",
-                  "number": 23,
-                  "position": "DEF"
+                  "name": "Samukele Kabini",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Relebohile Mofokeng",
+                  "number": 10,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 56,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Thalente Mbatha",
+                  "number": 5,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Ricardo Goss",
-                  "number": 16,
-                  "position": "POR"
+                  "number": 22,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Sage Stephens",
+                  "name": "Bradley Cross",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Thapelo Maseko",
                   "number": 12,
-                  "position": "POR"
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Tshepang Moremi",
+                  "number": 8,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Evidence Makgopa",
+                  "number": 17,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Olwethu Makhanya",
+                  "number": 24,
+                  "position": "?"
                 }
               ]
             },
             "homeLineup": {
-              "formation": "4-1-2-3",
+              "formation": "4-1-4-1",
               "players": [
                 {
                   "events": [],
@@ -211,19 +262,6 @@
                   "name": "Raúl Rangel",
                   "number": 1,
                   "position": "POR"
-                },
-                {
-                  "events": [
-                    {
-                      "extraTime": 2,
-                      "minute": 90,
-                      "type": "red"
-                    }
-                  ],
-                  "isStarter": true,
-                  "name": "César Montes",
-                  "number": 3,
-                  "position": "DEF"
                 },
                 {
                   "events": [],
@@ -235,9 +273,21 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Israel Reyes",
-                  "number": 15,
+                  "name": "César Montes",
+                  "number": 3,
                   "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Érik Lira",
+                  "number": 6,
+                  "position": "MED"
                 },
                 {
                   "events": [],
@@ -249,47 +299,37 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Erik Lira",
-                  "number": 14,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Álvaro Fidalgo",
-                  "number": 16,
-                  "position": "MED"
+                  "name": "Israel Reyes",
+                  "number": 15,
+                  "position": "DEF"
                 },
                 {
                   "events": [
                     {
-                      "minute": 22,
-                      "type": "yellow"
+                      "minute": 66,
+                      "type": "sub_out"
                     }
                   ],
                   "isStarter": true,
-                  "name": "Brian Gutiérrez",
+                  "name": "Álvaro Fidalgo",
                   "number": 8,
                   "position": "MED"
                 },
                 {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Roberto Alvarado",
-                  "number": 11,
-                  "position": "DEL"
-                },
-                {
                   "events": [
                     {
-                      "minute": 67,
-                      "type": "goal"
+                      "minute": 23,
+                      "type": "yellow"
+                    },
+                    {
+                      "minute": 66,
+                      "type": "sub_out"
                     }
                   ],
                   "isStarter": true,
-                  "name": "Raúl Jiménez",
-                  "number": 9,
-                  "position": "DEL"
+                  "name": "Brian Gutiérrez",
+                  "number": 26,
+                  "position": "MED"
                 },
                 {
                   "events": [
@@ -304,8 +344,88 @@
                   ],
                   "isStarter": true,
                   "name": "Julián Quiñones",
-                  "number": 7,
+                  "number": 16,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Roberto Alvarado",
+                  "number": 25,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Raúl Jiménez",
+                  "number": 9,
                   "position": "DEL"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Luis Romo",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "César Huerta",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Guillermo Ochoa",
+                  "number": 13,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Carlos Acevedo",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 66,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Luis Chávez",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mateo Chávez",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Santiago Gimenez",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Obed Vargas",
+                  "number": 18,
+                  "position": "?"
                 },
                 {
                   "events": [
@@ -316,99 +436,65 @@
                   ],
                   "isStarter": false,
                   "name": "Alexis Vega",
-                  "number": 25,
-                  "position": "DEL"
+                  "number": 10,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Memo Ochoa",
-                  "number": 13,
-                  "position": "POR"
+                  "name": "Guillermo Martínez",
+                  "number": 22,
+                  "position": "?"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_in"
+                    }
+                  ],
                   "isStarter": false,
-                  "name": "Carlos Acevedo",
-                  "number": 12,
-                  "position": "POR"
+                  "name": "Armando González",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 66,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Gilberto Mora",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Edson Álvarez",
+                  "number": 4,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Jorge Sánchez",
                   "number": 2,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Luis Romo",
-                  "number": 6,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Mateo Chávez",
-                  "number": 17,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "César Huerta",
-                  "number": 18,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Edson Álvarez",
-                  "number": 4,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Luis Chávez",
-                  "number": 19,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Obed Vargas",
-                  "number": 20,
-                  "position": "MED"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Orbelín Pineda",
-                  "number": 10,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Armando González",
-                  "number": 21,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Guillermo Martínez",
-                  "number": 24,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Santiago Giménez",
-                  "number": 22,
-                  "position": "DEL"
+                  "number": 17,
+                  "position": "?"
                 }
               ]
             }
@@ -418,8 +504,10 @@
           "group": "A",
           "home": "México",
           "result": "2-0",
+          "stadium": "Estadio Banorte",
           "time": "21:00",
-          "tv": "BOTH"
+          "tv": "BOTH",
+          "venueCity": "Mexico City, México"
         }
       ],
       "phase": "Grupos"
@@ -436,198 +524,224 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Matěj Kovář",
+                  "name": "Matej Kovár",
                   "number": 1,
                   "position": "POR"
                 },
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Štěpán Chaloupek",
-                  "number": 5,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Robin Hranáč",
-                  "number": 21,
-                  "position": "DEF"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 59,
-                      "type": "goal"
-                    }
-                  ],
-                  "isStarter": true,
-                  "name": "Ladislav Krejčí",
-                  "number": 15,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Vladimír Coufal",
+                  "name": "Robin Hranác",
                   "number": 4,
-                  "position": "MED"
+                  "position": "DEF"
                 },
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Tomáš Souček",
+                  "name": "Ladislav Krejcí",
+                  "number": 7,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Stepán Chaloupek",
                   "number": 6,
-                  "position": "MED"
+                  "position": "DEF"
                 },
                 {
                   "events": [
                     {
-                      "minute": 70,
+                      "minute": 84,
                       "type": "sub_out"
                     }
                   ],
                   "isStarter": true,
                   "name": "Alexandr Sojka",
-                  "number": 8,
+                  "number": 24,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Tomás Soucek",
+                  "number": 22,
                   "position": "MED"
                 },
                 {
                   "events": [],
                   "isStarter": true,
                   "name": "Jaroslav Zelený",
-                  "number": 14,
-                  "position": "MED"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 78,
-                      "type": "sub_out"
-                    }
-                  ],
-                  "isStarter": true,
-                  "name": "Lukáš Provod",
-                  "number": 18,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Pavel Šulc",
-                  "number": 17,
-                  "position": "MED"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 85,
-                      "type": "sub_out"
-                    }
-                  ],
-                  "isStarter": true,
-                  "name": "Patrik Schick",
-                  "number": 11,
-                  "position": "DEL"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 70,
-                      "type": "sub_in"
-                    }
-                  ],
-                  "isStarter": false,
-                  "name": "Mojmír Chytil",
-                  "number": 9,
-                  "position": "DEL"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 78,
-                      "type": "sub_in"
-                    }
-                  ],
-                  "isStarter": false,
-                  "name": "Michal Sadílek",
-                  "number": 10,
-                  "position": "MED"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 85,
-                      "type": "sub_in"
-                    }
-                  ],
-                  "isStarter": false,
-                  "name": "Tomáš Chorý",
-                  "number": 23,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Ondřej Lingr",
                   "number": 20,
                   "position": "MED"
                 },
                 {
                   "events": [],
-                  "isStarter": false,
-                  "name": "Václav Černý",
-                  "number": 19,
+                  "isStarter": true,
+                  "name": "Vladimír Coufal",
+                  "number": 5,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 64,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Patrik Schick",
+                  "number": 10,
                   "position": "DEL"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 64,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Pavel Sulc",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 64,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Lukás Provod",
+                  "number": 17,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Antonín Barák",
-                  "number": 7,
-                  "position": "MED"
+                  "name": "Jindrich Stanek",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 64,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Adam Hlozek",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 64,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Tomás Chorý",
+                  "number": 19,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "David Doudera",
-                  "number": 13,
-                  "position": "DEF"
+                  "number": 21,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Adam Hložek",
-                  "number": 22,
-                  "position": "DEL"
+                  "name": "Lukás Cerv",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Tomás Holes",
+                  "number": 3,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Vladimír Darida",
+                  "number": 8,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Lukás Hornícek",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Jan Kuchta",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 84,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Mojmír Chytil",
+                  "number": 13,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 64,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Michal Sadílek",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Hugo Sochurek",
+                  "number": 25,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "David Jurásek",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Denis Visinský",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "David Zima",
                   "number": 2,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Filip Panák",
-                  "number": 3,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Jindřich Staněk",
-                  "number": 12,
-                  "position": "POR"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Vítězslav Jaroš",
-                  "number": 16,
-                  "position": "POR"
+                  "position": "?"
                 }
               ]
             },
@@ -637,41 +751,41 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Kim Sung-gyu",
-                  "number": 21,
+                  "name": "Kim Seung-Gyu",
+                  "number": 1,
                   "position": "POR"
                 },
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Lee Han-beom",
-                  "number": 20,
+                  "name": "Kim Min-Jae",
+                  "number": 4,
                   "position": "DEF"
                 },
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Kim Min-jae",
-                  "number": 4,
+                  "name": "Lee Gi-Hyuk",
+                  "number": 3,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Lee Han-Beom",
+                  "number": 2,
                   "position": "DEF"
                 },
                 {
                   "events": [
                     {
-                      "minute": 85,
-                      "type": "yellow"
+                      "minute": 84,
+                      "type": "sub_out"
                     }
                   ],
                   "isStarter": true,
-                  "name": "Lee Gi-hyuk",
-                  "number": 17,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Seol Young-woo",
-                  "number": 2,
+                  "name": "Paik Seung-Ho",
+                  "number": 8,
                   "position": "MED"
                 },
                 {
@@ -679,57 +793,189 @@
                     {
                       "minute": 67,
                       "type": "goal"
+                    },
+                    {
+                      "minute": 84,
+                      "type": "sub_out"
                     }
                   ],
                   "isStarter": true,
-                  "name": "Hwang In-beom",
+                  "name": "Hwang In-Beom",
                   "number": 6,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Paik Seung-ho",
-                  "number": 15,
                   "position": "MED"
                 },
                 {
                   "events": [
                     {
-                      "minute": 70,
+                      "minute": 69,
                       "type": "sub_out"
                     }
                   ],
                   "isStarter": true,
-                  "name": "Lee Tae-seok",
+                  "name": "Lee Tae-Seok",
+                  "number": 13,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Seol Young-Woo",
                   "number": 22,
                   "position": "MED"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 69,
+                      "type": "sub_out"
+                    }
+                  ],
                   "isStarter": true,
-                  "name": "Lee Kang-in",
-                  "number": 10,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Lee Jae-sung",
-                  "number": 11,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Son Heung-min",
+                  "name": "Son Heung-Min",
                   "number": 7,
                   "position": "DEL"
                 },
                 {
                   "events": [
                     {
-                      "minute": 63,
+                      "minute": 62,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Lee Jae-Sung",
+                  "number": 10,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Lee Kang-In",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Bae Jun-Ho",
+                  "number": 17,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 84,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Kim Jin-Gyu",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Kim Tae-Hyeon",
+                  "number": 5,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Lee Dong-Gyeong",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Jens Castrop",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Song Bum-Keun",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 62,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Hwang Hee-Chan",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Cho Gue-Sung",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 69,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Eom Ji-Sung",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Jo Hyeon-Woo",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Yang Hyun-Jun",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Kim Moon-Hwan",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Cho Wi-Je",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 84,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Park Jin-Seop",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 69,
                       "type": "sub_in"
                     },
                     {
@@ -738,96 +984,9 @@
                     }
                   ],
                   "isStarter": false,
-                  "name": "Oh Hyeon-gyu",
+                  "name": "Oh Hyeon-Gyu",
                   "number": 18,
-                  "position": "DEL"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 70,
-                      "type": "sub_in"
-                    }
-                  ],
-                  "isStarter": false,
-                  "name": "Eom Ji-sung",
-                  "number": 14,
-                  "position": "MED"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 75,
-                      "type": "sub_in"
-                    }
-                  ],
-                  "isStarter": false,
-                  "name": "Park Jin-seop",
-                  "number": 16,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Kim Jin-gyu",
-                  "number": 8,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Kim Jin-su",
-                  "number": 3,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Kim Young-gwon",
-                  "number": 5,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Cho Gue-sung",
-                  "number": 9,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Hong Hyun-suk",
-                  "number": 13,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Bae Jun-ho",
-                  "number": 19,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Joo Min-kyu",
-                  "number": 23,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Jo Hyeon-woo",
-                  "number": 1,
-                  "position": "POR"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Cho Hyun-woo",
-                  "number": 12,
-                  "position": "POR"
+                  "position": "?"
                 }
               ]
             }
@@ -837,14 +996,16 @@
           "group": "A",
           "home": "Corea del Sur",
           "result": "2-1",
+          "stadium": "Estadio Akron",
           "time": "04:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "venueCity": "Guadalajara, México"
         },
         {
           "away": "Bosnia Herz.",
           "details": {
             "awayLineup": {
-              "formation": "4-2-3-1",
+              "formation": "4-4-2",
               "players": [
                 {
                   "events": [],
@@ -856,182 +1017,232 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Amar Dedić",
-                  "number": 13,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Nikola Katić",
+                  "name": "Tarik Muharemovic",
                   "number": 4,
                   "position": "DEF"
                 },
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Tarik Muharemović",
+                  "name": "Nikola Katic",
+                  "number": 18,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 84,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Sead Kolasinac",
                   "number": 5,
                   "position": "DEF"
                 },
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Sead Kolašinac",
-                  "number": 14,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Esmir Bajraktarević",
+                  "name": "Amar Dedic",
                   "number": 7,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Ivan Bašić",
-                  "number": 8,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Benjamin Tahirović",
-                  "number": 10,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Amar Memić",
-                  "number": 11,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Ermedin Demirović",
-                  "number": 18,
-                  "position": "DEL"
+                  "position": "DEF"
                 },
                 {
                   "events": [
                     {
-                      "minute": 21,
-                      "type": "goal"
+                      "minute": 62,
+                      "type": "sub_out"
                     }
                   ],
                   "isStarter": true,
-                  "name": "Jovo Lukić",
-                  "number": 19,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Edin Džeko",
-                  "number": 9,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Haris Tabaković",
-                  "number": 15,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Nihad Mujakić",
-                  "number": 3,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Dennis Hadžikadunić",
-                  "number": 2,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Armin Gigović",
-                  "number": 16,
+                  "name": "Ivan Basic",
+                  "number": 13,
                   "position": "MED"
                 },
                 {
                   "events": [],
-                  "isStarter": false,
-                  "name": "Samed Bazdar",
-                  "number": 17,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Ivan Šunjić",
+                  "isStarter": true,
+                  "name": "Benjamin Tahirovic",
                   "number": 6,
                   "position": "MED"
                 },
                 {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Amir Hadžiahmetović",
+                  "events": [
+                    {
+                      "minute": 74,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Amar Memic",
+                  "number": 15,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 74,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Esmir Bajraktarevic",
                   "number": 20,
                   "position": "MED"
                 },
                 {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Dženis Burnić",
-                  "number": 21,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Kerim Alajbegović",
-                  "number": 22,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Stjepan Radeljić",
-                  "number": 23,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Arjan Malić",
+                  "events": [
+                    {
+                      "minute": 62,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Jovo Lukic",
                   "number": 25,
-                  "position": "MED"
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Ermedin Demirovic",
+                  "number": 10,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Ermin Mahmić",
-                  "number": 26,
-                  "position": "DEL"
+                  "name": "Edin Dzeko",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Martin Zlomislic",
+                  "number": 22,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Mladen Jurkas",
                   "number": 12,
-                  "position": "POR"
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 62,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Samed Bazdar",
+                  "number": 9,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Martin Zlomislić",
+                  "name": "Amir Hadziahmetovic",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Ermin Mahmic",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 62,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Armin Gigovic",
+                  "number": 8,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Stjepan Radeljic",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 84,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Dzenis Burnic",
+                  "number": 17,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 74,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Kerim Alajbegovic",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Arjan Malic",
                   "number": 24,
-                  "position": "POR"
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Dennis Hadzikadunic",
+                  "number": 3,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Haris Tabakovic",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 74,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Ivan Sunjic",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Nihad Mujakic",
+                  "number": 2,
+                  "position": "?"
                 }
               ]
             },
@@ -1048,22 +1259,20 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Alistair Johnston",
-                  "number": 2,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Luc De Fougerolles",
-                  "number": 4,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
                   "name": "Derek Cornelius",
-                  "number": 12,
+                  "number": 13,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 53,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Luc de Fougerolles",
+                  "number": 4,
                   "position": "DEF"
                 },
                 {
@@ -1074,24 +1283,53 @@
                   "position": "DEF"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 11,
+                      "type": "yellow"
+                    }
+                  ],
                   "isStarter": true,
-                  "name": "Tajon Buchanan",
-                  "number": 11,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Ismaël Koné",
-                  "number": 6,
-                  "position": "MED"
+                  "name": "Alistair Johnston",
+                  "number": 2,
+                  "position": "DEF"
                 },
                 {
                   "events": [],
                   "isStarter": true,
                   "name": "Stephen Eustáquio",
                   "number": 7,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Ismaël Koné",
+                  "number": 8,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Liam Millar",
+                  "number": 11,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Tajon Buchanan",
+                  "number": 17,
                   "position": "MED"
                 },
                 {
@@ -1102,23 +1340,68 @@
                     }
                   ],
                   "isStarter": true,
-                  "name": "Liam Millar",
-                  "number": 10,
-                  "position": "MED"
+                  "name": "Tani Oluwaseyi",
+                  "number": 12,
+                  "position": "?"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_out"
+                    }
+                  ],
                   "isStarter": true,
                   "name": "Jonathan David",
-                  "number": 20,
-                  "position": "DEL"
+                  "number": 10,
+                  "position": "?"
                 },
                 {
                   "events": [],
-                  "isStarter": true,
-                  "name": "Tani Oluwaseyi",
-                  "number": 9,
-                  "position": "DEL"
+                  "isStarter": false,
+                  "name": "Alfie Jones",
+                  "number": 3,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Niko Sigur",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Jacob Shaffelburg",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Joel Waterman",
+                  "number": 5,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Jonathan Osorio",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Jayden Nelson",
+                  "number": 26,
+                  "position": "?"
                 },
                 {
                   "events": [
@@ -1133,111 +1416,74 @@
                   ],
                   "isStarter": false,
                   "name": "Cyle Larin",
-                  "number": 17,
-                  "position": "DEL"
+                  "number": 9,
+                  "position": "?"
                 },
                 {
                   "events": [
                     {
-                      "minute": 76,
+                      "minute": 61,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Ali Ahmed",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
                       "type": "sub_in"
                     }
                   ],
                   "isStarter": false,
                   "name": "Promise David",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Owen Goodman",
                   "number": 18,
-                  "position": "DEL"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Alphonso Davies",
                   "number": 19,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Ali Ahmed",
-                  "number": 14,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Mathieu Choinière",
-                  "number": 8,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Jacob Shaffelburg",
-                  "number": 13,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Moïse Bombito",
-                  "number": 15,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Joel Waterman",
-                  "number": 3,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Alfie Jones",
-                  "number": 5,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Jonathan Osorio",
-                  "number": 21,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Niko Sigur",
-                  "number": 23,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Nathan Saliba",
-                  "number": 26,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Jayden Nelson",
-                  "number": 25,
-                  "position": "DEL"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Dayne St. Clair",
                   "number": 1,
-                  "position": "POR"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Owen Goodman",
-                  "number": 24,
-                  "position": "POR"
+                  "name": "Moïse Bombito",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Nathan Saliba",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mathieu Choinière",
+                  "number": 6,
+                  "position": "?"
                 }
               ]
             }
@@ -1247,8 +1493,10 @@
           "group": "B",
           "home": "Canadá",
           "result": "1-1",
+          "stadium": "BMO Field",
           "time": "21:00",
-          "tv": "BOTH"
+          "tv": "BOTH",
+          "venueCity": "Toronto, Canadá"
         }
       ],
       "phase": "Grupos"
@@ -1260,25 +1508,20 @@
           "away": "Paraguay",
           "details": {
             "awayLineup": {
-              "formation": "4-3-3",
+              "formation": "4-4-2",
               "players": [
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Orlando Gill",
+                  "name": "Orlando Gil",
                   "number": 12,
                   "position": "POR"
                 },
                 {
-                  "events": [
-                    {
-                      "minute": 78,
-                      "type": "sub_out"
-                    }
-                  ],
+                  "events": [],
                   "isStarter": true,
-                  "name": "Juan Cáceres",
-                  "number": 4,
+                  "name": "Omar Alderete",
+                  "number": 3,
                   "position": "DEF"
                 },
                 {
@@ -1291,27 +1534,36 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Omar Alderete",
-                  "number": 3,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Junior Alonso",
+                  "name": "Júnior Alonso",
                   "number": 6,
                   "position": "DEF"
                 },
                 {
                   "events": [
                     {
-                      "minute": 78,
+                      "minute": 10,
+                      "type": "yellow"
+                    },
+                    {
+                      "minute": 79,
                       "type": "sub_out"
                     }
                   ],
                   "isStarter": true,
-                  "name": "Diego Gómez",
-                  "number": 8,
+                  "name": "Juan Jose Cáceres",
+                  "number": 4,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Damián Bobadilla",
+                  "number": 16,
                   "position": "MED"
                 },
                 {
@@ -1324,23 +1576,11 @@
                 {
                   "events": [
                     {
-                      "minute": 7,
-                      "type": "own_goal"
+                      "minute": 53,
+                      "type": "yellow"
                     },
                     {
-                      "minute": 45,
-                      "type": "sub_out"
-                    }
-                  ],
-                  "isStarter": true,
-                  "name": "Damián Bobadilla",
-                  "number": 16,
-                  "position": "MED"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 78,
+                      "minute": 79,
                       "type": "sub_out"
                     }
                   ],
@@ -1352,21 +1592,147 @@
                 {
                   "events": [
                     {
-                      "minute": 61,
+                      "minute": 79,
+                      "type": "yellow"
+                    },
+                    {
+                      "minute": 80,
                       "type": "sub_out"
                     }
                   ],
                   "isStarter": true,
-                  "name": "Antonio Sanabria",
-                  "number": 9,
-                  "position": "DEL"
+                  "name": "Diego Gómez",
+                  "number": 8,
+                  "position": "MED"
                 },
                 {
                   "events": [],
                   "isStarter": true,
                   "name": "Julio Enciso",
                   "number": 19,
-                  "position": "DEL"
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 62,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Antonio Sanabria",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 62,
+                      "type": "sub_in"
+                    },
+                    {
+                      "minute": 88,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Alex Arce",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "José Canale",
+                  "number": 13,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Gabriel Ávalos",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Alexandro Maidana",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Gustavo Caballero",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 80,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Alejandro Romero Gamarra",
+                  "number": 17,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Braian Ojeda",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Gastón Olveira",
+                  "number": 22,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Gatito Fernández",
+                  "number": 1,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Isidro Pitta",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Fabián Balbuena",
+                  "number": 5,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Matías Galarza",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 79,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Ramón Sosa",
+                  "number": 7,
+                  "position": "?"
                 },
                 {
                   "events": [
@@ -1381,107 +1747,25 @@
                   ],
                   "isStarter": false,
                   "name": "Maurício",
-                  "number": 18,
-                  "position": "DEL"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 61,
-                      "type": "sub_in"
-                    },
-                    {
-                      "minute": 75,
-                      "type": "yellow"
-                    }
-                  ],
-                  "isStarter": false,
-                  "name": "Alex Arce",
                   "number": 11,
-                  "position": "DEL"
+                  "position": "?"
                 },
                 {
                   "events": [
                     {
-                      "minute": 78,
+                      "minute": 79,
                       "type": "sub_in"
                     }
                   ],
                   "isStarter": false,
                   "name": "Gustavo Velázquez",
-                  "number": 22,
-                  "position": "DEF"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 78,
-                      "type": "sub_in"
-                    }
-                  ],
-                  "isStarter": false,
-                  "name": "Ramón Sosa",
-                  "number": 7,
-                  "position": "DEL"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 78,
-                      "type": "sub_in"
-                    }
-                  ],
-                  "isStarter": false,
-                  "name": "Alejandro Romero",
-                  "number": 17,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Gabriel Fernández",
-                  "number": 1,
-                  "position": "POR"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Anthony Silva",
-                  "number": 23,
-                  "position": "POR"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Fabián Balbuena",
-                  "number": 5,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Juan Canale",
-                  "number": 13,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Braian Ojeda",
-                  "number": 20,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Gerardo Ávalos",
-                  "number": 21,
-                  "position": "DEL"
+                  "number": 2,
+                  "position": "?"
                 }
               ]
             },
             "homeLineup": {
-              "formation": "3-4-2-1",
+              "formation": "4-2-3-1",
               "players": [
                 {
                   "events": [],
@@ -1489,13 +1773,6 @@
                   "name": "Matt Freese",
                   "number": 24,
                   "position": "POR"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Alex Freeman",
-                  "number": 16,
-                  "position": "DEF"
                 },
                 {
                   "events": [],
@@ -1512,28 +1789,30 @@
                   "position": "DEF"
                 },
                 {
-                  "events": [
-                    {
-                      "minute": 71,
-                      "type": "sub_out"
-                    }
-                  ],
+                  "events": [],
                   "isStarter": true,
-                  "name": "Sergiño Dest",
-                  "number": 2,
-                  "position": "MED"
+                  "name": "Antonee Robinson",
+                  "number": 5,
+                  "position": "DEF"
                 },
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Tyler Adams",
-                  "number": 4,
+                  "name": "Alex Freeman",
+                  "number": 16,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Weston McKennie",
+                  "number": 8,
                   "position": "MED"
                 },
                 {
                   "events": [
                     {
-                      "minute": 81,
+                      "minute": 82,
                       "type": "sub_out"
                     }
                   ],
@@ -1543,35 +1822,16 @@
                   "position": "MED"
                 },
                 {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Antonee Robinson",
-                  "number": 5,
-                  "position": "MED"
-                },
-                {
                   "events": [
                     {
-                      "minute": 42,
+                      "minute": 59,
                       "type": "yellow"
                     }
                   ],
                   "isStarter": true,
-                  "name": "Weston McKennie",
-                  "number": 8,
+                  "name": "Tyler Adams",
+                  "number": 4,
                   "position": "MED"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 45,
-                      "type": "sub_out"
-                    }
-                  ],
-                  "isStarter": true,
-                  "name": "Christian Pulisic",
-                  "number": 10,
-                  "position": "DEL"
                 },
                 {
                   "events": [
@@ -1580,12 +1840,7 @@
                       "type": "goal"
                     },
                     {
-                      "extraTime": 5,
-                      "minute": 45,
-                      "type": "goal"
-                    },
-                    {
-                      "minute": 71,
+                      "minute": 72,
                       "type": "sub_out"
                     }
                   ],
@@ -1598,131 +1853,150 @@
                   "events": [
                     {
                       "minute": 45,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Christian Pulisic",
+                  "number": 10,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 72,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Sergiño Dest",
+                  "number": 2,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Alejandro Zendejas",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
                       "type": "sub_in"
                     }
                   ],
                   "isStarter": false,
                   "name": "Sebastian Berhalter",
                   "number": 14,
-                  "position": "MED"
+                  "position": "?"
                 },
                 {
                   "events": [
                     {
-                      "minute": 71,
-                      "type": "sub_in"
-                    }
-                  ],
-                  "isStarter": false,
-                  "name": "Tim Weah",
-                  "number": 21,
-                  "position": "DEL"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 71,
+                      "minute": 72,
                       "type": "sub_in"
                     }
                   ],
                   "isStarter": false,
                   "name": "Ricardo Pepi",
                   "number": 9,
-                  "position": "DEL"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 81,
-                      "type": "sub_in"
-                    },
-                    {
-                      "extraTime": 8,
-                      "minute": 90,
-                      "type": "goal"
-                    }
-                  ],
-                  "isStarter": false,
-                  "name": "Gio Reyna",
-                  "number": 7,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Matt Turner",
-                  "number": 1,
-                  "position": "POR"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Chris Brady",
-                  "number": 25,
-                  "position": "POR"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Auston Trusty",
-                  "number": 6,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Brenden Aaronson",
-                  "number": 11,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Miles Robinson",
-                  "number": 12,
-                  "position": "DEF"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Cristian Roldan",
                   "number": 15,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Max Arfsten",
-                  "number": 18,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Haji Wright",
-                  "number": 19,
-                  "position": "DEL"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Mark McKenzie",
                   "number": 22,
-                  "position": "DEF"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Joe Scally",
                   "number": 23,
-                  "position": "DEF"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Alex Zendejas",
-                  "number": 26,
-                  "position": "DEL"
+                  "name": "Max Arfsten",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Matt Turner",
+                  "number": 1,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Haji Wright",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Chris Brady",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Brenden Aaronson",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 82,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Giovanni Reyna",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 72,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Timothy Weah",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Miles Robinson",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Auston Trusty",
+                  "number": 6,
+                  "position": "?"
                 }
               ]
             }
@@ -1732,8 +2006,10 @@
           "group": "D",
           "home": "EE.UU.",
           "result": "4-1",
+          "stadium": "SoFi Stadium",
           "time": "03:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "venueCity": "Inglewood, California, EE.UU."
         },
         {
           "away": "Suiza",
@@ -1751,8 +2027,8 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Denis Zakaria",
-                  "number": 2,
+                  "name": "Manuel Akanji",
+                  "number": 5,
                   "position": "DEF"
                 },
                 {
@@ -1763,25 +2039,28 @@
                   "position": "DEF"
                 },
                 {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Manuel Akanji",
-                  "number": 5,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 89,
+                      "type": "sub_out"
+                    }
+                  ],
                   "isStarter": true,
                   "name": "Ricardo Rodríguez",
                   "number": 13,
                   "position": "DEF"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 42,
+                      "type": "yellow"
+                    }
+                  ],
                   "isStarter": true,
-                  "name": "Michel Aebischer",
-                  "number": 14,
-                  "position": "MED"
+                  "name": "Denis Zakaria",
+                  "number": 6,
+                  "position": "DEF"
                 },
                 {
                   "events": [],
@@ -1791,142 +2070,189 @@
                   "position": "MED"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 89,
+                      "type": "sub_out"
+                    }
+                  ],
                   "isStarter": true,
                   "name": "Remo Freuler",
-                  "number": 15,
+                  "number": 8,
                   "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Dan Ndoye",
-                  "number": 20,
-                  "position": "DEL"
                 },
                 {
                   "events": [
                     {
-                      "minute": 17,
-                      "type": "penalty"
+                      "minute": 65,
+                      "type": "sub_out"
                     }
                   ],
+                  "isStarter": true,
+                  "name": "Michel Aebischer",
+                  "number": 20,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
                   "isStarter": true,
                   "name": "Breel Embolo",
                   "number": 7,
                   "position": "DEL"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 79,
+                      "type": "sub_out"
+                    }
+                  ],
                   "isStarter": true,
                   "name": "Rubén Vargas",
                   "number": 17,
-                  "position": "DEL"
+                  "position": "?"
                 },
                 {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Ardon Jashari",
-                  "number": 16,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Noah Okafor",
-                  "number": 9,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Cédric Itten",
-                  "number": 18,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Zeki Amdouni",
+                  "events": [
+                    {
+                      "minute": 65,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Dan Ndoye",
                   "number": 11,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Fabian Rieder",
-                  "number": 19,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Silvan Widmer",
-                  "number": 3,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Miro Muheim",
-                  "number": 6,
-                  "position": "DEF"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Eray Cömert",
-                  "number": 22,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Christian Fassnacht",
-                  "number": 8,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Aurèle Amenda",
-                  "number": 23,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Djibril Sow",
-                  "number": 24,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Luca Jaquez",
-                  "number": 25,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Johan Manzambi",
-                  "number": 26,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Yvon Mvogo",
-                  "number": 12,
-                  "position": "POR"
+                  "number": 18,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Marvin Keller",
                   "number": 21,
-                  "position": "POR"
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Aurèle Amenda",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 89,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Miro Muheim",
+                  "number": 2,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Silvan Widmer",
+                  "number": 3,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Noah Okafor",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Luca Jaquez",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 65,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Fabian Rieder",
+                  "number": 22,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Djibril Sow",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 79,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Zeki Amdouni",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Yvon Mvogo",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Christian Fassnacht",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 65,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Johan Manzambi",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Cedric Itten",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 89,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Ardon Jashari",
+                  "number": 14,
+                  "position": "?"
                 }
               ]
             },
@@ -1934,17 +2260,22 @@
               "formation": "4-3-3",
               "players": [
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 16,
+                      "type": "yellow"
+                    }
+                  ],
                   "isStarter": true,
-                  "name": "Mahmud Abunada",
-                  "number": 22,
+                  "name": "Mahmoud Abunada",
+                  "number": 1,
                   "position": "POR"
                 },
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Ayoub Al Oui",
-                  "number": 13,
+                  "name": "Boualem Khoukhi",
+                  "number": 16,
                   "position": "DEF"
                 },
                 {
@@ -1955,58 +2286,69 @@
                   "position": "DEF"
                 },
                 {
-                  "events": [
-                    {
-                      "extraTime": 4,
-                      "minute": 90,
-                      "type": "goal"
-                    }
-                  ],
+                  "events": [],
                   "isStarter": true,
-                  "name": "Boualem Khoukhi",
-                  "number": 16,
+                  "name": "Homam Ahmed",
+                  "number": 14,
                   "position": "DEF"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 60,
+                      "type": "sub_out"
+                    }
+                  ],
                   "isStarter": true,
-                  "name": "Homam El-Amin",
-                  "number": 3,
+                  "name": "Ayoub Al-Oui",
+                  "number": 13,
                   "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 79,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Assim Madibo",
+                  "number": 23,
+                  "position": "MED"
                 },
                 {
                   "events": [],
                   "isStarter": true,
                   "name": "Issa Laye",
-                  "number": 14,
+                  "number": 4,
                   "position": "MED"
                 },
                 {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Assim Madibo",
-                  "number": 6,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 23,
+                      "type": "yellow"
+                    },
+                    {
+                      "minute": 60,
+                      "type": "sub_out"
+                    }
+                  ],
                   "isStarter": true,
                   "name": "Jassem Gaber",
-                  "number": 8,
+                  "number": 5,
                   "position": "MED"
                 },
                 {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Edmílson Junior",
-                  "number": 7,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 60,
+                      "type": "sub_out"
+                    }
+                  ],
                   "isStarter": true,
                   "name": "Yusuf Abdurisag",
-                  "number": 19,
+                  "number": 15,
                   "position": "DEL"
                 },
                 {
@@ -2014,112 +2356,149 @@
                   "isStarter": true,
                   "name": "Akram Afif",
                   "number": 11,
-                  "position": "DEL"
+                  "position": "?"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 88,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Edmílson Junior",
+                  "number": 8,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 88,
+                      "type": "sub_in"
+                    }
+                  ],
                   "isStarter": false,
                   "name": "Hassan Al-Haydos",
                   "number": 10,
-                  "position": "MED"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Almoez Ali",
-                  "number": 9,
-                  "position": "DEL"
+                  "name": "Ahmed Al-Ganehi",
+                  "number": 17,
+                  "position": "?"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 79,
+                      "type": "sub_in"
+                    }
+                  ],
                   "isStarter": false,
-                  "name": "Abdulaziz Hatem",
-                  "number": 18,
-                  "position": "MED"
+                  "name": "Mohamed Manai",
+                  "number": 26,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Mohammed Muntari",
-                  "number": 23,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Karim Boudiaf",
-                  "number": 20,
-                  "position": "MED"
+                  "number": 9,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Lucas Mendes",
-                  "number": 15,
-                  "position": "DEF"
+                  "number": 3,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Tahsin Mohammed",
-                  "number": 17,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Sultan Al Brake",
-                  "number": 4,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Ahmed Fathy",
-                  "number": 5,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Al Hashmi Al Hussain",
-                  "number": 24,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Ahmed Al Ganehi",
+                  "name": "Al-Hashmi Al-Hussain",
                   "number": 25,
-                  "position": "DEL"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Mohammad Al Mannai",
-                  "number": 26,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Ahmed Alaa",
-                  "number": 12,
-                  "position": "MED"
+                  "name": "Tahsin Jamshid",
+                  "number": 24,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Meshaal Barsham",
-                  "number": 1,
-                  "position": "POR"
+                  "number": 22,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Sultan Al-Brake",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Abdulaziz Hatem",
+                  "number": 6,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 60,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Ahmed Fathy",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 60,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Ahmed Alaaeldin",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Almoez Ali",
+                  "number": 19,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Salah Zakaria",
                   "number": 21,
-                  "position": "POR"
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 60,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Karim Boudiaf",
+                  "number": 12,
+                  "position": "?"
                 }
               ]
             }
@@ -2129,8 +2508,10 @@
           "group": "B",
           "home": "Qatar",
           "result": "1-1",
+          "stadium": "Levi's Stadium",
           "time": "21:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "venueCity": "Santa Clara, California, EE.UU."
         }
       ],
       "phase": "Grupos"
@@ -2142,14 +2523,40 @@
           "away": "Marruecos",
           "details": {
             "awayLineup": {
-              "formation": "4-3-3",
+              "formation": "4-2-3-1",
               "players": [
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Yassine Bono",
+                  "name": "Yassine Bounou",
                   "number": 1,
                   "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Chadi Riad",
+                  "number": 18,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Issa Diop",
+                  "number": 14,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 80,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Noussair Mazraoui",
+                  "number": 3,
+                  "position": "DEF"
                 },
                 {
                   "events": [],
@@ -2159,35 +2566,12 @@
                   "position": "DEF"
                 },
                 {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Romain Saïss",
-                  "number": 6,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Nayef Aguerd",
-                  "number": 5,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Noussair Mazraoui",
-                  "number": 3,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Sofyan Amrabat",
-                  "number": 4,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 65,
+                      "type": "sub_out"
+                    }
+                  ],
                   "isStarter": true,
                   "name": "Azzedine Ounahi",
                   "number": 8,
@@ -2196,8 +2580,15 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Brahim Díaz",
-                  "number": 21,
+                  "name": "Ayyoub Bouaddi",
+                  "number": 6,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Neil El Aynaoui",
+                  "number": 24,
                   "position": "MED"
                 },
                 {
@@ -2205,133 +2596,188 @@
                     {
                       "minute": 21,
                       "type": "goal"
+                    },
+                    {
+                      "minute": 89,
+                      "type": "sub_out"
                     }
                   ],
                   "isStarter": true,
                   "name": "Ismael Saibari",
                   "number": 11,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Youssef En-Nesyri",
-                  "number": 19,
                   "position": "DEL"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 80,
+                      "type": "sub_out"
+                    }
+                  ],
                   "isStarter": true,
-                  "name": "Hakim Ziyech",
+                  "name": "Bilal El Khannouss",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 65,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Brahim Díaz",
+                  "number": 10,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Ahmed Reda Tagnaouti",
+                  "number": 22,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Amine Sbaï",
+                  "number": 17,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 65,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Chemsdine Talbi",
                   "number": 7,
-                  "position": "DEL"
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 89,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Soufiane Rahimi",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 80,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Ayoube Amaimouni",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Gessime Yassine",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 65,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Samir El Mourabet",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 80,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Anass Salah-Eddine",
+                  "number": 26,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Ayoub El Kaabi",
-                  "number": 9,
-                  "position": "DEL"
+                  "number": 20,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Bilal El Khannouss",
-                  "number": 10,
-                  "position": "MED"
+                  "name": "Marwane Saadane",
+                  "number": 5,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Sofyan Amrabat",
+                  "number": 4,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Youssef Belammari",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Zakaria El Ouahdi",
+                  "number": 13,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Munir El Kajoui",
                   "number": 12,
-                  "position": "POR"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Eliesse Ben Seghir",
-                  "number": 13,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Amine Adli",
-                  "number": 14,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Adam Masina",
-                  "number": 15,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Achraf Dari",
-                  "number": 16,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Hamza Igamane",
-                  "number": 17,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Bilal Nadir",
-                  "number": 18,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Achraf El Bouchiouy",
-                  "number": 20,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Mehdi Benatia",
-                  "number": 22,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Ahmed Reda Tagnaouti",
-                  "number": 23,
-                  "position": "POR"
+                  "name": "Redouane Halhal",
+                  "number": 25,
+                  "position": "?"
                 }
               ]
             },
             "homeLineup": {
-              "formation": "4-3-3",
+              "formation": "4-2-3-1",
               "players": [
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Alisson",
+                  "name": "Alisson Becker",
                   "number": 1,
                   "position": "POR"
                 },
                 {
-                  "events": [
-                    {
-                      "minute": 46,
-                      "type": "sub_out"
-                    }
-                  ],
+                  "events": [],
                   "isStarter": true,
-                  "name": "Roger Ibañez",
-                  "number": 13,
+                  "name": "Gabriel Magalhães",
+                  "number": 3,
                   "position": "DEF"
                 },
                 {
@@ -2344,21 +2790,53 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Gabriel Magalhães",
-                  "number": 15,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
                   "name": "Douglas Santos",
-                  "number": 6,
+                  "number": 16,
                   "position": "DEF"
                 },
                 {
                   "events": [
                     {
-                      "minute": 46,
+                      "minute": 43,
+                      "type": "yellow"
+                    },
+                    {
+                      "minute": 45,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Roger Ibañez",
+                  "number": 24,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Raphinha",
+                  "number": 11,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 80,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Bruno Guimarães",
+                  "number": 8,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 37,
+                      "type": "yellow"
+                    },
+                    {
+                      "minute": 45,
                       "type": "sub_out"
                     }
                   ],
@@ -2368,218 +2846,28 @@
                   "position": "MED"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 62,
+                      "type": "sub_out"
+                    }
+                  ],
                   "isStarter": true,
-                  "name": "Bruno Guimarães",
-                  "number": 8,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Lucas Paquetá",
-                  "number": 10,
-                  "position": "MED"
+                  "name": "Igor Thiago",
+                  "number": 25,
+                  "position": "DEL"
                 },
                 {
                   "events": [
                     {
-                      "minute": 72,
+                      "minute": 32,
                       "type": "goal"
                     }
                   ],
                   "isStarter": true,
-                  "name": "Vinicius Júnior",
+                  "name": "Vinícius Júnior",
                   "number": 7,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Raphinha",
-                  "number": 11,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Igor Thiago",
-                  "number": 9,
-                  "position": "DEL"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 46,
-                      "type": "sub_in"
-                    }
-                  ],
-                  "isStarter": false,
-                  "name": "Fabinho",
-                  "number": 17,
-                  "position": "MED"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 46,
-                      "type": "sub_in"
-                    }
-                  ],
-                  "isStarter": false,
-                  "name": "Danilo",
-                  "number": 2,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Neymar",
-                  "number": 18,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Léo Pereira",
-                  "number": 16,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Ederson",
-                  "number": 23,
-                  "position": "POR"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Bento",
-                  "number": 12,
-                  "position": "POR"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Endrick",
-                  "number": 14,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Andreas Pereira",
-                  "number": 19,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "João Gomes",
-                  "number": 20,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Vítor Roque",
-                  "number": 21,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Yan Couto",
-                  "number": 22,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Wendell",
-                  "number": 24,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Léo Ortiz",
-                  "number": 25,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Savinho",
-                  "number": 26,
-                  "position": "DEL"
-                }
-              ]
-            }
-          },
-          "done": true,
-          "esp": false,
-          "group": "C",
-          "home": "Brasil",
-          "result": "1-1",
-          "time": "00:00",
-          "tv": "BOTH"
-        },
-        {
-          "away": "Escocia",
-          "details": {
-            "awayLineup": {
-              "formation": "4-4-2",
-              "players": [
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Johny Placide",
-                  "number": 1,
-                  "position": "POR"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Ricardo Adé",
-                  "number": 2,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Thomas Delcroix",
-                  "number": 4,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Garven Metusala",
-                  "number": 3,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Carlens Arcus",
-                  "number": 5,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Jean Bellegarde",
-                  "number": 8,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Danley Jean Jacques",
-                  "number": 7,
-                  "position": "MED"
+                  "position": "?"
                 },
                 {
                   "events": [
@@ -2589,30 +2877,9 @@
                     }
                   ],
                   "isStarter": true,
-                  "name": "Deedson Louicius",
-                  "number": 10,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Frantzdy Pierrot",
-                  "number": 11,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Jean-Eudes Aholou",
-                  "number": 9,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Jean-Ricner Bellegarde",
+                  "name": "Lucas Paquetá",
                   "number": 20,
-                  "position": "DEL"
+                  "position": "?"
                 },
                 {
                   "events": [
@@ -2622,105 +2889,139 @@
                     }
                   ],
                   "isStarter": false,
-                  "name": "Donovan Providence",
-                  "number": 17,
-                  "position": "MED"
+                  "name": "Matheus Cunha",
+                  "number": 9,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Alexandre Pierre",
-                  "number": 13,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Markhus Lacroix",
-                  "number": 15,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Jean-Kevin Duverne",
-                  "number": 16,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Wilguens Paugain",
-                  "number": 18,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Carl Sainte",
-                  "number": 19,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Dominique Simon",
-                  "number": 21,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Woodensky Pierre",
-                  "number": 22,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Derrick Etienne",
+                  "name": "Ederson",
                   "number": 23,
-                  "position": "DEL"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Duckens Nazon",
-                  "number": 14,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Lenny Joseph",
-                  "number": 25,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Yassin Fortune",
+                  "name": "Rayan",
                   "number": 26,
-                  "position": "DEL"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Josue Duverger",
+                  "name": "Léo Pereira",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Fabinho",
+                  "number": 17,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Éderson",
+                  "number": 2,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 62,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Luiz Henrique",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Gabriel Martinelli",
+                  "number": 22,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Danilo",
+                  "number": 13,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Alex Sandro",
+                  "number": 6,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Endrick",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 80,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Danilo Santos",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Bremer",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Weverton",
                   "number": 12,
-                  "position": "POR"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Keeto Thermoncy",
-                  "number": 24,
-                  "position": "POR"
+                  "position": "?"
                 }
               ]
-            },
-            "homeLineup": {
-              "formation": "4-2-3-1",
+            }
+          },
+          "done": true,
+          "esp": false,
+          "group": "C",
+          "home": "Brasil",
+          "result": "1-1",
+          "stadium": "MetLife Stadium",
+          "time": "00:00",
+          "tv": "BOTH",
+          "venueCity": "East Rutherford, New Jersey, EE.UU."
+        },
+        {
+          "away": "Escocia",
+          "details": {
+            "awayLineup": {
+              "formation": "4-4-2",
               "players": [
                 {
                   "events": [],
@@ -2732,8 +3033,8 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Aaron Hickey",
-                  "number": 2,
+                  "name": "Jack Hendry",
+                  "number": 13,
                   "position": "DEF"
                 },
                 {
@@ -2746,29 +3047,38 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Jack Hendry",
-                  "number": 4,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Andrew Robertson",
+                  "name": "Andy Robertson",
                   "number": 3,
                   "position": "DEF"
                 },
                 {
+                  "events": [
+                    {
+                      "minute": 46,
+                      "type": "yellow"
+                    },
+                    {
+                      "minute": 75,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Aaron Hickey",
+                  "number": 2,
+                  "position": "DEF"
+                },
+                {
                   "events": [],
                   "isStarter": true,
-                  "name": "Billy Gilmour",
-                  "number": 6,
+                  "name": "Lewis Ferguson",
+                  "number": 19,
                   "position": "MED"
                 },
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Callum McGregor",
-                  "number": 8,
+                  "name": "Scott McTominay",
+                  "number": 4,
                   "position": "MED"
                 },
                 {
@@ -2776,138 +3086,404 @@
                     {
                       "minute": 28,
                       "type": "goal"
+                    },
+                    {
+                      "minute": 83,
+                      "type": "sub_out"
                     }
                   ],
                   "isStarter": true,
                   "name": "John McGinn",
+                  "number": 7,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 75,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Ben Gannon-Doak",
                   "number": 17,
                   "position": "MED"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 75,
+                      "type": "sub_out"
+                    }
+                  ],
                   "isStarter": true,
-                  "name": "Scott McTominay",
-                  "number": 11,
-                  "position": "MED"
+                  "name": "Ché Adams",
+                  "number": 10,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 83,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Lawrence Shankland",
+                  "number": 20,
+                  "position": "?"
                 },
                 {
                   "events": [],
-                  "isStarter": true,
-                  "name": "Ben Doak",
-                  "number": 7,
-                  "position": "DEL"
+                  "isStarter": false,
+                  "name": "Craig Gordon",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 75,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Nathan Patterson",
+                  "number": 22,
+                  "position": "?"
                 },
                 {
                   "events": [],
-                  "isStarter": true,
-                  "name": "Che Adams",
-                  "number": 9,
-                  "position": "DEL"
+                  "isStarter": false,
+                  "name": "John Souttar",
+                  "number": 15,
+                  "position": "?"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 75,
+                      "type": "sub_in"
+                    }
+                  ],
                   "isStarter": false,
                   "name": "Ryan Christie",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Tyler Fletcher",
+                  "number": 8,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Anthony Ralston",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Kieran Tierney",
+                  "number": 6,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Ross Stewart",
                   "number": 14,
-                  "position": "MED"
+                  "position": "?"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 75,
+                      "type": "sub_in"
+                    }
+                  ],
                   "isStarter": false,
-                  "name": "Tommy Conway",
-                  "number": 10,
-                  "position": "DEL"
+                  "name": "Lyndon Dykes",
+                  "number": 9,
+                  "position": "?"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 83,
+                      "type": "sub_in"
+                    }
+                  ],
                   "isStarter": false,
-                  "name": "Lewis Ferguson",
-                  "number": 15,
-                  "position": "MED"
+                  "name": "Kenny McLean",
+                  "number": 23,
+                  "position": "?"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 83,
+                      "type": "sub_in"
+                    }
+                  ],
                   "isStarter": false,
-                  "name": "Lewis Morgan",
-                  "number": 16,
-                  "position": "DEL"
+                  "name": "Findlay Curtis",
+                  "number": 25,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "George Hirst",
                   "number": 18,
-                  "position": "DEL"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "James Forrest",
-                  "number": 19,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Ryan Gauld",
-                  "number": 20,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Cieran Slicker",
-                  "number": 12,
-                  "position": "POR"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Robby McCrorie",
-                  "number": 13,
-                  "position": "POR"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Anthony Ralston",
-                  "number": 21,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Max Johnston",
-                  "number": 22,
-                  "position": "DEF"
+                  "name": "Dominic Hyam",
+                  "number": 16,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Scott McKenna",
-                  "number": 23,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Kieran Tierney",
-                  "number": 24,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Liam Cooper",
-                  "number": 25,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Ross McCrorie",
                   "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Liam Kelly",
+                  "number": 12,
+                  "position": "?"
+                }
+              ]
+            },
+            "homeLineup": {
+              "formation": "4-4-2",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Johny Placide",
+                  "number": 1,
+                  "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Hannes Delcroix",
+                  "number": 5,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Ricardo Adé",
+                  "number": 4,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Martin Expérience",
+                  "number": 8,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Carlens Arcus",
+                  "number": 2,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 39,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Jean-Ricner Bellegarde",
+                  "number": 10,
                   "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Danley Jean Jacques",
+                  "number": 17,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 85,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Ruben Providence",
+                  "number": 15,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Louicius Deedson",
+                  "number": 11,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Wilson Isidor",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Frantzdy Pierrot",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Josué Duverger",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Carl Sainté",
+                  "number": 6,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Duckens Nazon",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Wilguens Paugain",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Josué Casimir",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Lenny Joseph",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Garven Metusala",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Jean-Kévin Duverne",
+                  "number": 22,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Woodensky Pierre",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Dominique Simon",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Keeto Thermoncy",
+                  "number": 3,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Alexandre Pierre",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Markhus Lacroix",
+                  "number": 13,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Derrick Etienne Jr.",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 85,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Yassin Fortuné",
+                  "number": 19,
+                  "position": "?"
                 }
               ]
             }
@@ -2917,8 +3493,10 @@
           "group": "C",
           "home": "Haití",
           "result": "0-1",
+          "stadium": "Gillette Stadium",
           "time": "03:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "venueCity": "Foxborough, Massachusetts, EE.UU."
         },
         {
           "away": "Turquía",
@@ -2929,64 +3507,72 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Uğurcan Çakır",
-                  "number": 1,
+                  "name": "Ugurcan Çakir",
+                  "number": 23,
                   "position": "POR"
                 },
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Zeki Çelik",
-                  "number": 2,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Abdülkerim Bardakçı",
-                  "number": 4,
+                  "name": "Abdülkerim Bardakçi",
+                  "number": 14,
                   "position": "DEF"
                 },
                 {
                   "events": [],
                   "isStarter": true,
                   "name": "Merih Demiral",
-                  "number": 5,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Ferdi Kadıoğlu",
                   "number": 3,
                   "position": "DEF"
                 },
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "İsmail Yüksek",
+                  "name": "Ferdi Kadioglu",
+                  "number": 20,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 81,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Zeki Çelik",
+                  "number": 2,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 62,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Orkun Kökçü",
                   "number": 6,
                   "position": "MED"
                 },
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Orkun Kökçü",
-                  "number": 8,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Hakan Çalhanoğlu",
+                  "name": "Hakan Çalhanoglu",
                   "number": 10,
                   "position": "MED"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 81,
+                      "type": "sub_out"
+                    }
+                  ],
                   "isStarter": true,
-                  "name": "Arda Güler",
-                  "number": 11,
+                  "name": "Ismail Yüksek",
+                  "number": 16,
                   "position": "MED"
                 },
                 {
@@ -2997,33 +3583,44 @@
                     }
                   ],
                   "isStarter": true,
-                  "name": "Kerem Aktürkoğlu",
+                  "name": "Kerem Aktürkoglu",
                   "number": 7,
                   "position": "DEL"
                 },
                 {
                   "events": [
                     {
-                      "minute": 46,
+                      "minute": 45,
                       "type": "sub_out"
                     }
                   ],
                   "isStarter": true,
-                  "name": "Burak Yılmaz",
-                  "number": 9,
-                  "position": "DEL"
+                  "name": "Baris Alper Yilmaz",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Arda Güler",
+                  "number": 8,
+                  "position": "?"
                 },
                 {
                   "events": [
                     {
-                      "minute": 46,
+                      "minute": 62,
                       "type": "sub_in"
+                    },
+                    {
+                      "minute": 86,
+                      "type": "yellow"
                     }
                   ],
                   "isStarter": false,
-                  "name": "Kenan Yıldız",
-                  "number": 20,
-                  "position": "DEL"
+                  "name": "Yunus Akgün",
+                  "number": 19,
+                  "position": "?"
                 },
                 {
                   "events": [
@@ -3033,86 +3630,115 @@
                     }
                   ],
                   "isStarter": false,
-                  "name": "Doğukan Gül",
-                  "number": 21,
-                  "position": "MED"
+                  "name": "Deniz Gül",
+                  "number": 9,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Hakan Kadıoğlu",
-                  "number": 13,
-                  "position": "DEF"
+                  "name": "Kaan Ayhan",
+                  "number": 22,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Kenan Yildiz",
+                  "number": 11,
+                  "position": "?"
                 },
                 {
                   "events": [],
+                  "isStarter": false,
+                  "name": "Oguz Aydin",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Altay Bayindir",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 81,
+                      "type": "sub_in"
+                    }
+                  ],
                   "isStarter": false,
                   "name": "Salih Özcan",
-                  "number": 14,
-                  "position": "MED"
+                  "number": 5,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Çağlar Söyüncü",
+                  "name": "Can Uzun",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Ozan Kabak",
                   "number": 15,
-                  "position": "DEF"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Yusuf Yazıcı",
-                  "number": 16,
-                  "position": "MED"
+                  "name": "Samet Akaydin",
+                  "number": 25,
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Cenk Tosun",
+                  "name": "Irfan Can Kahveci",
                   "number": 17,
-                  "position": "DEL"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Halil Dervişoğlu",
+                  "name": "Çaglar Söyüncü",
+                  "number": 4,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Eren Elmali",
+                  "number": 13,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 81,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Mert Müldür",
                   "number": 18,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Eren Elmalı",
-                  "number": 19,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Çağlar Şahan",
-                  "number": 22,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Berke Özer",
-                  "number": 23,
-                  "position": "POR"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Erkin Aydın",
-                  "number": 24,
-                  "position": "DEL"
+                  "position": "?"
                 },
                 {
                   "events": [],
                   "isStarter": false,
                   "name": "Mert Günok",
-                  "number": 25,
-                  "position": "POR"
+                  "number": 1,
+                  "position": "?"
                 }
               ]
             },
@@ -3122,87 +3748,54 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Joe Gauci",
-                  "number": 1,
+                  "name": "Patrick Beach",
+                  "number": 18,
                   "position": "POR"
                 },
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Jason Geria",
-                  "number": 15,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
                   "name": "Harry Souttar",
-                  "number": 5,
+                  "number": 19,
                   "position": "DEF"
                 },
                 {
                   "events": [],
                   "isStarter": true,
                   "name": "Cameron Burgess",
-                  "number": 6,
+                  "number": 21,
                   "position": "DEF"
                 },
                 {
                   "events": [],
                   "isStarter": true,
                   "name": "Alessandro Circati",
-                  "number": 4,
-                  "position": "DEF"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 75,
-                      "type": "sub_out"
-                    }
-                  ],
-                  "isStarter": true,
-                  "name": "Jordan Bos",
                   "number": 3,
                   "position": "DEF"
                 },
                 {
                   "events": [
                     {
-                      "minute": 27,
-                      "type": "goal"
+                      "minute": 84,
+                      "type": "sub_out"
                     }
                   ],
                   "isStarter": true,
-                  "name": "Nestory Irankunda",
-                  "number": 7,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Aiden O'Neill",
-                  "number": 8,
-                  "position": "MED"
+                  "name": "Jordan Bos",
+                  "number": 5,
+                  "position": "DEF"
                 },
                 {
                   "events": [
                     {
-                      "minute": 70,
-                      "type": "goal"
+                      "minute": 74,
+                      "type": "sub_out"
                     }
                   ],
                   "isStarter": true,
-                  "name": "Connor Metcalfe",
-                  "number": 10,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
                   "name": "Jacob Italiano",
-                  "number": 11,
-                  "position": "MED"
+                  "number": 4,
+                  "position": "DEF"
                 },
                 {
                   "events": [
@@ -3213,20 +3806,161 @@
                   ],
                   "isStarter": true,
                   "name": "Paul Okon-Engstler",
-                  "number": 9,
-                  "position": "DEL"
+                  "number": 24,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Aiden O'Neill",
+                  "number": 13,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 27,
+                      "type": "goal"
+                    },
+                    {
+                      "minute": 61,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Nestory Irankunda",
+                  "number": 17,
+                  "position": "MED"
                 },
                 {
                   "events": [
                     {
                       "minute": 75,
+                      "type": "goal"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Connor Metcalfe",
+                  "number": 8,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 74,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Mohamed Toure",
+                  "number": 9,
+                  "position": "DEL"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mathew Ryan",
+                  "number": 1,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Kai Trewin",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Cameron Devlin",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Paul Izzo",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Cristian Volpato",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 74,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Jason Geria",
+                  "number": 6,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Awer Mabil",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 84,
                       "type": "sub_in"
                     }
                   ],
                   "isStarter": false,
                   "name": "Aziz Behich",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mathew Leckie",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Ajdin Hrustic",
+                  "number": 10,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 74,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Tete Yengi",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Lucas Herrington",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Milos Degenek",
                   "number": 2,
-                  "position": "DEF"
+                  "position": "?"
                 },
                 {
                   "events": [
@@ -3237,85 +3971,20 @@
                   ],
                   "isStarter": false,
                   "name": "Jackson Irvine",
-                  "number": 14,
-                  "position": "MED"
+                  "number": 22,
+                  "position": "?"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_in"
+                    }
+                  ],
                   "isStarter": false,
                   "name": "Nishan Velupillay",
-                  "number": 13,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Riley McGree",
-                  "number": 16,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Hayden Matthews",
-                  "number": 17,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Mohamed Toure",
-                  "number": 18,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Adam Taggart",
-                  "number": 19,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Lewis Miller",
-                  "number": 20,
-                  "position": "DEF"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Anthony Caceres",
-                  "number": 21,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Daniel Arzani",
-                  "number": 22,
-                  "position": "DEL"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Patrick Yazbek",
                   "number": 23,
-                  "position": "MED"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Maty Ryan",
-                  "number": 12,
-                  "position": "POR"
-                },
-                {
-                  "events": [],
-                  "isStarter": false,
-                  "name": "Steven Hall",
-                  "number": 24,
-                  "position": "POR"
+                  "position": "?"
                 }
               ]
             }
@@ -3325,8 +3994,10 @@
           "group": "D",
           "home": "Australia",
           "result": "2-0",
+          "stadium": "BC Place",
           "time": "06:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "venueCity": "Vancouver, Canadá"
         },
         {
           "away": "Curaçao",
@@ -3813,8 +4484,10 @@
           "group": "E",
           "home": "Alemania",
           "result": "7-1",
+          "stadium": "NRG Stadium",
           "time": "19:00",
-          "tv": "BOTH"
+          "tv": "BOTH",
+          "venueCity": "Houston, Texas, EE.UU."
         },
         {
           "away": "Japón",
