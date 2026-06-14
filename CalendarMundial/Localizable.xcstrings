@@ -1,0 +1,153 @@
+{
+  "sourceLanguage" : "es",
+  "strings" : {
+    "1/16" : {
+      "extractionState" : "manual"
+    },
+    "1/8" : {
+      "extractionState" : "manual"
+    },
+    "11 Jun – 19 Jul 2026" : {
+      "comment" : "Rango de fechas del torneo mostrado en la cabecera.",
+      "extractionState" : "manual"
+    },
+    "Act. %@" : {
+      "comment" : "Subtítulo derecho con la hora de la última actualización remota.",
+      "extractionState" : "manual"
+    },
+    "ALINEACIONES" : {
+      "comment" : "Cabecera de la sección de alineaciones en la hoja de detalle.",
+      "extractionState" : "manual"
+    },
+    "Buscar equipo..." : {
+      "comment" : "Placeholder del buscador por nombre de equipo.",
+      "extractionState" : "manual"
+    },
+    "COPA MUNDIAL FIFA" : {
+      "extractionState" : "manual"
+    },
+    "Cuartos" : {
+      "extractionState" : "manual"
+    },
+    "EQUIPOS POR DEFINIR" : {
+      "comment" : "Mensaje para partidos del bracket cuyos equipos aún no se conocen.",
+      "extractionState" : "manual"
+    },
+    "Estado" : {
+      "extractionState" : "manual"
+    },
+    "Fase" : {
+      "extractionState" : "manual"
+    },
+    "Fase Grupos" : {
+      "comment" : "Texto de la chip que filtra todos los partidos de la fase de grupos.",
+      "extractionState" : "manual"
+    },
+    "Fecha" : {
+      "extractionState" : "manual"
+    },
+    "Final" : {
+      "extractionState" : "manual"
+    },
+    "Finalizado" : {
+      "comment" : "Estado de un partido ya disputado.",
+      "extractionState" : "manual"
+    },
+    "Formación" : {
+      "comment" : "Etiqueta para la formación táctica del equipo (p. ej. 4-3-3).",
+      "extractionState" : "manual"
+    },
+    "Grupo" : {
+      "extractionState" : "manual"
+    },
+    "Grupo A" : { "extractionState" : "manual" },
+    "Grupo B" : { "extractionState" : "manual" },
+    "Grupo C" : { "extractionState" : "manual" },
+    "Grupo D" : { "extractionState" : "manual" },
+    "Grupo E" : { "extractionState" : "manual" },
+    "Grupo F" : { "extractionState" : "manual" },
+    "Grupo G" : { "extractionState" : "manual" },
+    "Grupo H" : { "extractionState" : "manual" },
+    "Grupo I" : { "extractionState" : "manual" },
+    "Grupo J" : { "extractionState" : "manual" },
+    "Grupo K" : { "extractionState" : "manual" },
+    "Grupo L" : { "extractionState" : "manual" },
+    "Grupos" : {
+      "extractionState" : "manual"
+    },
+    "Hora (España)" : {
+      "extractionState" : "manual"
+    },
+    "HORARIOS ESPAÑA" : {
+      "extractionState" : "manual"
+    },
+    "HOY" : {
+      "comment" : "Insignia junto a la fecha de la jornada del día actual.",
+      "extractionState" : "manual"
+    },
+    "La 1 + DAZN" : {
+      "extractionState" : "manual"
+    },
+    "La 1 + DAZN (gratis)" : {
+      "extractionState" : "manual"
+    },
+    "Limpiar" : {
+      "comment" : "Botón para resetear el filtro activo.",
+      "extractionState" : "manual"
+    },
+    "Limpiar filtros" : {
+      "extractionState" : "manual"
+    },
+    "Los contrincantes se confirmarán al finalizar las fases previas." : {
+      "extractionState" : "manual"
+    },
+    "Mundial 2026" : {
+      "extractionState" : "manual"
+    },
+    "No se encontraron partidos" : {
+      "extractionState" : "manual"
+    },
+    "ONCE INICIAL" : {
+      "comment" : "Cabecera de la lista de titulares del partido.",
+      "extractionState" : "manual"
+    },
+    "Partido de España" : {
+      "extractionState" : "manual"
+    },
+    "Partido de la selección española" : {
+      "extractionState" : "manual"
+    },
+    "Pendiente" : {
+      "comment" : "Estado de un partido aún por disputarse.",
+      "extractionState" : "manual"
+    },
+    "PRÓXIMO PARTIDO" : {
+      "extractionState" : "manual"
+    },
+    "Resultado: %@" : {
+      "comment" : "Prefijo del resultado en la fila del partido.",
+      "extractionState" : "manual"
+    },
+    "RESULTADO FINAL" : {
+      "extractionState" : "manual"
+    },
+    "Semis" : {
+      "extractionState" : "manual"
+    },
+    "Solo DAZN (pago)" : {
+      "extractionState" : "manual"
+    },
+    "SUPLENTES" : {
+      "comment" : "Cabecera de la lista de suplentes que participaron en el partido.",
+      "extractionState" : "manual"
+    },
+    "Televisión" : {
+      "extractionState" : "manual"
+    },
+    "Todos" : {
+      "comment" : "Chip que muestra todo el calendario sin filtrar.",
+      "extractionState" : "manual"
+    }
+  },
+  "version" : "1.0"
+}
