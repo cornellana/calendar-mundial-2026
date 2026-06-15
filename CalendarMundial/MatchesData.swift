@@ -23,19 +23,20 @@ enum MundialData {
     /// Letras de los 12 grupos del torneo, en orden alfabético.
     static let groupLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
 
-    /// Países confirmados que aparecen en el calendario, ordenados alfabéticamente.
-    /// Útil para poblar el menú de filtro por país.
+    /// Países anfitriones del Mundial (México, Canadá, EE.UU.) que aparecen
+    /// como sede en los partidos publicados. Se usa para el filtro "País":
+    /// "filtrar por Canadá" muestra todos los partidos disputados en estadios
+    /// canadienses, no los de la selección de Canadá.
     static func allCountries(in matchDays: [MatchDay]) -> [String] {
         var set = Set<String>()
         for day in matchDays {
-            for match in day.games where match.hasConfirmedTeams {
-                set.insert(match.home)
-                if !match.away.isEmpty {
-                    set.insert(match.away)
+            for match in day.games {
+                if let host = match.hostCountry, !host.isEmpty {
+                    set.insert(host)
                 }
             }
         }
-        return set.sorted { stripEmoji($0).lowercased() < stripEmoji($1).lowercased() }
+        return set.sorted()
     }
 
     /// Estadios distintos extraídos del calendario, ordenados alfabéticamente.

@@ -489,6 +489,19 @@ struct Match: Identifiable, Codable {
         return group != "CF" && group != "SF" && group != "3P"
     }
 
+    /// País anfitrión donde se disputa el partido (México, Canadá o EE.UU.).
+    /// Se deriva del último componente de `venueCity` ("Ciudad, [Estado,] País").
+    /// Devuelve `nil` si todavía no se ha publicado la sede.
+    var hostCountry: String? {
+        guard let city = venueCity, !city.isEmpty else { return nil }
+        let parts = city
+            .split(separator: ",")
+            .map { $0.trimmingCharacters(in: .whitespaces) }
+        // Tiene que haber al menos "Ciudad, País"; si solo hay un componente
+        // asumimos que es solo ciudad sin país y no podemos inferir.
+        return parts.count >= 2 ? parts.last : nil
+    }
+
     /// `true` cuando los dos equipos están ya confirmados.
     /// Si es `false`, el partido es un placeholder de bracket pendiente
     /// (p. ej. "1º Grupo A").

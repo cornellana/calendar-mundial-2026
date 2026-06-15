@@ -32,8 +32,8 @@ struct ContentView: View {
                 phaseFiltered = day.games.filter { $0.phase == p }
             case .group(let letter):
                 phaseFiltered = day.games.filter { $0.group == letter }
-            case .country(let name):
-                phaseFiltered = day.games.filter { $0.home == name || $0.away == name }
+            case .country(let host):
+                phaseFiltered = day.games.filter { $0.hostCountry == host }
             case .stadium(let name):
                 phaseFiltered = day.games.filter { $0.stadium == name }
             }
