@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T11:10:01Z",
+  "lastUpdated": "2026-06-15T18:23:12Z",
   "matchDays": [
     {
       "date": "2026-06-11",
@@ -6141,12 +6141,491 @@
         },
         {
           "away": "Cabo Verde",
-          "done": false,
+          "details": {
+            "awayLineup": {
+              "formation": "4-1-4-1",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Vozinha",
+                  "number": 1,
+                  "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Diney Borges",
+                  "number": 3,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Pico Lopes",
+                  "number": 4,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Kevin Pina",
+                  "number": 6,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 16,
+                      "type": "yellow"
+                    },
+                    {
+                      "minute": 76,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Sidny Lopes Cabral",
+                  "number": 13,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Steven Moreira",
+                  "number": 22,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 79,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Jamiro Monteiro",
+                  "number": 10,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Laros Duarte",
+                  "number": 15,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Jovane Cabral",
+                  "number": 7,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Ryan Mendes",
+                  "number": 20,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Dailon Livramento",
+                  "number": 19,
+                  "position": "DEL"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Stopira",
+                  "number": 2,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Márcio Rosa",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Hélio Varela",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Wagner Pina",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Gilson Benchimol",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Garry Rodrigues",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 79,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Telmo Arcanjo",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Willy Semedo",
+                  "number": 17,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Logan Costa",
+                  "number": 5,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Yannick Semedo",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Nuno da Costa",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "João Paulo",
+                  "number": 8,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "CJ dos Santos",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Kelvin Pires",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Deroy Duarte",
+                  "number": 14,
+                  "position": "?"
+                }
+              ]
+            },
+            "homeLineup": {
+              "formation": "4-3-3",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Unai Simón",
+                  "number": 23,
+                  "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Aymeric Laporte",
+                  "number": 14,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Pau Cubarsí",
+                  "number": 22,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Marc Cucurella",
+                  "number": 24,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Marcos Llorente",
+                  "number": 5,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 87,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Rodri",
+                  "number": 16,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 3,
+                      "minute": 90,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Pedri",
+                  "number": 20,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 71,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Fabián Ruiz",
+                  "number": 8,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Mikel Oyarzabal",
+                  "number": 21,
+                  "position": "DEL"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 71,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Gavi",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 81,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Ferran Torres",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "David Raya",
+                  "number": 1,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Víctor Muñoz",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 71,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Lamine Yamal",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Yéremy Pino",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Martín Zubimendi",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 81,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Dani Olmo",
+                  "number": 10,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 87,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Nico Williams",
+                  "number": 17,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 71,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Mikel Merino",
+                  "number": 6,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Pedro Porro",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Borja Iglesias",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Joan García",
+                  "number": 13,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Álex Baena",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Alejandro Grimaldo",
+                  "number": 3,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Marc Pubill",
+                  "number": 2,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Eric García",
+                  "number": 4,
+                  "position": "?"
+                }
+              ]
+            }
+          },
+          "done": true,
           "esp": true,
           "group": "H",
           "home": "🇪🇸 España",
+          "result": "0-0",
+          "stadium": "Mercedes-Benz Stadium",
           "time": "18:00",
-          "tv": "BOTH"
+          "tv": "BOTH",
+          "venueCity": "Atlanta, Georgia, EE.UU."
         },
         {
           "away": "Egipto",
