@@ -198,22 +198,38 @@ def parse_clock(clock_str: str) -> tuple[int | None, int | None]:
         return None, None
 
 
-def map_key_event(api_event: dict) -> list[tuple[str, str, dict]]:
-    """De un keyEvent de ESPN devuelve [(team_id, player_name, event_dict), ...].
-    Soporta gol, gol en propia, penalti, amarillas, rojas y sustituciones."""
-    etype = (api_event.get("type") or {}).get("type") or ""
-    clock_str = (api_event.get("clock") or {}).get("displayValue") or ""
+def map_commentary_item(item: dict) -> list[tuple[str, str, dict]]:
+    """Convierte un item de `summary.commentary` en eventos de nuestro modelo.
+
+    A diferencia de `keyEvents` (que sólo lista algunos goles destacados),
+    `commentary` recoge **todos** los eventos del partido. Tipos relevantes
+    de ESPN que cubrimos:
+      - Goal / Goal - Header / Goal - Volley / Goal - … → goal
+      - Penalty - Scored                              → penalty
+      - Own Goal                                       → own_goal
+      - Yellow Card / VAR - (Yellow) Card Upgrade      → yellow
+      - Red Card    / VAR - (Red) Card Upgrade         → red
+      - Substitution                                   → sub_in + sub_out
+
+    En un autogol ESPN sigue poniendo team_id = equipo BENEFICIARIO. El
+    matching en `build_details` se hace por nombre de jugador, así el
+    autogol se coloca en la alineación del autor (el equipo opuesto)."""
+    play = item.get("play") or {}
+    play_type = ((play.get("type") or {}).get("text") or "").strip()
+    play_type_lc = play_type.lower()
+
+    clock_str = (item.get("time") or {}).get("displayValue") or ""
     minute, extra = parse_clock(clock_str)
     if minute is None:
         return []
 
-    team_id = (api_event.get("team") or {}).get("id")
-    participants = api_event.get("participants") or []
-    p1_name = ((participants[0].get("athlete") or {}).get("displayName")
-               if len(participants) >= 1 else None)
-    p2_name = ((participants[1].get("athlete") or {}).get("displayName")
-               if len(participants) >= 2 else None)
-    text = (api_event.get("text") or "").lower()
+    team_id = (play.get("team") or {}).get("id")
+    participants = play.get("participants") or []
+    p1 = ((participants[0].get("athlete") or {}).get("displayName") or ""
+          if len(participants) >= 1 else "")
+    p2 = ((participants[1].get("athlete") or {}).get("displayName") or ""
+          if len(participants) >= 2 else "")
+    text_lc = (item.get("text") or "").lower()
 
     out: list[tuple[str, str, dict]] = []
 
@@ -223,38 +239,42 @@ def map_key_event(api_event: dict) -> list[tuple[str, str, dict]]:
             ev["extraTime"] = extra
         return ev
 
-    # ESPN diferencia `goal` y `own-goal` como tipos distintos.
-    # En un own-goal, ESPN pone team_id = equipo BENEFICIARIO, no el
-    # equipo del jugador autogoleador. Lo asignamos igualmente al nombre
-    # del jugador y el matching en build_details lo coloca en su
-    # alineación real (ver: events_per_player es por nombre).
-    if etype in ("goal", "own-goal"):
-        if etype == "own-goal":
-            kind = "own_goal"
-        elif "penalty" in text:
-            kind = "penalty"
-        else:
-            kind = "goal"
-        if p1_name:
-            out.append((team_id, p1_name, make_event(kind)))
+    # Autogol — comprobar primero porque puede solaparse con "goal"
+    if "own goal" in play_type_lc or "own goal" in text_lc:
+        if p1:
+            out.append((team_id, p1, make_event("own_goal")))
         return out
 
-    if etype == "yellow-card":
-        if team_id and p1_name:
-            out.append((team_id, p1_name, make_event("yellow")))
+    # Penalti convertido
+    if "penalty - scored" in play_type_lc:
+        if p1:
+            out.append((team_id, p1, make_event("penalty")))
         return out
 
-    if etype == "red-card":
-        if team_id and p1_name:
-            out.append((team_id, p1_name, make_event("red")))
+    # Gol (con sus variantes: Goal, Goal - Header, Goal - Volley, etc.)
+    if play_type_lc.startswith("goal"):
+        if p1:
+            out.append((team_id, p1, make_event("goal")))
         return out
 
-    if etype == "substitution":
-        # En ESPN: participant[0] entra, participant[1] sale
-        if team_id and p1_name:
-            out.append((team_id, p1_name, make_event("sub_in")))
-        if team_id and p2_name:
-            out.append((team_id, p2_name, make_event("sub_out")))
+    # Amarilla (directa o por upgrade de VAR)
+    if "yellow card" in play_type_lc:
+        if p1:
+            out.append((team_id, p1, make_event("yellow")))
+        return out
+
+    # Roja (directa o por upgrade de VAR)
+    if "red card" in play_type_lc:
+        if p1:
+            out.append((team_id, p1, make_event("red")))
+        return out
+
+    # Sustitución: ESPN pone p1 como el que ENTRA y p2 como el que SALE.
+    if "substitution" in play_type_lc:
+        if p1:
+            out.append((team_id, p1, make_event("sub_in")))
+        if p2:
+            out.append((team_id, p2, make_event("sub_out")))
         return out
 
     return out
@@ -286,14 +306,28 @@ def build_details(summary: dict) -> dict | None:
         (r for r in rosters if r["team"]["id"] == away_id), rosters[1]
     )
 
-    # Indexa eventos por NOMBRE de jugador. No por (team_id, name), porque
-    # los autogoles vienen con el team_id del beneficiario, no del autor.
-    # En el Mundial las colisiones de nombre entre equipos son rarísimas;
-    # si ocurriera, ganaría el primer roster que itere.
+    # Indexa eventos por NOMBRE de jugador (no por team_id) porque los
+    # autogoles vienen con team_id = beneficiario y queremos colocarlos
+    # en la alineación del autor (equipo opuesto).
+    # Usamos `commentary` (no `keyEvents`) porque keyEvents lista sólo
+    # algunos goles "destacados" y nos perdemos varios por partido.
     events_per_player: dict[str, list[dict]] = {}
-    for ev in summary.get("keyEvents") or []:
-        for _team_id, player_name, event_dict in map_key_event(ev):
+    for item in summary.get("commentary") or []:
+        for _team_id, player_name, event_dict in map_commentary_item(item):
             events_per_player.setdefault(player_name, []).append(event_dict)
+
+    # Deduplica por (tipo, minuto, extraTime) — un mismo evento puede
+    # aparecer dos veces en commentary (p. ej. comentario + scoringPlay).
+    for name, evs in events_per_player.items():
+        seen: set[tuple] = set()
+        unique: list[dict] = []
+        for e in evs:
+            key = (e["type"], e["minute"], e.get("extraTime"))
+            if key in seen:
+                continue
+            seen.add(key)
+            unique.append(e)
+        events_per_player[name] = unique
 
     def build_team(roster_team: dict) -> dict:
         formation = (
