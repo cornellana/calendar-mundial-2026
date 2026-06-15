@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T07:54:23Z",
+  "lastUpdated": "2026-06-15T11:10:01Z",
   "matchDays": [
     {
       "date": "2026-06-11",
@@ -363,6 +363,10 @@
                 {
                   "events": [
                     {
+                      "minute": 67,
+                      "type": "goal"
+                    },
+                    {
                       "minute": 76,
                       "type": "sub_out"
                     }
@@ -542,7 +546,12 @@
                   "position": "DEF"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 59,
+                      "type": "goal"
+                    }
+                  ],
                   "isStarter": true,
                   "name": "Ladislav Krejcí",
                   "number": 7,
@@ -1110,6 +1119,10 @@
                 },
                 {
                   "events": [
+                    {
+                      "minute": 21,
+                      "type": "goal"
+                    },
                     {
                       "extraTime": 1,
                       "minute": 45,
@@ -2149,7 +2162,12 @@
                   "position": "MED"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 17,
+                      "type": "penalty"
+                    }
+                  ],
                   "isStarter": true,
                   "name": "Breel Embolo",
                   "number": 7,
@@ -4305,7 +4323,12 @@
                   "position": "POR"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 38,
+                      "type": "goal"
+                    }
+                  ],
                   "isStarter": true,
                   "name": "Nico Schlotterbeck",
                   "number": 15,
@@ -4325,6 +4348,10 @@
                 },
                 {
                   "events": [
+                    {
+                      "minute": 68,
+                      "type": "goal"
+                    },
                     {
                       "minute": 73,
                       "type": "sub_out"
@@ -4388,6 +4415,11 @@
                 },
                 {
                   "events": [
+                    {
+                      "extraTime": 5,
+                      "minute": 45,
+                      "type": "penalty"
+                    },
                     {
                       "minute": 88,
                       "type": "goal"
@@ -4599,7 +4631,12 @@
                   "position": "DEF"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 89,
+                      "type": "goal"
+                    }
+                  ],
                   "isStarter": true,
                   "name": "Daichi Kamada",
                   "number": 15,
@@ -4815,7 +4852,12 @@
                   "position": "POR"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 51,
+                      "type": "goal"
+                    }
+                  ],
                   "isStarter": true,
                   "name": "Virgil van Dijk",
                   "number": 4,
@@ -5603,7 +5645,12 @@
                   "position": "DEF"
                 },
                 {
-                  "events": [],
+                  "events": [
+                    {
+                      "minute": 43,
+                      "type": "goal"
+                    }
+                  ],
                   "isStarter": true,
                   "name": "Omar Rekik",
                   "number": 4,
@@ -5999,6 +6046,10 @@
                 },
                 {
                   "events": [
+                    {
+                      "minute": 7,
+                      "type": "goal"
+                    },
                     {
                       "extraTime": 6,
                       "minute": 90,
