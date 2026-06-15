@@ -1,10 +1,13 @@
 name: Actualizar datos del Mundial
 
-# Cron cada 30 minutos. Cuando termina un partido, en ~30 min la app
-# ya descarga los datos completos sin intervención humana.
+# Cron cada 15 minutos. GitHub Actions no garantiza puntualidad para los
+# eventos `schedule` (pueden retrasarse o saltarse en periodos de carga
+# alta), así que pedimos más frecuencia para minimizar el agujero. Cuando
+# termina un partido, en ~15-30 min la app baja datos completos sin que
+# nadie tenga que tocar nada.
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
     inputs:
       force_refresh:
