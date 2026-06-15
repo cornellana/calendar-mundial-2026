@@ -171,10 +171,14 @@ def espn_get(path: str, params: dict | None = None) -> dict[str, Any]:
 # -- Mapeo de eventos del partido -----------------------------------------
 
 def parse_clock(clock_str: str) -> tuple[int | None, int | None]:
-    """Convierte '27\\''  →  (27, None);  '45+5\\''  →  (45, 5)."""
+    """Convierte '27\\''  →  (27, None);  '45\\'+5\\''  →  (45, 5).
+
+    ESPN devuelve el minuto del tiempo añadido con APÓSTROFE DOBLE
+    (p. ej. '45'+5''), no '45+5''. Por eso eliminamos todos los apóstrofes
+    antes de parsear — si sólo quitásemos el último, fallaría el int()."""
     if not clock_str:
         return None, None
-    base = clock_str.rstrip("'").strip()
+    base = clock_str.replace("'", "").strip()
     if not base:
         return None, None
     try:
@@ -211,14 +215,19 @@ def map_key_event(api_event: dict) -> list[tuple[str, str, dict]]:
             ev["extraTime"] = extra
         return ev
 
-    if etype == "goal":
-        if "penalty" in text:
-            kind = "penalty"
-        elif "own goal" in text:
+    # ESPN diferencia `goal` y `own-goal` como tipos distintos.
+    # En un own-goal, ESPN pone team_id = equipo BENEFICIARIO, no el
+    # equipo del jugador autogoleador. Lo asignamos igualmente al nombre
+    # del jugador y el matching en build_details lo coloca en su
+    # alineación real (ver: events_per_player es por nombre).
+    if etype in ("goal", "own-goal"):
+        if etype == "own-goal":
             kind = "own_goal"
+        elif "penalty" in text:
+            kind = "penalty"
         else:
             kind = "goal"
-        if team_id and p1_name:
+        if p1_name:
             out.append((team_id, p1_name, make_event(kind)))
         return out
 
@@ -269,16 +278,16 @@ def build_details(summary: dict) -> dict | None:
         (r for r in rosters if r["team"]["id"] == away_id), rosters[1]
     )
 
-    # Indexa eventos por (team_id, player_name)
-    events_per_player: dict[tuple[str, str], list[dict]] = {}
+    # Indexa eventos por NOMBRE de jugador. No por (team_id, name), porque
+    # los autogoles vienen con el team_id del beneficiario, no del autor.
+    # En el Mundial las colisiones de nombre entre equipos son rarísimas;
+    # si ocurriera, ganaría el primer roster que itere.
+    events_per_player: dict[str, list[dict]] = {}
     for ev in summary.get("keyEvents") or []:
-        for team_id, player_name, event_dict in map_key_event(ev):
-            events_per_player.setdefault(
-                (team_id, player_name), []
-            ).append(event_dict)
+        for _team_id, player_name, event_dict in map_key_event(ev):
+            events_per_player.setdefault(player_name, []).append(event_dict)
 
     def build_team(roster_team: dict) -> dict:
-        team_id = roster_team["team"]["id"]
         formation = (
             roster_team.get("formation")
             or (roster_team.get("team") or {}).get("formation")
@@ -294,7 +303,7 @@ def build_details(summary: dict) -> dict | None:
                 jersey = 0
             pos_abbrev = (entry.get("position") or {}).get("abbreviation")
             is_starter = bool(entry.get("starter", False))
-            evs = events_per_player.get((team_id, name), [])
+            evs = events_per_player.get(name, [])
             # Ordena cronológicamente
             evs = sorted(evs, key=lambda e: (e["minute"], e.get("extraTime") or 0))
             players.append({
