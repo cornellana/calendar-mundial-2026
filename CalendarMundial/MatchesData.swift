@@ -23,6 +23,105 @@ enum MundialData {
     /// Letras de los 12 grupos del torneo, en orden alfabético.
     static let groupLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"]
 
+    /// Países confirmados que aparecen en el calendario, ordenados alfabéticamente.
+    /// Útil para poblar el menú de filtro por país.
+    static func allCountries(in matchDays: [MatchDay]) -> [String] {
+        var set = Set<String>()
+        for day in matchDays {
+            for match in day.games where match.hasConfirmedTeams {
+                set.insert(match.home)
+                if !match.away.isEmpty {
+                    set.insert(match.away)
+                }
+            }
+        }
+        return set.sorted { stripEmoji($0).lowercased() < stripEmoji($1).lowercased() }
+    }
+
+    /// Estadios distintos extraídos del calendario, ordenados alfabéticamente.
+    /// Sólo se incluyen los que ESPN ha publicado (por norma, los de partidos
+    /// ya disputados; los futuros se irán añadiendo).
+    static func allStadiums(in matchDays: [MatchDay]) -> [String] {
+        var set = Set<String>()
+        for day in matchDays {
+            for match in day.games {
+                if let stadium = match.stadium, !stadium.isEmpty {
+                    set.insert(stadium)
+                }
+            }
+        }
+        return set.sorted()
+    }
+
+    /// Calcula la clasificación de un grupo a partir de los partidos disputados.
+    /// - Parameters:
+    ///   - letter: Letra del grupo ("A", "B", …).
+    ///   - matchDays: Calendario completo (se procesan sólo los partidos
+    ///                con `group == letter` y equipos confirmados).
+    /// - Returns: Filas ordenadas según criterios FIFA: puntos, diferencia de
+    ///            goles, goles a favor, nombre.
+    static func standings(forGroup letter: String, in matchDays: [MatchDay]) -> [GroupStanding] {
+        var rows: [String: GroupStanding] = [:]
+
+        for day in matchDays {
+            for match in day.games where match.group == letter && match.hasConfirmedTeams {
+                // Asegura que ambos equipos figuren aunque no hayan jugado todavía.
+                if rows[match.home] == nil {
+                    rows[match.home] = GroupStanding(country: match.home)
+                }
+                if !match.away.isEmpty, rows[match.away] == nil {
+                    rows[match.away] = GroupStanding(country: match.away)
+                }
+
+                guard let result = match.result,
+                      !match.away.isEmpty else { continue }
+                let parts = result.split(separator: "-").compactMap { Int($0) }
+                guard parts.count == 2 else { continue }
+                let homeGoals = parts[0]
+                let awayGoals = parts[1]
+
+                var home = rows[match.home] ?? GroupStanding(country: match.home)
+                var away = rows[match.away] ?? GroupStanding(country: match.away)
+
+                home.played += 1
+                away.played += 1
+                home.goalsFor += homeGoals
+                home.goalsAgainst += awayGoals
+                away.goalsFor += awayGoals
+                away.goalsAgainst += homeGoals
+
+                if homeGoals > awayGoals {
+                    home.won += 1
+                    away.lost += 1
+                } else if homeGoals < awayGoals {
+                    home.lost += 1
+                    away.won += 1
+                } else {
+                    home.drawn += 1
+                    away.drawn += 1
+                }
+
+                rows[match.home] = home
+                rows[match.away] = away
+            }
+        }
+
+        return rows.values.sorted { a, b in
+            if a.points != b.points { return a.points > b.points }
+            if a.goalDifference != b.goalDifference { return a.goalDifference > b.goalDifference }
+            if a.goalsFor != b.goalsFor { return a.goalsFor > b.goalsFor }
+            return stripEmoji(a.country).lowercased() < stripEmoji(b.country).lowercased()
+        }
+    }
+
+    /// Elimina caracteres no alfanuméricos al principio del nombre (banderas emoji)
+    /// para ordenar correctamente "🇪🇸 España" como "España".
+    private static func stripEmoji(_ name: String) -> String {
+        name.trimmingCharacters(in: .whitespaces)
+            .drop(while: { !$0.isLetter })
+            .trimmingCharacters(in: .whitespaces)
+    }
+
     /// Fecha actual en zona horaria Europe/Madrid (formato ISO `yyyy-MM-dd`).
     ///
     /// Se usa para detectar la jornada del día actual en el listado. Se

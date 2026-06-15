@@ -32,6 +32,10 @@ struct ContentView: View {
                 phaseFiltered = day.games.filter { $0.phase == p }
             case .group(let letter):
                 phaseFiltered = day.games.filter { $0.group == letter }
+            case .country(let name):
+                phaseFiltered = day.games.filter { $0.home == name || $0.away == name }
+            case .stadium(let name):
+                phaseFiltered = day.games.filter { $0.stadium == name }
             }
 
             let finalGames = search.isEmpty ? phaseFiltered : phaseFiltered.filter { game in
@@ -44,6 +48,13 @@ struct ContentView: View {
         }
     }
 
+    /// Clasificación del grupo cuando hay un filtro `.group` activo.
+    private var groupStandings: (letter: String, rows: [GroupStanding])? {
+        guard case .group(let letter) = activePhase else { return nil }
+        let rows = MundialData.standings(forGroup: letter, in: store.matchDays)
+        return rows.isEmpty ? nil : (letter, rows)
+    }
+
     var body: some View {
         ZStack(alignment: .top) {
             Color(hex: 0x0A0F1E).ignoresSafeArea()
@@ -53,11 +64,22 @@ struct ContentView: View {
                     search: $search,
                     activePhase: $activePhase,
                     isRefreshing: store.isRefreshing,
-                    lastUpdated: store.lastUpdated
+                    lastUpdated: store.lastUpdated,
+                    countries: MundialData.allCountries(in: store.matchDays),
+                    stadiums: MundialData.allStadiums(in: store.matchDays)
                 )
 
                 ScrollView {
                     VStack(spacing: 0) {
+                        if let standings = groupStandings {
+                            GroupStandingsView(
+                                groupLetter: standings.letter,
+                                rows: standings.rows
+                            )
+                            .padding(.horizontal, 20)
+                            .padding(.top, 12)
+                        }
+
                         LegendView()
                             .padding(.horizontal, 20)
                             .padding(.top, 12)
@@ -131,6 +153,8 @@ private struct HeaderView: View {
     @Binding var activePhase: PhaseFilter
     let isRefreshing: Bool
     let lastUpdated: Date?
+    let countries: [String]
+    let stadiums: [String]
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -208,6 +232,12 @@ private struct HeaderView: View {
                     }
                     .padding(.vertical, 2)
                 }
+
+                HStack(spacing: 8) {
+                    countryMenu
+                    stadiumMenu
+                    Spacer()
+                }
             }
 
             if activePhase != .all || !search.isEmpty {
@@ -247,6 +277,67 @@ private struct HeaderView: View {
             return "Act. \(formatter.string(from: lastUpdated))"
         }
         return "11 Jun – 19 Jul 2026"
+    }
+
+    private var countryMenu: some View {
+        Menu {
+            Button("Sin filtro de país") { activePhase = .all }
+            Divider()
+            ForEach(countries, id: \.self) { country in
+                Button(country) { activePhase = .country(country) }
+            }
+        } label: {
+            menuChipLabel(systemImage: "flag.fill", title: currentCountryLabel)
+        }
+    }
+
+    private var stadiumMenu: some View {
+        Menu {
+            if stadiums.isEmpty {
+                Text("Aún no hay estadios publicados")
+            } else {
+                Button("Sin filtro de estadio") { activePhase = .all }
+                Divider()
+                ForEach(stadiums, id: \.self) { stadium in
+                    Button(stadium) { activePhase = .stadium(stadium) }
+                }
+            }
+        } label: {
+            menuChipLabel(systemImage: "building.2.fill", title: currentStadiumLabel)
+        }
+    }
+
+    private var currentCountryLabel: String {
+        if case .country(let c) = activePhase { return c }
+        return "País"
+    }
+
+    private var currentStadiumLabel: String {
+        if case .stadium(let s) = activePhase { return s }
+        return "Estadio"
+    }
+
+    private func menuChipLabel(systemImage: String, title: String) -> some View {
+        HStack(spacing: 5) {
+            Image(systemName: systemImage)
+                .font(.system(size: 10))
+            Text(title)
+                .font(.system(size: 12, weight: .semibold))
+                .lineLimit(1)
+                .truncationMode(.tail)
+            Image(systemName: "chevron.down")
+                .font(.system(size: 9, weight: .bold))
+        }
+        .foregroundColor(Color(hex: 0xE0EAFF))
+        .padding(.horizontal, 12)
+        .padding(.vertical, 7)
+        .frame(minHeight: 34)
+        .background(Color(hex: 0x0D1F3C))
+        .overlay(
+            RoundedRectangle(cornerRadius: 17)
+                .stroke(Color(hex: 0x1E3A5F), lineWidth: 1)
+        )
+        .clipShape(RoundedRectangle(cornerRadius: 17))
     }
 
     private var phaseFilterCapsule: some View {
@@ -572,6 +663,102 @@ private struct MatchRow: View {
                 .stroke(match.tv.badgeBorder, lineWidth: 1)
         )
         .clipShape(RoundedRectangle(cornerRadius: 5))
+    }
+}
+
+// MARK: - GroupStandingsView
+
+/// Tabla compacta con la clasificación de un grupo: PJ, PG, PE, PP, GF, GC, DG, Pts.
+private struct GroupStandingsView: View {
+    let groupLetter: String
+    let rows: [GroupStanding]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack(spacing: 8) {
+                Rectangle()
+                    .fill(Color(hex: 0xC8A84B))
+                    .frame(width: 3, height: 14)
+                Text("CLASIFICACIÓN GRUPO \(groupLetter)")
+                    .font(.system(size: 12, weight: .heavy))
+                    .tracking(1.5)
+                    .foregroundColor(Color(hex: 0xC8A84B))
+            }
+
+            // Cabecera
+            standingsRow(
+                team: "Equipo",
+                pj: "PJ", pg: "PG", pe: "PE", pp: "PP",
+                gf: "GF", gc: "GC", dg: "DG", pts: "Pts",
+                isHeader: true
+            )
+
+            Rectangle()
+                .fill(Color(hex: 0x1E3A5F))
+                .frame(height: 1)
+
+            ForEach(Array(rows.enumerated()), id: \.element.id) { idx, row in
+                standingsRow(
+                    team: row.country,
+                    pj: "\(row.played)",
+                    pg: "\(row.won)",
+                    pe: "\(row.drawn)",
+                    pp: "\(row.lost)",
+                    gf: "\(row.goalsFor)",
+                    gc: "\(row.goalsAgainst)",
+                    dg: row.goalDifference >= 0 ? "+\(row.goalDifference)" : "\(row.goalDifference)",
+                    pts: "\(row.points)",
+                    isHeader: false,
+                    position: idx + 1
+                )
+                if idx < rows.count - 1 {
+                    Rectangle()
+                        .fill(Color(hex: 0x12243A))
+                        .frame(height: 1)
+                }
+            }
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 12)
+        .background(Color(hex: 0x0D1A2E))
+        .overlay(
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(Color(hex: 0x1E3A5F), lineWidth: 1)
+        )
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+    }
+
+    private func standingsRow(team: String,
+                              pj: String, pg: String, pe: String, pp: String,
+                              gf: String, gc: String, dg: String, pts: String,
+                              isHeader: Bool,
+                              position: Int? = nil) -> some View {
+        HStack(spacing: 4) {
+            Text(position.map { "\($0)" } ?? "")
+                .frame(width: 14, alignment: .trailing)
+                .foregroundColor(Color(hex: 0xC8A84B))
+            Text(team)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .lineLimit(1)
+                .minimumScaleFactor(0.75)
+            Group {
+                Text(pj).frame(width: 22, alignment: .trailing)
+                Text(pg).frame(width: 22, alignment: .trailing)
+                Text(pe).frame(width: 22, alignment: .trailing)
+                Text(pp).frame(width: 22, alignment: .trailing)
+                Text(gf).frame(width: 22, alignment: .trailing)
+                Text(gc).frame(width: 22, alignment: .trailing)
+                Text(dg).frame(width: 28, alignment: .trailing)
+            }
+            Text(pts)
+                .frame(width: 28, alignment: .trailing)
+                .fontWeight(isHeader ? .bold : .heavy)
+                .foregroundColor(isHeader ? Color(hex: 0x8CA8CC) : Color(hex: 0xC8A84B))
+        }
+        .font(.system(size: isHeader ? 10 : 12,
+                      weight: isHeader ? .bold : .semibold).monospacedDigit())
+        .foregroundColor(isHeader ? Color(hex: 0x8CA8CC) : Color(hex: 0xE0EAFF))
+        .padding(.vertical, isHeader ? 0 : 4)
     }
 }
 

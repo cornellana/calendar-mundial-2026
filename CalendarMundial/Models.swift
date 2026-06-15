@@ -103,6 +103,10 @@ enum PhaseFilter: Hashable {
     case phase(Phase)
     /// Filtro por letra de grupo (de "A" a "L").
     case group(String)
+    /// Filtro por selección/país concreto.
+    case country(String)
+    /// Filtro por estadio concreto.
+    case stadium(String)
 
     /// Etiqueta legible para mostrar en la barra de filtro activo.
     var label: String {
@@ -110,8 +114,35 @@ enum PhaseFilter: Hashable {
         case .all: return "Todos"
         case .phase(let p): return p.rawValue
         case .group(let g): return "Grupo \(g)"
+        case .country(let c): return c
+        case .stadium(let s): return s
         }
     }
+}
+
+// MARK: - GroupStanding
+
+/// Fila de la clasificación de un grupo: estadísticas acumuladas de un equipo.
+struct GroupStanding: Identifiable, Hashable {
+    var id: String { country }
+    /// Nombre del país tal como aparece en el calendario (puede incluir flag emoji).
+    let country: String
+    /// Partidos jugados.
+    var played: Int = 0
+    /// Partidos ganados.
+    var won: Int = 0
+    /// Partidos empatados.
+    var drawn: Int = 0
+    /// Partidos perdidos.
+    var lost: Int = 0
+    /// Goles a favor.
+    var goalsFor: Int = 0
+    /// Goles en contra.
+    var goalsAgainst: Int = 0
+    /// Diferencia de goles (GF - GC).
+    var goalDifference: Int { goalsFor - goalsAgainst }
+    /// Puntos (3 por victoria, 1 por empate).
+    var points: Int { won * 3 + drawn }
 }
 
 // MARK: - TeamSide
