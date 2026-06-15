@@ -18,6 +18,7 @@ Uso local:
 from __future__ import annotations
 
 import json
+import os
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -27,6 +28,13 @@ from zoneinfo import ZoneInfo
 import requests
 
 MADRID_TZ = ZoneInfo("Europe/Madrid")
+
+# Si está activo, el script reprocesa todos los partidos finalizados aunque
+# ya tengan `done` + `result` + `details` + `stadium` + `venueCity`. Útil para
+# aplicar fixes del propio script a datos antiguos.
+FORCE_REFRESH = os.environ.get("FORCE_REFRESH", "").lower() in (
+    "true", "1", "yes", "y",
+)
 
 
 # -- Configuración --------------------------------------------------------
@@ -430,7 +438,9 @@ def main() -> int:
 
             result = f"{home_score}-{away_score}"
             # Refetch si falta cualquiera de: result correcto, details o venue.
-            already = (game.get("done")
+            # Con FORCE_REFRESH=true se ignora esta condición y se recarga todo.
+            already = (not FORCE_REFRESH
+                       and game.get("done")
                        and game.get("result") == result
                        and game.get("details")
                        and game.get("stadium")
