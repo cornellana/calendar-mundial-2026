@@ -78,10 +78,16 @@ final class MatchStore {
         defer { isRefreshing = false }
 
         do {
-            var request = URLRequest(url: url)
-            // Forzamos descarga fresca: el JSON puede cambiar varias veces al día.
-            request.cachePolicy = .reloadIgnoringLocalCacheData
+            // Anexa un timestamp como cache-buster: ni URLCache ni los CDN
+            // intermedios (GitHub raw cachea 5 min) servirán versión vieja
+            // porque la URL es diferente cada vez.
+            let cacheBustedURL = url.appending(queryItems: [
+                URLQueryItem(name: "t", value: String(Int(Date().timeIntervalSince1970)))
+            ])
+            var request = URLRequest(url: cacheBustedURL)
+            request.cachePolicy = .reloadIgnoringLocalAndRemoteCacheData
             request.timeoutInterval = 15
+            request.setValue("no-cache", forHTTPHeaderField: "Cache-Control")
 
             let (data, response) = try await URLSession.shared.data(for: request)
             guard let http = response as? HTTPURLResponse,
