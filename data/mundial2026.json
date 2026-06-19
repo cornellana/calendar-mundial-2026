@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T08:19:00Z",
+  "lastUpdated": "2026-06-19T22:04:36Z",
   "matchDays": [
     {
       "date": "2026-06-11",
@@ -14199,12 +14199,531 @@
         },
         {
           "away": "Australia",
-          "done": false,
+          "details": {
+            "awayLineup": {
+              "formation": "5-4-1",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Patrick Beach",
+                  "number": 18,
+                  "position": "POR"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 88,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Harry Souttar",
+                  "number": 19,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 11,
+                      "type": "own_goal"
+                    },
+                    {
+                      "minute": 45,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Cameron Burgess",
+                  "number": 21,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 32,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Alessandro Circati",
+                  "number": 3,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 16,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Jordan Bos",
+                  "number": 5,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 89,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Jacob Italiano",
+                  "number": 4,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 78,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Paul Okon-Engstler",
+                  "number": 24,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Aiden O'Neill",
+                  "number": 13,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Nishan Velupillay",
+                  "number": 23,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Mathew Leckie",
+                  "number": 7,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Mohamed Toure",
+                  "number": 9,
+                  "position": "DEL"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Aziz Behich",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Kai Trewin",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Connor Metcalfe",
+                  "number": 8,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Awer Mabil",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Lucas Herrington",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Ajdin Hrustic",
+                  "number": 10,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Milos Degenek",
+                  "number": 2,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Jason Geria",
+                  "number": 6,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Nestory Irankunda",
+                  "number": 17,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Tete Yengi",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mathew Ryan",
+                  "number": 1,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Cameron Devlin",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 78,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Jackson Irvine",
+                  "number": 22,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Paul Izzo",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Cristian Volpato",
+                  "number": 20,
+                  "position": "?"
+                }
+              ]
+            },
+            "homeLineup": {
+              "formation": "3-5-2",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Matt Freese",
+                  "number": 24,
+                  "position": "POR"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 3,
+                      "minute": 90,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Chris Richards",
+                  "number": 3,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Tim Ream",
+                  "number": 13,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 43,
+                      "type": "goal"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Alex Freeman",
+                  "number": 16,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Malik Tillman",
+                  "number": 17,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 6,
+                      "minute": 90,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Weston McKennie",
+                  "number": 8,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Tyler Adams",
+                  "number": 4,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 56,
+                      "type": "yellow"
+                    },
+                    {
+                      "minute": 80,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Antonee Robinson",
+                  "number": 5,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 80,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Sergiño Dest",
+                  "number": 2,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 74,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Ricardo Pepi",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 89,
+                      "type": "yellow"
+                    },
+                    {
+                      "extraTime": 6,
+                      "minute": 90,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Folarin Balogun",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 6,
+                      "minute": 90,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Giovanni Reyna",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Timothy Weah",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Miles Robinson",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mark McKenzie",
+                  "number": 22,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 80,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Joe Scally",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Max Arfsten",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Cristian Roldan",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 74,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Sebastian Berhalter",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Matt Turner",
+                  "number": 1,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Chris Brady",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 80,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Auston Trusty",
+                  "number": 6,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 6,
+                      "minute": 90,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Haji Wright",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Alejandro Zendejas",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Brenden Aaronson",
+                  "number": 11,
+                  "position": "?"
+                }
+              ]
+            }
+          },
+          "done": true,
           "esp": false,
           "group": "D",
           "home": "EE.UU.",
+          "result": "2-0",
+          "stadium": "Lumen Field",
           "time": "21:00",
-          "tv": "BOTH"
+          "tv": "BOTH",
+          "venueCity": "Seattle, Washington, EE.UU."
         }
       ],
       "phase": "Grupos"
