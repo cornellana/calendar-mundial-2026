@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T01:40:33Z",
+  "lastUpdated": "2026-06-22T07:04:10Z",
   "matchDays": [
     {
       "date": "2026-06-11",
@@ -19775,12 +19775,532 @@
         },
         {
           "away": "Egipto",
-          "done": false,
+          "details": {
+            "awayLineup": {
+              "formation": "4-2-3-1",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Mostafa Shoubir",
+                  "number": 23,
+                  "position": "POR"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 41,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Hamdy Fathy",
+                  "number": 14,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Yasser Ibrahim",
+                  "number": 2,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Ahmed Fatouh",
+                  "number": 13,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Mohamed Hany",
+                  "number": 3,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 67,
+                      "type": "goal"
+                    },
+                    {
+                      "minute": 85,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Mohamed Salah",
+                  "number": 10,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 17,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Mohanad Lashin",
+                  "number": 17,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Marawan Attia",
+                  "number": 19,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Omar Marmoush",
+                  "number": 22,
+                  "position": "DEL"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 85,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Emam Ashour",
+                  "number": 8,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 58,
+                      "type": "goal"
+                    },
+                    {
+                      "minute": 76,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Mostafa Zico",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mohamed Alaa",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 9,
+                      "minute": 90,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Mohamed Abdelmoneim",
+                  "number": 6,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Haissem Hassan",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Tarek Alaa",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 85,
+                      "type": "sub_in"
+                    },
+                    {
+                      "extraTime": 9,
+                      "minute": 90,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Hossam Abdelmaguid",
+                  "number": 4,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mohamed El Shenawy",
+                  "number": 1,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Ibrahim Adel",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 85,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Zizo",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 41,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Ramy Rabia",
+                  "number": 5,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Nabil Donga",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_in"
+                    },
+                    {
+                      "minute": 82,
+                      "type": "goal"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Trézéguet",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mahdy Soliman",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Hamza Abdelkarim",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mahmoud Saber",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Karim Hafez",
+                  "number": 15,
+                  "position": "?"
+                }
+              ]
+            },
+            "homeLineup": {
+              "formation": "4-2-3-1",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Max Crocombe",
+                  "number": 1,
+                  "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Michael Boxall",
+                  "number": 5,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 15,
+                      "type": "goal"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Finn Surman",
+                  "number": 16,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Liberato Cacace",
+                  "number": 13,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 85,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Tim Payne",
+                  "number": 2,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 20,
+                      "type": "yellow"
+                    },
+                    {
+                      "minute": 76,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Sarpreet Singh",
+                  "number": 10,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Marko Stamenic",
+                  "number": 8,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Joe Bell",
+                  "number": 6,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Chris Wood",
+                  "number": 9,
+                  "position": "DEL"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 85,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Elijah Just",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 34,
+                      "type": "yellow"
+                    },
+                    {
+                      "minute": 66,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Callum McCowatt",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 85,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Francis de Vries",
+                  "number": 3,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Ryan Thomas",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Alex Paulsen",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Lachlan Bayliss",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 66,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Ben Old",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Ben Waine",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 85,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Tyler Bindon",
+                  "number": 4,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Callan Elliot",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Logan Rogerson",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Alex Rufer",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Tommy Smith",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Nando Pijnaker",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Michael Woud",
+                  "number": 22,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Kosta Barbarouses",
+                  "number": 17,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Jesse Randall",
+                  "number": 21,
+                  "position": "?"
+                }
+              ]
+            }
+          },
+          "done": true,
           "esp": false,
           "group": "G",
           "home": "Nueva Zelanda",
+          "result": "1-3",
+          "stadium": "BC Place",
           "time": "03:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "venueCity": "Vancouver, Canadá"
         },
         {
           "away": "Austria",
