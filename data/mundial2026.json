@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-23T02:50:55Z",
+  "lastUpdated": "2026-06-23T06:48:16Z",
   "matchDays": [
     {
       "date": "2026-06-11",
@@ -21843,12 +21843,509 @@
         },
         {
           "away": "Argelia",
-          "done": false,
+          "details": {
+            "awayLineup": {
+              "formation": "4-2-3-1",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Luca Zidane",
+                  "number": 23,
+                  "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Ramy Bensebaini",
+                  "number": 21,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Aïssa Mandi",
+                  "number": 2,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 85,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Rayan Aït-Nouri",
+                  "number": 15,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Rafik Belghali",
+                  "number": 17,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Ibrahim Maza",
+                  "number": 22,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 44,
+                      "type": "yellow"
+                    },
+                    {
+                      "minute": 45,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Ramiz Zerrouki",
+                  "number": 6,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Hicham Boudaoui",
+                  "number": 14,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 82,
+                      "type": "goal"
+                    },
+                    {
+                      "minute": 86,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Amine Gouiri",
+                  "number": 9,
+                  "position": "DEL"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Farès Chaïbi",
+                  "number": 10,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Riyad Mahrez",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mohamed Amine Tougai",
+                  "number": 4,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 86,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Zineddine Belaïd",
+                  "number": 5,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Farès Ghedjemis",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Anis Hadj Moussa",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Oussama Benbot",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Achraf Abada",
+                  "number": 3,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Adil Boulbina",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Houssem Aouar",
+                  "number": 8,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Yassine Titraoui",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 85,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Jaouen Hadjam",
+                  "number": 13,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Nabil Bentaleb",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_in"
+                    },
+                    {
+                      "minute": 69,
+                      "type": "goal"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Nadhir Benbouali",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Samir Chergui",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Melvin Mastil",
+                  "number": 1,
+                  "position": "?"
+                }
+              ]
+            },
+            "homeLineup": {
+              "formation": "3-4-2-1",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Yazeed Abulaila",
+                  "number": 1,
+                  "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Yazan Al-Arab",
+                  "number": 5,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 64,
+                      "type": "yellow"
+                    },
+                    {
+                      "extraTime": 1,
+                      "minute": 90,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Husam Abu Dahab",
+                  "number": 4,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Abdallah Nasib",
+                  "number": 3,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Noor Al-Rawabdeh",
+                  "number": 8,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 36,
+                      "type": "goal"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Nizar Al-Rashdan",
+                  "number": 21,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 85,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Mohannad Abu Taha",
+                  "number": 20,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Ehsan Haddad",
+                  "number": 23,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 84,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Mousa Al-Tamari",
+                  "number": 10,
+                  "position": "DEL"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Mahmoud Al-Mardi",
+                  "number": 13,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 2,
+                      "minute": 90,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Ali Olwan",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 85,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Mohammad Abu Hasheesh",
+                  "number": 2,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mohammad Abughoush",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Saed Al-Rosan",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 1,
+                      "minute": 90,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Saleem Obaid",
+                  "number": 17,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Ibrahim Sadeh",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Abdallah Al-Fakhouri",
+                  "number": 22,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Rajaei Ayed",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 2,
+                      "minute": 90,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Mohammed Abu Zraiq",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mohammad Abualnadi",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 84,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Ali Azaizeh",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 76,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Odeh Fakhoury",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Amer Jamous",
+                  "number": 6,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mohammad Al-Daoud",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Anas Badawi",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Nour Bani Ateyah",
+                  "number": 12,
+                  "position": "?"
+                }
+              ]
+            }
+          },
+          "done": true,
           "esp": false,
           "group": "J",
           "home": "Jordania",
+          "result": "1-2",
+          "stadium": "Levi's Stadium",
           "time": "05:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "venueCity": "Santa Clara, California, EE.UU."
         },
         {
           "away": "Uzbekistán",
