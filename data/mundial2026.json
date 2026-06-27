@@ -33452,13 +33452,15 @@
           "tv": "DAZN"
         },
         {
-          "away": "2º Grupo B",
+          "away": "Canadá",
           "done": false,
           "esp": false,
           "group": "1/16",
-          "home": "2º Grupo A",
+          "home": "Sudáfrica",
           "time": "21:00",
-          "tv": "BOTH"
+          "tv": "BOTH",
+          "stadium": "SoFi Stadium",
+          "venueCity": "Los Ángeles, EE.UU."
         }
       ],
       "phase": "Grupos"
@@ -33467,22 +33469,26 @@
       "date": "2026-06-29",
       "games": [
         {
-          "away": "2º Grupo F",
+          "away": "Japón",
           "done": false,
           "esp": false,
           "group": "1/16",
-          "home": "1º Grupo C",
+          "home": "Brasil",
           "time": "19:00",
-          "tv": "BOTH"
+          "tv": "BOTH",
+          "stadium": "NRG Stadium",
+          "venueCity": "Houston, EE.UU."
         },
         {
-          "away": "3º Mejor",
+          "away": "Paraguay",
           "done": false,
           "esp": false,
           "group": "1/16",
-          "home": "1º Grupo E",
+          "home": "Alemania",
           "time": "22:30",
-          "tv": "BOTH"
+          "tv": "BOTH",
+          "stadium": "Gillette Stadium",
+          "venueCity": "Foxborough, EE.UU."
         }
       ],
       "phase": "1/16"
@@ -33491,31 +33497,37 @@
       "date": "2026-06-30",
       "games": [
         {
-          "away": "2º Grupo C",
+          "away": "Marruecos",
           "done": false,
           "esp": false,
           "group": "1/16",
-          "home": "1º Grupo F",
+          "home": "Países Bajos",
           "time": "03:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "stadium": "Estadio Monterrey",
+          "venueCity": "Monterrey, México"
         },
         {
-          "away": "2º Grupo I",
+          "away": "Noruega",
           "done": false,
           "esp": false,
           "group": "1/16",
-          "home": "2º Grupo E",
+          "home": "C. de Marfil",
           "time": "19:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "stadium": "AT&T Stadium",
+          "venueCity": "Arlington, EE.UU."
         },
         {
-          "away": "3º Mejor",
+          "away": "Suecia",
           "done": false,
           "esp": false,
           "group": "1/16",
-          "home": "1º Grupo I",
+          "home": "Francia",
           "time": "23:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "stadium": "MetLife Stadium",
+          "venueCity": "East Rutherford, EE.UU."
         }
       ],
       "phase": "1/16"
@@ -33524,13 +33536,15 @@
       "date": "2026-07-01",
       "games": [
         {
-          "away": "3º Mejor",
+          "away": "3er Mejor",
           "done": false,
           "esp": false,
           "group": "1/16",
-          "home": "1º Grupo A",
+          "home": "México",
           "time": "03:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "stadium": "Estadio Azteca",
+          "venueCity": "Ciudad de México, México"
         },
         {
           "away": "3º Mejor",
@@ -33539,16 +33553,20 @@
           "group": "1/16",
           "home": "1º Grupo L",
           "time": "18:00",
-          "tv": "BOTH"
+          "tv": "BOTH",
+          "stadium": "Mercedes-Benz Stadium",
+          "venueCity": "Atlanta, EE.UU."
         },
         {
-          "away": "3º Mejor",
+          "away": "3er Mejor",
           "done": false,
           "esp": false,
           "group": "1/16",
-          "home": "1º Grupo G",
+          "home": "Bélgica",
           "time": "22:00",
-          "tv": "BOTH"
+          "tv": "BOTH",
+          "stadium": "Lumen Field",
+          "venueCity": "Seattle, EE.UU."
         }
       ],
       "phase": "1/16"
@@ -33557,22 +33575,26 @@
       "date": "2026-07-02",
       "games": [
         {
-          "away": "3º Mejor",
+          "away": "Bosnia Herz.",
           "done": false,
           "esp": false,
           "group": "1/16",
-          "home": "1º Grupo D",
+          "home": "EE.UU.",
           "time": "02:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "stadium": "Levi's Stadium",
+          "venueCity": "San Francisco, EE.UU."
         },
         {
           "away": "2º Grupo J",
           "done": false,
           "esp": true,
           "group": "1/16",
-          "home": "1º Grupo H",
+          "home": "🇪🇸 España",
           "time": "21:00",
-          "tv": "BOTH"
+          "tv": "BOTH",
+          "stadium": "SoFi Stadium",
+          "venueCity": "Los Ángeles, EE.UU."
         }
       ],
       "phase": "1/16"
@@ -33581,13 +33603,15 @@
       "date": "2026-07-03",
       "games": [
         {
-          "away": "2º Grupo H",
+          "away": "Cabo Verde",
           "done": false,
           "esp": false,
           "group": "1/16",
-          "home": "1º Grupo J",
+          "home": "Argentina",
           "time": "00:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "stadium": "Hard Rock Stadium",
+          "venueCity": "Miami, EE.UU."
         },
         {
           "away": "2º Grupo L",
@@ -33596,34 +33620,42 @@
           "group": "1/16",
           "home": "2º Grupo K",
           "time": "01:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "stadium": "BMO Field",
+          "venueCity": "Toronto, Canadá"
         },
         {
-          "away": "3º Mejor",
+          "away": "3er Mejor",
           "done": false,
           "esp": false,
           "group": "1/16",
           "home": "1º Grupo K",
           "time": "03:30",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "stadium": "Arrowhead Stadium",
+          "venueCity": "Kansas City, EE.UU."
         },
         {
-          "away": "3º Mejor",
+          "away": "3er Mejor",
           "done": false,
           "esp": false,
           "group": "1/16",
-          "home": "1º Grupo B",
+          "home": "Suiza",
           "time": "05:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "stadium": "BC Place",
+          "venueCity": "Vancouver, Canadá"
         },
         {
-          "away": "2º Grupo G",
+          "away": "Egipto",
           "done": false,
           "esp": false,
           "group": "1/16",
-          "home": "2º Grupo D",
+          "home": "Australia",
           "time": "20:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "stadium": "AT&T Stadium",
+          "venueCity": "Arlington, EE.UU."
         }
       ],
       "phase": "1/16"
