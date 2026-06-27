@@ -19,8 +19,14 @@ struct ContentView: View {
     @State private var activePhase: PhaseFilter = .all
     @State private var selectedMatch: SelectedMatch?
     @State private var sheetDetent: PresentationDetent = .medium
+    @Environment(\.scenePhase) private var scenePhase
 
     private let today = MundialData.todayString
+
+    /// Primer día con partidos a partir de hoy (o el último si el torneo ya terminó).
+    private var scrollTargetDate: String? {
+        filteredDays.first { $0.date >= today }?.date ?? filteredDays.last?.date
+    }
 
     private var filteredDays: [MatchDay] {
         store.matchDays.compactMap { day in
@@ -69,6 +75,7 @@ struct ContentView: View {
                     stadiums: MundialData.allStadiums(in: store.matchDays)
                 )
 
+                ScrollViewReader { proxy in
                 ScrollView {
                     VStack(spacing: 0) {
                         if let standings = groupStandings {
@@ -120,6 +127,7 @@ struct ContentView: View {
                                             phase: day.phase
                                         )
                                     }
+                                    .id(day.id)
                                 }
                             }
                             .padding(.horizontal, 20)
@@ -131,12 +139,19 @@ struct ContentView: View {
                 .refreshable {
                     await store.refresh()
                 }
+                .task(id: scenePhase) {
+                    guard scenePhase == .active else { return }
+                    await store.refresh()
+                    guard let target = scrollTargetDate else { return }
+                    try? await Task.sleep(nanoseconds: 350_000_000)
+                    withAnimation(.easeInOut(duration: 0.5)) {
+                        proxy.scrollTo(target, anchor: .top)
+                    }
+                }
+                } // ScrollViewReader
             }
         }
         .preferredColorScheme(.dark)
-        .task {
-            await store.refresh()
-        }
         .sheet(item: $selectedMatch) { item in
             MatchDetailSheet(match: item.match, dateString: item.date, phase: item.phase)
                 .presentationDetents([.medium, .large], selection: $sheetDetent)
