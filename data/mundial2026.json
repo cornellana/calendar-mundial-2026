@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-28T06:14:25Z",
+  "lastUpdated": "2026-06-28T21:19:07Z",
   "matchDays": [
     {
       "date": "2026-06-11",
@@ -36455,14 +36455,471 @@
         },
         {
           "away": "Canadá",
-          "done": false,
+          "details": {
+            "awayLineup": {
+              "formation": "4-4-2",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Maxime Crépeau",
+                  "number": 16,
+                  "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Derek Cornelius",
+                  "number": 13,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 59,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Moïse Bombito",
+                  "number": 15,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Richie Laryea",
+                  "number": 22,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Alistair Johnston",
+                  "number": 2,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 2,
+                      "minute": 90,
+                      "type": "goal"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Stephen Eustáquio",
+                  "number": 7,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 54,
+                      "type": "yellow"
+                    },
+                    {
+                      "minute": 59,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Nathan Saliba",
+                  "number": 25,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 70,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Liam Millar",
+                  "number": 11,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 75,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Tajon Buchanan",
+                  "number": 17,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 70,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Tani Oluwaseyi",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Jonathan David",
+                  "number": 10,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Jonathan Osorio",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Dayne St. Clair",
+                  "number": 1,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 70,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Jacob Shaffelburg",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Owen Goodman",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 70,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Promise David",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Jayden Nelson",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Ali Ahmed",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Joel Waterman",
+                  "number": 5,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mathieu Choinière",
+                  "number": 6,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Alfie Jones",
+                  "number": 3,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 59,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Luc de Fougerolles",
+                  "number": 4,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 59,
+                      "type": "sub_in"
+                    },
+                    {
+                      "minute": 67,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Niko Sigur",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 75,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Alphonso Davies",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Cyle Larin",
+                  "number": 9,
+                  "position": "?"
+                }
+              ]
+            },
+            "homeLineup": {
+              "formation": "4-2-3-1",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Ronwen Williams",
+                  "number": 1,
+                  "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Mbekezeli Mbokazi",
+                  "number": 14,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Ime Okon",
+                  "number": 21,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Aubrey Modiba",
+                  "number": 6,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Khuliso Mudau",
+                  "number": 20,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Relebohile Mofokeng",
+                  "number": 10,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Sphephelo Sithole",
+                  "number": 13,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Teboho Mokoena",
+                  "number": 4,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 86,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Evidence Makgopa",
+                  "number": 17,
+                  "position": "DEL"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Oswin Appollis",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 86,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Thapelo Maseko",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 86,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Iqraam Rayners",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Nkosinathi Sibisi",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Kamogelo Sebelebele",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Jayden Adams",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Samukele Kabini",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Sipho Chaine",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Olwethu Makhanya",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 86,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Tshepang Moremi",
+                  "number": 8,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Bradley Cross",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Khulumani Ndamane",
+                  "number": 3,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Thabang Matuludi",
+                  "number": 2,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Lyle Foster",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Thalente Mbatha",
+                  "number": 5,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Ricardo Goss",
+                  "number": 22,
+                  "position": "?"
+                }
+              ]
+            }
+          },
+          "done": true,
           "esp": false,
           "group": "1/16",
           "home": "Sudáfrica",
+          "result": "0-1",
           "stadium": "SoFi Stadium",
           "time": "21:00",
           "tv": "BOTH",
-          "venueCity": "Los Ángeles, EE.UU."
+          "venueCity": "Inglewood, California, EE.UU."
         }
       ],
       "phase": "Grupos"
