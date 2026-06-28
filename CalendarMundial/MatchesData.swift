@@ -123,6 +123,49 @@ enum MundialData {
             .trimmingCharacters(in: .whitespaces)
     }
 
+    /// Calcula la tabla de goleadores del torneo a partir de los partidos con detalle.
+    ///
+    /// Solo cuenta goles propios (`.goal` y `.penalty`); los goles en propia puerta
+    /// (`.ownGoal`) se excluyen porque no se acreditan a ningún jugador en la
+    /// clasificación oficial de goleadores FIFA.
+    /// - Parameter matchDays: Calendario completo con detalles de los partidos disputados.
+    /// - Returns: Lista ordenada de mayor a menor número de goles (alfabético en caso de empate).
+    static func topScorers(in matchDays: [MatchDay]) -> [TopScorer] {
+        var tally: [String: (goals: Int, penalties: Int, player: String, team: String)] = [:]
+
+        for day in matchDays {
+            for match in day.games {
+                guard let details = match.details else { continue }
+                let sides: [(TeamLineup, String)] = [
+                    (details.homeLineup, match.home),
+                    (details.awayLineup, match.away)
+                ]
+                for (lineup, team) in sides {
+                    for player in lineup.players {
+                        let goals = player.events.filter {
+                            $0.type == .goal || $0.type == .penalty
+                        }.count
+                        guard goals > 0 else { continue }
+                        let pens = player.events.filter { $0.type == .penalty }.count
+                        let key = "\(player.name)|\(team)"
+                        if let cur = tally[key] {
+                            tally[key] = (cur.goals + goals, cur.penalties + pens, player.name, team)
+                        } else {
+                            tally[key] = (goals, pens, player.name, team)
+                        }
+                    }
+                }
+            }
+        }
+
+        return tally.values
+            .map { TopScorer(player: $0.player, team: $0.team, goals: $0.goals, penalties: $0.penalties) }
+            .sorted { a, b in
+                if a.goals != b.goals { return a.goals > b.goals }
+                return a.player < b.player
+            }
+    }
+
     /// Fecha actual en zona horaria Europe/Madrid (formato ISO `yyyy-MM-dd`).
     ///
     /// Se usa para detectar la jornada del día actual en el listado. Se

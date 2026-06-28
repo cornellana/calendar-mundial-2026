@@ -527,6 +527,19 @@ struct MatchDay: Identifiable, Codable {
     let games: [Match]
 }
 
+// MARK: - TopScorer
+
+/// Entrada de la tabla de goleadores del torneo.
+struct TopScorer: Identifiable {
+    var id: String { "\(player)|\(team)" }
+    let player: String
+    let team: String
+    /// Total de goles (incluye penaltis, excluye propios).
+    let goals: Int
+    /// Goles de penalti dentro del total.
+    let penalties: Int
+}
+
 // MARK: - MatchSnapshot
 
 /// Envoltorio del JSON descargado por el `MatchStore` desde el endpoint remoto.

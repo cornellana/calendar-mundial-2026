@@ -19,6 +19,7 @@ struct ContentView: View {
     @State private var activePhase: PhaseFilter = .all
     @State private var selectedMatch: SelectedMatch?
     @State private var sheetDetent: PresentationDetent = .medium
+    @State private var showingScorers = false
     @Environment(\.scenePhase) private var scenePhase
 
     private let today = MundialData.todayString
@@ -69,6 +70,7 @@ struct ContentView: View {
                 HeaderView(
                     search: $search,
                     activePhase: $activePhase,
+                    showingScorers: $showingScorers,
                     isRefreshing: store.isRefreshing,
                     lastUpdated: store.lastUpdated,
                     countries: MundialData.allCountries(in: store.matchDays),
@@ -148,6 +150,24 @@ struct ContentView: View {
                         proxy.scrollTo(target, anchor: .top)
                     }
                 }
+                .onChange(of: activePhase) { _, newPhase in
+                    guard newPhase == .all, let target = scrollTargetDate else { return }
+                    Task {
+                        try? await Task.sleep(nanoseconds: 150_000_000)
+                        withAnimation(.easeInOut(duration: 0.5)) {
+                            proxy.scrollTo(target, anchor: .top)
+                        }
+                    }
+                }
+                .onChange(of: showingScorers) { _, isShowing in
+                    guard !isShowing, let target = scrollTargetDate else { return }
+                    Task {
+                        try? await Task.sleep(nanoseconds: 150_000_000)
+                        withAnimation(.easeInOut(duration: 0.5)) {
+                            proxy.scrollTo(target, anchor: .top)
+                        }
+                    }
+                }
                 } // ScrollViewReader
             }
         }
@@ -155,6 +175,11 @@ struct ContentView: View {
         .sheet(item: $selectedMatch) { item in
             MatchDetailSheet(match: item.match, dateString: item.date, phase: item.phase)
                 .presentationDetents([.medium, .large], selection: $sheetDetent)
+                .presentationDragIndicator(.visible)
+        }
+        .sheet(isPresented: $showingScorers) {
+            TopScorersSheet(scorers: MundialData.topScorers(in: store.matchDays))
+                .presentationDetents([.large])
                 .presentationDragIndicator(.visible)
         }
     }
@@ -166,6 +191,7 @@ struct ContentView: View {
 private struct HeaderView: View {
     @Binding var search: String
     @Binding var activePhase: PhaseFilter
+    @Binding var showingScorers: Bool
     let isRefreshing: Bool
     let lastUpdated: Date?
     let countries: [String]
@@ -251,6 +277,7 @@ private struct HeaderView: View {
                 HStack(spacing: 8) {
                     countryMenu
                     stadiumMenu
+                    scorersButton
                     Spacer()
                 }
             }
@@ -292,6 +319,14 @@ private struct HeaderView: View {
             return "Act. \(formatter.string(from: lastUpdated))"
         }
         return "11 Jun – 19 Jul 2026"
+    }
+
+    private var scorersButton: some View {
+        Button {
+            showingScorers = true
+        } label: {
+            menuChipLabel(systemImage: "soccerball", title: "Goleadores")
+        }
     }
 
     private var countryMenu: some View {
