@@ -272,27 +272,27 @@ enum MundialData {
                   stadium: "MetLife Stadium", venueCity: "East Rutherford, EE.UU.")
         ]),
         MatchDay(date: "2026-07-01", phase: .dieciseisavos, games: [
-            Match(time: "03:00", home: "México", away: "3er Mejor", group: "1/16", tv: .dazn, done: false,
+            Match(time: "03:00", home: "México", away: "Ecuador", group: "1/16", tv: .dazn, done: false,
                   stadium: "Estadio Azteca", venueCity: "Ciudad de México, México"),
-            Match(time: "18:00", home: "1º Grupo L", away: "3er Mejor", group: "1/16", tv: .both, done: false,
+            Match(time: "18:00", home: "Inglaterra", away: "R.D. Congo", group: "1/16", tv: .both, done: false,
                   stadium: "Mercedes-Benz Stadium", venueCity: "Atlanta, EE.UU."),
-            Match(time: "22:00", home: "Bélgica", away: "3er Mejor", group: "1/16", tv: .both, done: false,
+            Match(time: "22:00", home: "Bélgica", away: "Senegal", group: "1/16", tv: .both, done: false,
                   stadium: "Lumen Field", venueCity: "Seattle, EE.UU.")
         ]),
         MatchDay(date: "2026-07-02", phase: .dieciseisavos, games: [
             Match(time: "02:00", home: "EE.UU.", away: "Bosnia Herz.", group: "1/16", tv: .dazn, done: false,
                   stadium: "Levi's Stadium", venueCity: "San Francisco, EE.UU."),
-            Match(time: "21:00", home: "🇪🇸 España", away: "2º Grupo J", group: "1/16", tv: .both, done: false, esp: true,
+            Match(time: "21:00", home: "🇪🇸 España", away: "Austria", group: "1/16", tv: .both, done: false, esp: true,
                   stadium: "SoFi Stadium", venueCity: "Los Ángeles, EE.UU.")
         ]),
         MatchDay(date: "2026-07-03", phase: .dieciseisavos, games: [
             Match(time: "00:00", home: "Argentina", away: "Cabo Verde", group: "1/16", tv: .dazn, done: false,
                   stadium: "Hard Rock Stadium", venueCity: "Miami, EE.UU."),
-            Match(time: "01:00", home: "2º Grupo K", away: "2º Grupo L", group: "1/16", tv: .dazn, done: false,
+            Match(time: "01:00", home: "Portugal", away: "Croacia", group: "1/16", tv: .dazn, done: false,
                   stadium: "BMO Field", venueCity: "Toronto, Canadá"),
-            Match(time: "03:30", home: "1º Grupo K", away: "3er Mejor", group: "1/16", tv: .dazn, done: false,
+            Match(time: "03:30", home: "Colombia", away: "Ghana", group: "1/16", tv: .dazn, done: false,
                   stadium: "Arrowhead Stadium", venueCity: "Kansas City, EE.UU."),
-            Match(time: "05:00", home: "Suiza", away: "3er Mejor", group: "1/16", tv: .dazn, done: false,
+            Match(time: "05:00", home: "Suiza", away: "Argelia", group: "1/16", tv: .dazn, done: false,
                   stadium: "BC Place", venueCity: "Vancouver, Canadá"),
             Match(time: "20:00", home: "Australia", away: "Egipto", group: "1/16", tv: .dazn, done: false,
                   stadium: "AT&T Stadium", venueCity: "Arlington, EE.UU.")

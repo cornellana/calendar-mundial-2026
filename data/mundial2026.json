@@ -36538,7 +36538,7 @@
       "date": "2026-07-01",
       "games": [
         {
-          "away": "3er Mejor",
+          "away": "Ecuador",
           "done": false,
           "esp": false,
           "group": "1/16",
@@ -36549,18 +36549,18 @@
           "venueCity": "Ciudad de México, México"
         },
         {
-          "away": "3º Mejor",
+          "away": "R.D. Congo",
           "done": false,
           "esp": false,
           "group": "1/16",
-          "home": "1º Grupo L",
+          "home": "Inglaterra",
           "stadium": "Mercedes-Benz Stadium",
           "time": "18:00",
           "tv": "BOTH",
           "venueCity": "Atlanta, EE.UU."
         },
         {
-          "away": "3er Mejor",
+          "away": "Senegal",
           "done": false,
           "esp": false,
           "group": "1/16",
@@ -36588,7 +36588,7 @@
           "venueCity": "San Francisco, EE.UU."
         },
         {
-          "away": "2º Grupo J",
+          "away": "Austria",
           "done": false,
           "esp": true,
           "group": "1/16",
@@ -36616,29 +36616,29 @@
           "venueCity": "Miami, EE.UU."
         },
         {
-          "away": "2º Grupo L",
+          "away": "Croacia",
           "done": false,
           "esp": false,
           "group": "1/16",
-          "home": "2º Grupo K",
+          "home": "Portugal",
           "stadium": "BMO Field",
           "time": "01:00",
           "tv": "DAZN",
           "venueCity": "Toronto, Canadá"
         },
         {
-          "away": "3er Mejor",
+          "away": "Ghana",
           "done": false,
           "esp": false,
           "group": "1/16",
-          "home": "1º Grupo K",
+          "home": "Colombia",
           "stadium": "Arrowhead Stadium",
           "time": "03:30",
           "tv": "DAZN",
           "venueCity": "Kansas City, EE.UU."
         },
         {
-          "away": "3er Mejor",
+          "away": "Argelia",
           "done": false,
           "esp": false,
           "group": "1/16",
