@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30T09:09:39Z",
+  "lastUpdated": "2026-06-30T09:11:21Z",
   "matchDays": [
     {
       "date": "2026-06-11",
@@ -1561,7 +1561,7 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Orlando Gil",
+                  "name": "Orlando Gill",
                   "number": 12,
                   "position": "POR"
                 },
@@ -6728,7 +6728,7 @@
                 {
                   "events": [
                     {
-                      "minute": 19,
+                      "minute": 20,
                       "type": "goal"
                     },
                     {
@@ -9176,6 +9176,10 @@
                     {
                       "minute": 81,
                       "type": "sub_out"
+                    },
+                    {
+                      "minute": 82,
+                      "type": "sub_out"
                     }
                   ],
                   "isStarter": true,
@@ -9184,12 +9188,7 @@
                   "position": "MED"
                 },
                 {
-                  "events": [
-                    {
-                      "minute": 82,
-                      "type": "sub_out"
-                    }
-                  ],
+                  "events": [],
                   "isStarter": true,
                   "name": "Ibrahim Maza",
                   "number": 22,
@@ -10457,7 +10456,7 @@
                     }
                   ],
                   "isStarter": true,
-                  "name": "Vitinha ",
+                  "name": "Vitinha",
                   "number": 23,
                   "position": "MED"
                 },
@@ -10692,7 +10691,7 @@
                 {
                   "events": [
                     {
-                      "minute": 79,
+                      "minute": 78,
                       "type": "sub_out"
                     }
                   ],
@@ -10834,7 +10833,7 @@
                 {
                   "events": [
                     {
-                      "minute": 79,
+                      "minute": 78,
                       "type": "sub_in"
                     }
                   ],
@@ -11404,7 +11403,7 @@
               ]
             },
             "homeLineup": {
-              "formation": "4-4-1-1",
+              "formation": "4-3-3",
               "players": [
                 {
                   "events": [
@@ -11461,6 +11460,18 @@
                 {
                   "events": [
                     {
+                      "minute": 58,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Kamaldeen Sulemana",
+                  "number": 22,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
                       "minute": 16,
                       "type": "yellow"
                     },
@@ -11476,25 +11487,6 @@
                   "position": "MED"
                 },
                 {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Antoine Semenyo",
-                  "number": 11,
-                  "position": "MED"
-                },
-                {
-                  "events": [
-                    {
-                      "minute": 58,
-                      "type": "sub_out"
-                    }
-                  ],
-                  "isStarter": true,
-                  "name": "Ernest Nuamah",
-                  "number": 24,
-                  "position": "MED"
-                },
-                {
                   "events": [
                     {
                       "minute": 87,
@@ -11507,6 +11499,13 @@
                   "position": "DEL"
                 },
                 {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Antoine Semenyo",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
                   "events": [
                     {
                       "minute": 58,
@@ -11514,8 +11513,8 @@
                     }
                   ],
                   "isStarter": true,
-                  "name": "Kamaldeen Sulemana",
-                  "number": 22,
+                  "name": "Ernest Nuamah",
+                  "number": 24,
                   "position": "?"
                 },
                 {
@@ -15596,7 +15595,7 @@
                     }
                   ],
                   "isStarter": true,
-                  "name": "Raphinha ",
+                  "name": "Raphinha",
                   "number": 11,
                   "position": "?"
                 },
@@ -15688,7 +15687,7 @@
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Ederson ",
+                  "name": "Ederson",
                   "number": 23,
                   "position": "?"
                 },
@@ -15745,7 +15744,7 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Orlando Gil",
+                  "name": "Orlando Gill",
                   "number": 12,
                   "position": "POR"
                 },
@@ -16050,13 +16049,6 @@
                   "position": "MED"
                 },
                 {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Hakan Çalhanoglu",
-                  "number": 10,
-                  "position": "MED"
-                },
-                {
                   "events": [
                     {
                       "minute": 60,
@@ -16066,6 +16058,13 @@
                   "isStarter": true,
                   "name": "Ismail Yüksek",
                   "number": 16,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Hakan Çalhanoglu",
+                  "number": 10,
                   "position": "MED"
                 },
                 {
@@ -18568,7 +18567,7 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Rodri ",
+                  "name": "Rodri",
                   "number": 16,
                   "position": "MED"
                 },
@@ -18580,7 +18579,7 @@
                     }
                   ],
                   "isStarter": true,
-                  "name": "Pedri ",
+                  "name": "Pedri",
                   "number": 20,
                   "position": "MED"
                 },
@@ -18692,7 +18691,7 @@
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Gavi ",
+                  "name": "Gavi",
                   "number": 9,
                   "position": "?"
                 },
@@ -22668,7 +22667,7 @@
                     }
                   ],
                   "isStarter": true,
-                  "name": "Vitinha ",
+                  "name": "Vitinha",
                   "number": 23,
                   "position": "MED"
                 },
@@ -24165,7 +24164,7 @@
                 {
                   "events": [
                     {
-                      "minute": 78,
+                      "minute": 77,
                       "type": "sub_out"
                     }
                   ],
@@ -24295,7 +24294,7 @@
                 {
                   "events": [
                     {
-                      "minute": 78,
+                      "minute": 77,
                       "type": "sub_in"
                     }
                   ],
@@ -24425,7 +24424,7 @@
                 {
                   "events": [
                     {
-                      "minute": 75,
+                      "minute": 74,
                       "type": "sub_out"
                     }
                   ],
@@ -24561,7 +24560,7 @@
                 {
                   "events": [
                     {
-                      "minute": 75,
+                      "minute": 74,
                       "type": "sub_in"
                     },
                     {
@@ -25495,7 +25494,7 @@
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Ederson ",
+                  "name": "Ederson",
                   "number": 23,
                   "position": "?"
                 },
@@ -30087,7 +30086,7 @@
                 {
                   "events": [],
                   "isStarter": true,
-                  "name": "Orlando Gil",
+                  "name": "Orlando Gill",
                   "number": 12,
                   "position": "POR"
                 },
@@ -31449,7 +31448,7 @@
                     }
                   ],
                   "isStarter": true,
-                  "name": "Pedri ",
+                  "name": "Pedri",
                   "number": 20,
                   "position": "MED"
                 },
@@ -31564,7 +31563,7 @@
                 {
                   "events": [],
                   "isStarter": false,
-                  "name": "Gavi ",
+                  "name": "Gavi",
                   "number": 9,
                   "position": "?"
                 },
@@ -31992,6 +31991,13 @@
                   "position": "MED"
                 },
                 {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Mohamed Kanno",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
                   "events": [
                     {
                       "extraTime": 3,
@@ -32002,13 +32008,6 @@
                   "isStarter": true,
                   "name": "Feras Al-Brikan",
                   "number": 9,
-                  "position": "?"
-                },
-                {
-                  "events": [],
-                  "isStarter": true,
-                  "name": "Mohamed Kanno",
-                  "number": 23,
                   "position": "?"
                 },
                 {
@@ -34962,7 +34961,7 @@
                 {
                   "events": [
                     {
-                      "extraTime": 3,
+                      "extraTime": 2,
                       "minute": 90,
                       "type": "sub_out"
                     }
@@ -34999,7 +34998,7 @@
                     }
                   ],
                   "isStarter": true,
-                  "name": "Vitinha ",
+                  "name": "Vitinha",
                   "number": 23,
                   "position": "MED"
                 },
@@ -35148,7 +35147,7 @@
                 {
                   "events": [
                     {
-                      "extraTime": 3,
+                      "extraTime": 2,
                       "minute": 90,
                       "type": "sub_in"
                     }
