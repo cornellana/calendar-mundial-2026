@@ -10,6 +10,14 @@ import SwiftUI
 
 // MARK: - TopScorersSheet
 
+/// Hoja modal con la clasificación de goleadores del Mundial 2026.
+///
+/// Muestra la lista ordenada de mayor a menor número de goles. Los tres primeros
+/// clasificados reciben el color de medalla correspondiente (oro, plata, bronce).
+/// Incluye un indicador de goles de penalti cuando el jugador ha marcado alguno.
+///
+/// Se presenta con un estado vacío y mensaje explicativo si todavía no hay
+/// partidos con detalles de jugadores disponibles.
 struct TopScorersSheet: View {
     let scorers: [TopScorer]
     @Environment(\.dismiss) private var dismiss

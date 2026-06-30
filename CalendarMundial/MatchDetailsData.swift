@@ -13,6 +13,15 @@
 
 import Foundation
 
+/// Repositorio de alineaciones y eventos de los partidos ya disputados.
+///
+/// Cada propiedad estática devuelve un `MatchDetails` con titulares,
+/// suplentes utilizados, goles, tarjetas y cambios verificados contra
+/// fuentes oficiales (FIFA, ESPN, FotMob, WhoScored).
+///
+/// Estos datos sirven de semilla estática cuando el JSON remoto no está
+/// disponible; `MatchStore` los sustituye por los del endpoint en cuanto
+/// descarga el snapshot actualizado.
 enum MatchDetailsData {
 
     // MARK: México 2-0 Sudáfrica (11/06/2026, Estadio Azteca)

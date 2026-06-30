@@ -181,6 +181,12 @@ enum MundialData {
         )
     }
 
+    /// Calendario completo del torneo con todos los partidos, fases y resultados
+    /// disponibles en el momento de compilación.
+    ///
+    /// Actúa como semilla inicial cuando no hay caché ni JSON remoto. `MatchStore`
+    /// sustituye estos datos por la versión descargada de `remoteURL` en cuanto
+    /// se establece conexión.
     static let matchDays: [MatchDay] = [
         MatchDay(date: "2026-06-11", phase: .grupos, games: [
             Match(time: "21:00", home: "México", away: "Sudáfrica", group: "A", tv: .both, done: true, result: "2-0",

@@ -440,8 +440,12 @@ def main() -> int:
                 continue
             seen_event_ids.add(event_id)
 
-            status = ((event.get("status") or {}).get("type") or {}).get("name", "")
-            if status != "STATUS_FULL_TIME":
+            # Usar el campo `completed` en lugar del nombre exacto del estado:
+            # en fase de grupos el estado es STATUS_FULL_TIME, pero en
+            # eliminatorias puede ser STATUS_FULL_TIME_AET (prórroga) o
+            # STATUS_FINAL_PEN (penaltis). `completed=True` cubre todos los casos.
+            status_type = (event.get("status") or {}).get("type") or {}
+            if not status_type.get("completed", False):
                 continue
 
             # Fecha del partido en Madrid (para cruzar con nuestro JSON)

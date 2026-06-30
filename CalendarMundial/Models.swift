@@ -530,13 +530,22 @@ struct MatchDay: Identifiable, Codable {
 // MARK: - TopScorer
 
 /// Entrada de la tabla de goleadores del torneo.
+///
+/// Agrupa todos los goles marcados por un jugador a lo largo del Mundial,
+/// calculados a partir de los eventos disponibles en `MatchDetails`.
+/// Los goles en propia puerta no se contabilizan para ningún jugador,
+/// siguiendo el criterio oficial FIFA.
 struct TopScorer: Identifiable {
+    /// Identificador estable compuesto de nombre y equipo, para evitar
+    /// colisiones entre jugadores homónimos de distintas selecciones.
     var id: String { "\(player)|\(team)" }
+    /// Nombre del jugador tal como aparece en las alineaciones oficiales.
     let player: String
+    /// Nombre del equipo/selección; puede incluir emoji de bandera (p. ej. `"🇧🇷 Brasil"`).
     let team: String
-    /// Total de goles (incluye penaltis, excluye propios).
+    /// Total de goles marcados (incluye penaltis; excluye goles en propia puerta).
     let goals: Int
-    /// Goles de penalti dentro del total.
+    /// Número de goles de penalti incluidos en `goals`.
     let penalties: Int
 }
 
