@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30T09:11:21Z",
+  "lastUpdated": "2026-06-30T20:20:41Z",
   "matchDays": [
     {
       "date": "2026-06-11",
@@ -38533,14 +38533,493 @@
         },
         {
           "away": "Noruega",
-          "done": false,
+          "details": {
+            "awayLineup": {
+              "formation": "4-3-3",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Ørjan Nyland",
+                  "number": 1,
+                  "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Torbjørn Heggem",
+                  "number": 17,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Kristoffer Ajer",
+                  "number": 3,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "David Møller Wolfe",
+                  "number": 5,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 83,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Marcus Holmgren Pedersen",
+                  "number": 16,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Sander Berge",
+                  "number": 8,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Patrick Berg",
+                  "number": 6,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Martin Ødegaard",
+                  "number": 10,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 86,
+                      "type": "goal"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Erling Haaland",
+                  "number": 9,
+                  "position": "DEL"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 39,
+                      "type": "goal"
+                    },
+                    {
+                      "extraTime": 1,
+                      "minute": 45,
+                      "type": "yellow"
+                    },
+                    {
+                      "minute": 71,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Antonio Nusa",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 71,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Alexander Sørloth",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Sondre Langas",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Sander Tangvik",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Jens Petter Hauge",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 71,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Oscar Bobb",
+                  "number": 22,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 83,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Fredrik Aursnes",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Leo Østigard",
+                  "number": 4,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Egil Selvik",
+                  "number": 13,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Fredrik André Bjørkan",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Morten Thorsby",
+                  "number": 2,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 71,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Andreas Schjelderup",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Jørgen Strand Larsen",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Julian Ryerson",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Thelo Aasgaard",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Henrik Falchener",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Kristian Thorstvedt",
+                  "number": 18,
+                  "position": "?"
+                }
+              ]
+            },
+            "homeLineup": {
+              "formation": "4-1-4-1",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Yahia Fofana",
+                  "number": 1,
+                  "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Emmanuel Agbadou",
+                  "number": 20,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Odilon Kossounou",
+                  "number": 7,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Ibrahim Sangaré",
+                  "number": 18,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 3,
+                      "minute": 90,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Ghislain Konan",
+                  "number": 3,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Guela Doué",
+                  "number": 17,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 60,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Christ Inao Oulaï",
+                  "number": 26,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Franck Kessié",
+                  "number": 8,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 3,
+                      "minute": 90,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Yan Diomande",
+                  "number": 11,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 87,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Nicolas Pépé",
+                  "number": 19,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 60,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Ange-Yoan Bonny",
+                  "number": 9,
+                  "position": "DEL"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Jean Michaël Seri",
+                  "number": 4,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Alban Lafont",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Seko Fofana",
+                  "number": 6,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mohamed Koné",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 3,
+                      "minute": 90,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Evann Guessand",
+                  "number": 22,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Christopher Operi",
+                  "number": 13,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Evan Ndicka",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 3,
+                      "minute": 90,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Bazoumana Touré",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Ousmane Diomande",
+                  "number": 2,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 60,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Elye Wahi",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 87,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Oumar Diakité",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Wilfried Singo",
+                  "number": 5,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Parfait Guiagon",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Simon Adingra",
+                  "number": 10,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 60,
+                      "type": "sub_in"
+                    },
+                    {
+                      "minute": 74,
+                      "type": "goal"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Amad Diallo",
+                  "number": 15,
+                  "position": "?"
+                }
+              ]
+            }
+          },
+          "done": true,
           "esp": false,
           "group": "1/16",
           "home": "C. de Marfil",
+          "result": "1-2",
           "stadium": "AT&T Stadium",
           "time": "19:00",
           "tv": "DAZN",
-          "venueCity": "Arlington, EE.UU."
+          "venueCity": "Arlington, Texas, EE.UU."
         },
         {
           "away": "Suecia",
