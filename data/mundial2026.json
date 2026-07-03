@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-02T21:00:50Z",
+  "lastUpdated": "2026-07-03T01:16:28Z",
   "matchDays": [
     {
       "date": "2026-06-11",
@@ -42078,10 +42078,510 @@
         },
         {
           "away": "Croacia",
-          "done": false,
+          "details": {
+            "awayLineup": {
+              "formation": "4-2-3-1",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Dominik Livakovic",
+                  "number": 1,
+                  "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Marin Pongracic",
+                  "number": 3,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Josip Sutalo",
+                  "number": 6,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 53,
+                      "type": "goal"
+                    },
+                    {
+                      "extraTime": 8,
+                      "minute": 90,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Ivan Perisic",
+                  "number": 14,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Josip Stanisic",
+                  "number": 2,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Petar Sucic",
+                  "number": 17,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 6,
+                      "minute": 90,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Mateo Kovacic",
+                  "number": 8,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 59,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Luka Modric",
+                  "number": 10,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Ante Budimir",
+                  "number": 11,
+                  "position": "DEL"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 68,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Martin Baturina",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 2,
+                      "minute": 90,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Nikola Vlasic",
+                  "number": 13,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 6,
+                      "minute": 90,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Andrej Kramaric",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Igor Matanovic",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Luka Sucic",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Dominik Kotarski",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 68,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Mario Pasalic",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Luka Vuskovic",
+                  "number": 22,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 2,
+                      "minute": 90,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Josko Gvardiol",
+                  "number": 4,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Nikola Moro",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Duje Caleta-Car",
+                  "number": 5,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Petar Musa",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Marco Pasalic",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Toni Fruk",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Kristijan Jakic",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Martin Erlic",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Ivor Pandur",
+                  "number": 12,
+                  "position": "?"
+                }
+              ]
+            },
+            "homeLineup": {
+              "formation": "4-2-3-1",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Diogo Costa",
+                  "number": 1,
+                  "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Renato Veiga",
+                  "number": 13,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 17,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Rúben Dias",
+                  "number": 3,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Nuno Mendes",
+                  "number": 25,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 63,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "João Cancelo",
+                  "number": 20,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 63,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Bruno Fernandes",
+                  "number": 8,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 62,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Vitinha",
+                  "number": 23,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "João Neves",
+                  "number": 15,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 68,
+                      "type": "penalty"
+                    },
+                    {
+                      "minute": 81,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Cristiano Ronaldo",
+                  "number": 7,
+                  "position": "DEL"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Rafael Leão",
+                  "number": 17,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 63,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Pedro Neto",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Samú Costa",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 81,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Rúben Neves",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Tomás Araújo",
+                  "number": 4,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Gonçalo Inácio",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Matheus Nunes",
+                  "number": 6,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "João Félix",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 63,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Nélson Semedo",
+                  "number": 2,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 63,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Francisco Conceição",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 63,
+                      "type": "sub_in"
+                    },
+                    {
+                      "extraTime": 4,
+                      "minute": 90,
+                      "type": "goal"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Gonçalo Ramos",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Gonçalo Guedes",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Rui Silva",
+                  "number": 22,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Diogo Dalot",
+                  "number": 5,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Francisco Trincão",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 62,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Bernardo Silva",
+                  "number": 10,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "José Sá",
+                  "number": 12,
+                  "position": "?"
+                }
+              ]
+            }
+          },
+          "done": true,
           "esp": false,
           "group": "1/16",
           "home": "Portugal",
+          "result": "2-1",
           "stadium": "BMO Field",
           "time": "01:00",
           "tv": "DAZN",
