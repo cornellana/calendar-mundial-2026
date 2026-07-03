@@ -335,32 +335,32 @@ enum MundialData {
                   stadium: "SoFi Stadium", venueCity: "Los Ángeles, EE.UU.")
         ]),
         MatchDay(date: "2026-07-03", phase: .dieciseisavos, games: [
-            Match(time: "00:00", home: "Argentina", away: "Cabo Verde", group: "1/16", tv: .dazn, done: false,
-                  stadium: "Hard Rock Stadium", venueCity: "Miami, EE.UU."),
             Match(time: "01:00", home: "Portugal", away: "Croacia", group: "1/16", tv: .dazn, done: false,
                   stadium: "BMO Field", venueCity: "Toronto, Canadá"),
-            Match(time: "03:30", home: "Colombia", away: "Ghana", group: "1/16", tv: .dazn, done: false,
-                  stadium: "Arrowhead Stadium", venueCity: "Kansas City, EE.UU."),
             Match(time: "05:00", home: "Suiza", away: "Argelia", group: "1/16", tv: .dazn, done: false,
                   stadium: "BC Place", venueCity: "Vancouver, Canadá"),
             Match(time: "20:00", home: "Australia", away: "Egipto", group: "1/16", tv: .dazn, done: false,
                   stadium: "AT&T Stadium", venueCity: "Arlington, EE.UU.")
         ]),
-        MatchDay(date: "2026-07-04", phase: .octavos, games: [
-            Match(time: "19:00", home: "Gan. P73", away: "Gan. P75", group: "1/8", tv: .both, done: false),
-            Match(time: "23:00", home: "Gan. P74", away: "Gan. P77", group: "1/8", tv: .both, done: false)
+        MatchDay(date: "2026-07-04", phase: .dieciseisavos, games: [
+            Match(time: "00:00", home: "Argentina", away: "Cabo Verde", group: "1/16", tv: .dazn, done: false,
+                  stadium: "Hard Rock Stadium", venueCity: "Miami, EE.UU."),
+            Match(time: "03:30", home: "Colombia", away: "Ghana", group: "1/16", tv: .dazn, done: false,
+                  stadium: "Arrowhead Stadium", venueCity: "Kansas City, EE.UU."),
+            Match(time: "19:00", home: "Canadá", away: "Marruecos", group: "1/8", tv: .both, done: false),
+            Match(time: "23:00", home: "Paraguay", away: "Francia", group: "1/8", tv: .both, done: false)
         ]),
         MatchDay(date: "2026-07-05", phase: .octavos, games: [
-            Match(time: "22:00", home: "Gan. P76", away: "Gan. P78", group: "1/8", tv: .dazn, done: false)
+            Match(time: "22:00", home: "Brasil", away: "Noruega", group: "1/8", tv: .dazn, done: false)
         ]),
         MatchDay(date: "2026-07-06", phase: .octavos, games: [
-            Match(time: "02:00", home: "Gan. P79", away: "Gan. P80", group: "1/8", tv: .both, done: false, esp: true),
-            Match(time: "21:00", home: "Gan. P83", away: "Gan. P84", group: "1/8", tv: .dazn, done: false)
+            Match(time: "02:00", home: "México", away: "Inglaterra", group: "1/8", tv: .both, done: false),
+            Match(time: "21:00", home: "Portugal", away: "🇪🇸 España", group: "1/8", tv: .both, done: false, esp: true)
         ]),
         MatchDay(date: "2026-07-07", phase: .octavos, games: [
-            Match(time: "01:00", home: "Gan. P81", away: "Gan. P82", group: "1/8", tv: .dazn, done: false),
-            Match(time: "18:00", home: "Gan. P86", away: "Gan. P88", group: "1/8", tv: .both, done: false, esp: true),
-            Match(time: "22:00", home: "Gan. P85", away: "Gan. P87", group: "1/8", tv: .dazn, done: false)
+            Match(time: "02:00", home: "EE.UU.", away: "Bélgica", group: "1/8", tv: .dazn, done: false),
+            Match(time: "18:00", home: "Gan. Jul7A", away: "Gan. Jul7B", group: "1/8", tv: .both, done: false, esp: true),
+            Match(time: "22:00", home: "Suiza", away: "Gan. Jul7C", group: "1/8", tv: .dazn, done: false)
         ]),
         MatchDay(date: "2026-07-09", phase: .cuartos, games: [
             Match(time: "22:00", home: "Cuartos 1", away: "", group: "CF", tv: .both, done: false)

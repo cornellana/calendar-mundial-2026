@@ -42066,17 +42066,6 @@
       "date": "2026-07-03",
       "games": [
         {
-          "away": "Cabo Verde",
-          "done": false,
-          "esp": false,
-          "group": "1/16",
-          "home": "Argentina",
-          "stadium": "Hard Rock Stadium",
-          "time": "00:00",
-          "tv": "DAZN",
-          "venueCity": "Miami, EE.UU."
-        },
-        {
           "away": "Croacia",
           "details": {
             "awayLineup": {
@@ -42588,17 +42577,6 @@
           "venueCity": "Toronto, Canadá"
         },
         {
-          "away": "Ghana",
-          "done": false,
-          "esp": false,
-          "group": "1/16",
-          "home": "Colombia",
-          "stadium": "Arrowhead Stadium",
-          "time": "03:30",
-          "tv": "DAZN",
-          "venueCity": "Kansas City, EE.UU."
-        },
-        {
           "away": "Argelia",
           "details": {
             "awayLineup": {
@@ -43100,35 +43078,57 @@
       "date": "2026-07-04",
       "games": [
         {
-          "away": "Gan. P75",
+          "away": "Cabo Verde",
+          "done": false,
+          "esp": false,
+          "group": "1/16",
+          "home": "Argentina",
+          "stadium": "Hard Rock Stadium",
+          "time": "00:00",
+          "tv": "DAZN",
+          "venueCity": "Miami, EE.UU."
+        },
+        {
+          "away": "Ghana",
+          "done": false,
+          "esp": false,
+          "group": "1/16",
+          "home": "Colombia",
+          "stadium": "Arrowhead Stadium",
+          "time": "03:30",
+          "tv": "DAZN",
+          "venueCity": "Kansas City, EE.UU."
+        },
+        {
+          "away": "Marruecos",
           "done": false,
           "esp": false,
           "group": "1/8",
-          "home": "Gan. P73",
+          "home": "Canadá",
           "time": "19:00",
           "tv": "BOTH"
         },
         {
-          "away": "Gan. P77",
+          "away": "Francia",
           "done": false,
           "esp": false,
           "group": "1/8",
-          "home": "Gan. P74",
+          "home": "Paraguay",
           "time": "23:00",
           "tv": "BOTH"
         }
       ],
-      "phase": "1/8"
+      "phase": "1/16"
     },
     {
       "date": "2026-07-05",
       "games": [
         {
-          "away": "Gan. P78",
+          "away": "Noruega",
           "done": false,
           "esp": false,
           "group": "1/8",
-          "home": "Gan. P76",
+          "home": "Brasil",
           "time": "22:00",
           "tv": "DAZN"
         }
@@ -43139,22 +43139,21 @@
       "date": "2026-07-06",
       "games": [
         {
-          "away": "Gan. P80",
+          "away": "Inglaterra",
           "done": false,
-          "esp": true,
           "group": "1/8",
-          "home": "Gan. P79",
+          "home": "México",
           "time": "02:00",
           "tv": "BOTH"
         },
         {
-          "away": "Gan. P84",
+          "away": "🇪🇸 España",
           "done": false,
-          "esp": false,
+          "esp": true,
           "group": "1/8",
-          "home": "Gan. P83",
+          "home": "Portugal",
           "time": "21:00",
-          "tv": "DAZN"
+          "tv": "BOTH"
         }
       ],
       "phase": "1/8"
@@ -43163,29 +43162,29 @@
       "date": "2026-07-07",
       "games": [
         {
-          "away": "Gan. P82",
+          "away": "Bélgica",
           "done": false,
           "esp": false,
           "group": "1/8",
-          "home": "Gan. P81",
-          "time": "01:00",
+          "home": "EE.UU.",
+          "time": "02:00",
           "tv": "DAZN"
         },
         {
-          "away": "Gan. P88",
+          "away": "Gan. Jul7B",
           "done": false,
           "esp": true,
           "group": "1/8",
-          "home": "Gan. P86",
+          "home": "Gan. Jul7A",
           "time": "18:00",
           "tv": "BOTH"
         },
         {
-          "away": "Gan. P87",
+          "away": "Gan. Jul7C",
           "done": false,
           "esp": false,
           "group": "1/8",
-          "home": "Gan. P85",
+          "home": "Suiza",
           "time": "22:00",
           "tv": "DAZN"
         }
