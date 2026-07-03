@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T05:11:30Z",
+  "lastUpdated": "2026-07-03T06:56:11Z",
   "matchDays": [
     {
       "date": "2026-06-11",
@@ -40572,7 +40572,7 @@
                 {
                   "events": [
                     {
-                      "minute": 93,
+                      "minute": 94,
                       "type": "sub_out"
                     }
                   ],
@@ -40615,7 +40615,7 @@
                 {
                   "events": [
                     {
-                      "minute": 25,
+                      "minute": 24,
                       "type": "goal"
                     },
                     {
@@ -40643,7 +40643,7 @@
                 {
                   "events": [
                     {
-                      "minute": 93,
+                      "minute": 94,
                       "type": "sub_out"
                     }
                   ],
@@ -40707,7 +40707,7 @@
                 {
                   "events": [
                     {
-                      "minute": 93,
+                      "minute": 94,
                       "type": "sub_in"
                     }
                   ],
@@ -40719,7 +40719,7 @@
                 {
                   "events": [
                     {
-                      "minute": 93,
+                      "minute": 94,
                       "type": "sub_in"
                     }
                   ],
