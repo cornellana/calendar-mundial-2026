@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-05T19:11:19Z",
+  "lastUpdated": "2026-07-05T22:39:12Z",
   "matchDays": [
     {
       "date": "2026-06-11",
@@ -45616,12 +45616,478 @@
       "games": [
         {
           "away": "Noruega",
-          "done": false,
+          "details": {
+            "awayLineup": {
+              "formation": "4-3-3",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Ørjan Nyland",
+                  "number": 1,
+                  "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Torbjørn Heggem",
+                  "number": 17,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Kristoffer Ajer",
+                  "number": 3,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 5,
+                      "minute": 90,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "David Møller Wolfe",
+                  "number": 5,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 63,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Julian Ryerson",
+                  "number": 26,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Sander Berge",
+                  "number": 8,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Patrick Berg",
+                  "number": 6,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Martin Ødegaard",
+                  "number": 10,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 79,
+                      "type": "goal"
+                    },
+                    {
+                      "minute": 90,
+                      "type": "goal"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Erling Haaland",
+                  "number": 9,
+                  "position": "DEL"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Antonio Nusa",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Alexander Sørloth",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Oscar Bobb",
+                  "number": 22,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Jørgen Strand Larsen",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Henrik Falchener",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Kristian Thorstvedt",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Jens Petter Hauge",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Sondre Langas",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 45,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Andreas Schjelderup",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Thelo Aasgaard",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Sander Tangvik",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 63,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Fredrik Aursnes",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Morten Thorsby",
+                  "number": 2,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Egil Selvik",
+                  "number": 13,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 5,
+                      "minute": 90,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Leo Østigard",
+                  "number": 4,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Fredrik André Bjørkan",
+                  "number": 15,
+                  "position": "?"
+                }
+              ]
+            },
+            "homeLineup": {
+              "formation": "4-4-2",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Alisson Becker",
+                  "number": 1,
+                  "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Gabriel Magalhães",
+                  "number": 3,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Marquinhos",
+                  "number": 4,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Douglas Santos",
+                  "number": 16,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Danilo",
+                  "number": 13,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Casemiro",
+                  "number": 5,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 79,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Bruno Guimarães",
+                  "number": 8,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 67,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Gabriel Martinelli",
+                  "number": 22,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 67,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Rayan",
+                  "number": 26,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Vinícius Júnior",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 58,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Matheus Cunha",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 67,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Danilo Santos",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Weverton",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Ederson",
+                  "number": 23,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Roger Ibañez",
+                  "number": 24,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Raphinha",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Bremer",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 79,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Éderson",
+                  "number": 2,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 67,
+                      "type": "sub_in"
+                    },
+                    {
+                      "extraTime": 6,
+                      "minute": 90,
+                      "type": "yellow"
+                    },
+                    {
+                      "extraTime": 10,
+                      "minute": 90,
+                      "type": "penalty"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Neymar",
+                  "number": 10,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Luiz Henrique",
+                  "number": 21,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Igor Thiago",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 58,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Endrick",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Alex Sandro",
+                  "number": 6,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Léo Pereira",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Fabinho",
+                  "number": 17,
+                  "position": "?"
+                }
+              ]
+            }
+          },
+          "done": true,
           "esp": false,
           "group": "1/8",
           "home": "Brasil",
+          "result": "1-2",
+          "stadium": "MetLife Stadium",
           "time": "22:00",
-          "tv": "DAZN"
+          "tv": "DAZN",
+          "venueCity": "East Rutherford, New Jersey, EE.UU."
         }
       ],
       "phase": "1/8"
