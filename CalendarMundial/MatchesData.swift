@@ -351,28 +351,28 @@ enum MundialData {
             Match(time: "23:00", home: "Paraguay", away: "Francia", group: "1/8", tv: .both, done: true, result: "0-1")
         ]),
         MatchDay(date: "2026-07-05", phase: .octavos, games: [
-            Match(time: "22:00", home: "Brasil", away: "Noruega", group: "1/8", tv: .dazn, done: false)
+            Match(time: "22:00", home: "Brasil", away: "Noruega", group: "1/8", tv: .dazn, done: true, result: "1-2")
         ]),
         MatchDay(date: "2026-07-06", phase: .octavos, games: [
-            Match(time: "02:00", home: "México", away: "Inglaterra", group: "1/8", tv: .both, done: false),
-            Match(time: "21:00", home: "Portugal", away: "🇪🇸 España", group: "1/8", tv: .both, done: false, esp: true)
+            Match(time: "03:00", home: "México", away: "Inglaterra", group: "1/8", tv: .both, done: true, result: "2-3"),
+            Match(time: "21:00", home: "Portugal", away: "🇪🇸 España", group: "1/8", tv: .both, done: true, result: "0-1", esp: true)
         ]),
         MatchDay(date: "2026-07-07", phase: .octavos, games: [
-            Match(time: "02:00", home: "EE.UU.", away: "Bélgica", group: "1/8", tv: .dazn, done: false),
-            Match(time: "18:00", home: "Argentina", away: "Egipto", group: "1/8", tv: .both, done: false),
-            Match(time: "22:00", home: "Suiza", away: "Colombia", group: "1/8", tv: .dazn, done: false)
+            Match(time: "02:00", home: "EE.UU.", away: "Bélgica", group: "1/8", tv: .dazn, done: true, result: "1-4"),
+            Match(time: "18:00", home: "Argentina", away: "Egipto", group: "1/8", tv: .both, done: true, result: "3-2"),
+            Match(time: "22:00", home: "Suiza", away: "Colombia", group: "1/8", tv: .dazn, done: true, result: "0-0 p.")
         ]),
         MatchDay(date: "2026-07-09", phase: .cuartos, games: [
             Match(time: "22:00", home: "Francia", away: "Marruecos", group: "CF", tv: .both, done: false)
         ]),
         MatchDay(date: "2026-07-10", phase: .cuartos, games: [
-            Match(time: "21:00", home: "Cuartos 2", away: "", group: "CF", tv: .both, done: false)
+            Match(time: "21:00", home: "🇪🇸 España", away: "Bélgica", group: "CF", tv: .both, done: false, esp: true)
         ]),
         MatchDay(date: "2026-07-11", phase: .cuartos, games: [
-            Match(time: "23:00", home: "Cuartos 3", away: "", group: "CF", tv: .both, done: false)
+            Match(time: "23:00", home: "Noruega", away: "Inglaterra", group: "CF", tv: .both, done: false)
         ]),
         MatchDay(date: "2026-07-12", phase: .cuartos, games: [
-            Match(time: "03:00", home: "Cuartos 4", away: "", group: "CF", tv: .dazn, done: false)
+            Match(time: "03:00", home: "Argentina", away: "Suiza", group: "CF", tv: .dazn, done: false)
         ]),
         MatchDay(date: "2026-07-14", phase: .semis, games: [
             Match(time: "21:00", home: "Semifinal 1", away: "", group: "SF", tv: .both, done: false)
