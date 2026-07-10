@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-09T22:08:35Z",
+  "lastUpdated": "2026-07-10T21:03:02Z",
   "matchDays": [
     {
       "date": "2026-06-11",
@@ -49203,12 +49203,493 @@
       "games": [
         {
           "away": "Bélgica",
-          "done": false,
+          "details": {
+            "awayLineup": {
+              "formation": "4-2-3-1",
+              "players": [
+                {
+                  "events": [
+                    {
+                      "minute": 71,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Thibaut Courtois",
+                  "number": 1,
+                  "position": "POR"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Brandon Mechele",
+                  "number": 4,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Nathan Ngoy",
+                  "number": 25,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Maxim De Cuyper",
+                  "number": 5,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Timothy Castagne",
+                  "number": 21,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 85,
+                      "type": "yellow"
+                    },
+                    {
+                      "minute": 86,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Kevin De Bruyne",
+                  "number": 7,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Nicolas Raskin",
+                  "number": 23,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 60,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Hans Vanaken",
+                  "number": 20,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 41,
+                      "type": "goal"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Charles De Ketelaere",
+                  "number": 17,
+                  "position": "DEL"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Jérémy Doku",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 60,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Leandro Trossard",
+                  "number": 10,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 86,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Alexis Saelemaekers",
+                  "number": 22,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Koni De Winter",
+                  "number": 16,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 61,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Joaquin Seys",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Diego Moreira",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 71,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Senne Lammens",
+                  "number": 12,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Dodi Lukébakio",
+                  "number": 14,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Arthur Theate",
+                  "number": 3,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Matias Fernandez-Pardo",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Thomas Meunier",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 60,
+                      "type": "sub_in"
+                    },
+                    {
+                      "extraTime": 5,
+                      "minute": 90,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Axel Witsel",
+                  "number": 6,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Mike Penders",
+                  "number": 13,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 60,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Romelu Lukaku",
+                  "number": 9,
+                  "position": "?"
+                }
+              ]
+            },
+            "homeLineup": {
+              "formation": "4-2-3-1",
+              "players": [
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Unai Simón",
+                  "number": 23,
+                  "position": "POR"
+                },
+                {
+                  "events": [
+                    {
+                      "extraTime": 3,
+                      "minute": 90,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Aymeric Laporte",
+                  "number": 14,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 43,
+                      "type": "yellow"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Pau Cubarsí",
+                  "number": 22,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Marc Cucurella",
+                  "number": 24,
+                  "position": "DEF"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Pedro Porro",
+                  "number": 12,
+                  "position": "DEF"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 86,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Dani Olmo",
+                  "number": 10,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 30,
+                      "type": "goal"
+                    },
+                    {
+                      "minute": 55,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Fabián Ruiz",
+                  "number": 8,
+                  "position": "MED"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Rodri",
+                  "number": 16,
+                  "position": "MED"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 79,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Mikel Oyarzabal",
+                  "number": 21,
+                  "position": "DEL"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 55,
+                      "type": "sub_out"
+                    }
+                  ],
+                  "isStarter": true,
+                  "name": "Álex Baena",
+                  "number": 15,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": true,
+                  "name": "Lamine Yamal",
+                  "number": 19,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 79,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Nico Williams",
+                  "number": 17,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Yéremy Pino",
+                  "number": 11,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Alejandro Grimaldo",
+                  "number": 3,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Víctor Muñoz",
+                  "number": 25,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 86,
+                      "type": "sub_in"
+                    },
+                    {
+                      "minute": 88,
+                      "type": "goal"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Mikel Merino",
+                  "number": 6,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Joan García",
+                  "number": 13,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Eric García",
+                  "number": 4,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Borja Iglesias",
+                  "number": 26,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Gavi",
+                  "number": 9,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "David Raya",
+                  "number": 1,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Marc Pubill",
+                  "number": 2,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 55,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Pedri",
+                  "number": 20,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Martín Zubimendi",
+                  "number": 18,
+                  "position": "?"
+                },
+                {
+                  "events": [
+                    {
+                      "minute": 55,
+                      "type": "sub_in"
+                    }
+                  ],
+                  "isStarter": false,
+                  "name": "Ferran Torres",
+                  "number": 7,
+                  "position": "?"
+                },
+                {
+                  "events": [],
+                  "isStarter": false,
+                  "name": "Marcos Llorente",
+                  "number": 5,
+                  "position": "?"
+                }
+              ]
+            }
+          },
+          "done": true,
           "esp": true,
           "group": "CF",
           "home": "🇪🇸 España",
+          "result": "2-1",
+          "stadium": "SoFi Stadium",
           "time": "21:00",
-          "tv": "BOTH"
+          "tv": "BOTH",
+          "venueCity": "Inglewood, California, EE.UU."
         }
       ],
       "phase": "Cuartos"
