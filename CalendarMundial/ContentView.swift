@@ -22,7 +22,7 @@ struct ContentView: View {
     @State private var showingScorers = false
     @Environment(\.scenePhase) private var scenePhase
 
-    private let today = MundialData.todayString
+    private var today: String { MundialData.todayString }
 
     /// Primer día con partidos a partir de hoy (o el último si el torneo ya terminó).
     private var scrollTargetDate: String? {
@@ -121,7 +121,11 @@ struct ContentView: View {
                         } else {
                             VStack(spacing: 10) {
                                 ForEach(filteredDays) { day in
-                                    DaySectionView(day: day, today: today) { match in
+                                    DaySectionView(
+                                        day: day,
+                                        today: today,
+                                        isScrollTarget: day.date == scrollTargetDate
+                                    ) { match in
                                         sheetDetent = match.details != nil ? .large : .medium
                                         selectedMatch = SelectedMatch(
                                             match: match,
@@ -556,10 +560,14 @@ private struct LegendView: View {
 private struct DaySectionView: View {
     let day: MatchDay
     let today: String
+    /// `true` cuando este día es el destino del scroll automático (el más próximo a hoy).
+    let isScrollTarget: Bool
     let onSelect: (Match) -> Void
 
     private var isToday: Bool { day.date == today }
     private var isPast: Bool { day.date < today }
+    // Destacado en dorado: exactamente hoy o, si no hay partido hoy, el próximo día con partido.
+    private var isHighlighted: Bool { isToday || isScrollTarget }
 
     var body: some View {
         VStack(spacing: 4) {
@@ -567,7 +575,7 @@ private struct DaySectionView: View {
 
             ForEach(day.games) { game in
                 Button { onSelect(game) } label: {
-                    MatchRow(match: game, isToday: isToday, isPast: isPast)
+                    MatchRow(match: game, isToday: isHighlighted, isPast: isPast)
                 }
                 .buttonStyle(.plain)
             }
@@ -577,14 +585,19 @@ private struct DaySectionView: View {
     private var dayHeader: some View {
         HStack(spacing: 10) {
             HStack(spacing: 4) {
-                if isToday {
+                if isHighlighted {
                     Text("📍").font(.system(size: 13))
                 }
                 Text(DateFormat.displayDate(from: day.date))
                     .font(.system(size: 13, weight: .bold))
-                    .foregroundColor(isToday ? Color(hex: 0xC8A84B) : isPast ? Color(hex: 0x4A6080) : Color(hex: 0xE0EAFF))
+                    .foregroundColor(isHighlighted ? Color(hex: 0xC8A84B) : isPast ? Color(hex: 0x4A6080) : Color(hex: 0xE0EAFF))
                 if isToday {
                     Text("HOY")
+                        .font(.system(size: 10, weight: .bold))
+                        .foregroundColor(Color(hex: 0xC8A84B))
+                        .padding(.leading, 2)
+                } else if isScrollTarget {
+                    Text("PRÓXIMO")
                         .font(.system(size: 10, weight: .bold))
                         .foregroundColor(Color(hex: 0xC8A84B))
                         .padding(.leading, 2)
@@ -592,7 +605,7 @@ private struct DaySectionView: View {
             }
 
             Rectangle()
-                .fill(isToday ? Color(hex: 0xC8A84B).opacity(0.13) : Color(hex: 0x1E3A5F))
+                .fill(isHighlighted ? Color(hex: 0xC8A84B).opacity(0.13) : Color(hex: 0x1E3A5F))
                 .frame(height: 1)
 
             Text(day.phase.rawValue.uppercased())
