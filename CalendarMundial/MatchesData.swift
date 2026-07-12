@@ -363,25 +363,25 @@ enum MundialData {
             Match(time: "22:00", home: "Suiza", away: "Colombia", group: "1/8", tv: .dazn, done: true, result: "0-0 p.")
         ]),
         MatchDay(date: "2026-07-09", phase: .cuartos, games: [
-            Match(time: "22:00", home: "Francia", away: "Marruecos", group: "CF", tv: .both, done: false)
+            Match(time: "22:00", home: "Francia", away: "Marruecos", group: "CF", tv: .both, done: true, result: "2-0")
         ]),
         MatchDay(date: "2026-07-10", phase: .cuartos, games: [
-            Match(time: "21:00", home: "🇪🇸 España", away: "Bélgica", group: "CF", tv: .both, done: false, esp: true)
+            Match(time: "21:00", home: "🇪🇸 España", away: "Bélgica", group: "CF", tv: .both, done: true, result: "2-1", esp: true)
         ]),
         MatchDay(date: "2026-07-11", phase: .cuartos, games: [
-            Match(time: "23:00", home: "Noruega", away: "Inglaterra", group: "CF", tv: .both, done: false)
+            Match(time: "23:00", home: "Noruega", away: "Inglaterra", group: "CF", tv: .both, done: true, result: "1-2")
         ]),
         MatchDay(date: "2026-07-12", phase: .cuartos, games: [
-            Match(time: "03:00", home: "Argentina", away: "Suiza", group: "CF", tv: .dazn, done: false)
+            Match(time: "03:00", home: "Argentina", away: "Suiza", group: "CF", tv: .dazn, done: true, result: "3-1")
         ]),
         MatchDay(date: "2026-07-14", phase: .semis, games: [
-            Match(time: "21:00", home: "Semifinal 1", away: "", group: "SF", tv: .both, done: false)
+            Match(time: "21:00", home: "Francia", away: "🇪🇸 España", group: "SF", tv: .both, done: false, esp: true)
         ]),
         MatchDay(date: "2026-07-15", phase: .semis, games: [
-            Match(time: "21:00", home: "Semifinal 2", away: "", group: "SF", tv: .both, done: false)
+            Match(time: "21:00", home: "Inglaterra", away: "Argentina", group: "SF", tv: .both, done: false)
         ]),
         MatchDay(date: "2026-07-18", phase: .final, games: [
-            Match(time: "22:00", home: "3er y 4º Puesto", away: "", group: "3P", tv: .both, done: false)
+            Match(time: "23:00", home: "3er y 4º Puesto", away: "", group: "3P", tv: .both, done: false)
         ]),
         MatchDay(date: "2026-07-19", phase: .final, games: [
             Match(time: "21:00", home: "🏆 FINAL", away: "MetLife Stadium, Nueva Jersey", group: "FINAL", tv: .both, done: false)
