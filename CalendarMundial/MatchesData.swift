@@ -375,16 +375,16 @@ enum MundialData {
             Match(time: "03:00", home: "Argentina", away: "Suiza", group: "CF", tv: .dazn, done: true, result: "3-1")
         ]),
         MatchDay(date: "2026-07-14", phase: .semis, games: [
-            Match(time: "21:00", home: "Francia", away: "🇪🇸 España", group: "SF", tv: .both, done: false, esp: true)
+            Match(time: "21:00", home: "Francia", away: "🇪🇸 España", group: "SF", tv: .both, done: true, result: "0-2", esp: true)
         ]),
         MatchDay(date: "2026-07-15", phase: .semis, games: [
-            Match(time: "21:00", home: "Inglaterra", away: "Argentina", group: "SF", tv: .both, done: false)
+            Match(time: "21:00", home: "Inglaterra", away: "Argentina", group: "SF", tv: .both, done: true, result: "1-2")
         ]),
         MatchDay(date: "2026-07-18", phase: .final, games: [
-            Match(time: "23:00", home: "3er y 4º Puesto", away: "", group: "3P", tv: .both, done: false)
+            Match(time: "23:00", home: "Francia", away: "Inglaterra", group: "3P", tv: .both, done: false)
         ]),
         MatchDay(date: "2026-07-19", phase: .final, games: [
-            Match(time: "21:00", home: "🏆 FINAL", away: "MetLife Stadium, Nueva Jersey", group: "FINAL", tv: .both, done: false)
+            Match(time: "21:00", home: "🇪🇸 España", away: "Argentina", group: "FINAL", tv: .both, done: false, esp: true)
         ])
     ]
 }
