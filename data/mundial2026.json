@@ -51812,11 +51812,11 @@
       "date": "2026-07-18",
       "games": [
         {
-          "away": "",
+          "away": "Inglaterra",
           "done": false,
           "esp": false,
           "group": "3P",
-          "home": "3er y 4º Puesto",
+          "home": "Francia",
           "time": "23:00",
           "tv": "BOTH"
         }
@@ -51827,11 +51827,11 @@
       "date": "2026-07-19",
       "games": [
         {
-          "away": "MetLife Stadium, Nueva Jersey",
+          "away": "Argentina",
           "done": false,
-          "esp": false,
+          "esp": true,
           "group": "FINAL",
-          "home": "🏆 FINAL",
+          "home": "🇪🇸 España",
           "time": "21:00",
           "tv": "BOTH"
         }
