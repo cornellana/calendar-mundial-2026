@@ -50,7 +50,7 @@ final class MatchStore {
     )
 
     /// Clave bajo la que se persiste el snapshot en `UserDefaults`.
-    private static let cacheKey = "mundial2026_cache_v1"
+    private static let cacheKey = "mundial2026_cache_v2"
 
     // MARK: Inicialización
 
